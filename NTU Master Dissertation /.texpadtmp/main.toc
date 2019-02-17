@@ -1,0 +1,42 @@
+\contentsline {chapter}{Abstract}{iii}{chapter*.3}
+\contentsline {chapter}{Acknowledgement}{iv}{chapter*.4}
+\contentsline {chapter}{Acronyms}{v}{chapter*.5}
+\contentsline {chapter}{Symbols}{vi}{chapter*.6}
+\contentsline {chapter}{Lists of Figures}{vii}{chapter*.7}
+\contentsline {chapter}{Lists of Tables}{viii}{chapter*.8}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivation and Objectives}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Major contribution of the Dissertation}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Organisation of the Dissertation}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Visual SLAM}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Basic Structure}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Algorithms}{5}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Visual SLAM Solutions}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}ORB-SLAM}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}CORB-SLAM}{5}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Illumination Tolerance Algorithms}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Model-based Approaches}{6}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Illumination Variance}{6}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Life-Long SLAM}{6}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}Approach (Actual work done and contribution, including literature survey)}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Evaluation of CORBSLAM}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Modification to CORBSLAM}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}CORBSLAM with Illumination Variance}{7}{section.3.3}
+\contentsline {chapter}{\numberline {4}Test and Experiments}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}Evaluation of CORBSLAM}{8}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Evaluation on multi ground robots}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Evaluation on multi hybrid robots}{8}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evaluation under different illumination}{8}{section.4.2}
+\contentsline {chapter}{\numberline {5}Discussion}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}One}{9}{section.5.1}
+\contentsline {section}{\numberline {5.2}Two}{9}{section.5.2}
+\contentsline {section}{\numberline {5.3}Three}{9}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{10}{chapter.6}
+\contentsline {section}{\numberline {6.1}One}{10}{section.6.1}
+\contentsline {section}{\numberline {6.2}Two}{10}{section.6.2}
+\contentsline {section}{\numberline {6.3}Three}{10}{section.6.3}
+\contentsline {chapter}{Appendix A}{12}{chapter*.14}
+\contentsline {chapter}{Appendix B}{13}{chapter*.15}

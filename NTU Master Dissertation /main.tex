@@ -1,0 +1,80 @@
+%\documentclass{article}
+\documentclass[12pt]{report}
+\linespread{1.5}
+
+%% Useful packages
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3.5cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage{courier}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx} %Times Font
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+\usepackage{paralist}
+\usepackage{mdwlist}
+
+%tikz settings
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta,arrows}
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+text width=6em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=white, 
+text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{block2} = [rectangle, draw, fill=yellow!20, 
+text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+minimum height=4em]
+
+\begin{document}
+
+%==== FRONT PART====
+\include{Title/titlepage}
+
+%\begingroup
+%\let\cleardoublepage\clearpage
+\pagenumbering{roman}
+\tableofcontents
+%\endgroup
+
+\include{Front/Abstract}
+\include{Front/Acknowledgement}
+\include{Front/Acronyms}
+\include{Front/Symbols}
+
+\listoffigures 
+\addcontentsline{toc}{chapter}{Lists of Figures}
+\newpage
+
+\listoftables 
+\addcontentsline{toc}{chapter}{Lists of Tables}
+\newpage
+
+
+%==== MAIN PART ====
+\pagenumbering{arabic}
+\include{Chapter1/Chapter1}
+\include{Chapter2/Chapter2}
+\include{Chapter3/Chapter3}
+\include{Chapter4/Chapter4}
+\include{Chapter5/Chapter5}
+\include{Chapter6/Chapter6}
+%==== ENDING PART ===
+
+\bibliographystyle{unsrt}
+\bibliography{Ref/refs.bib}
+
+\include{Appendix/appendix}
+%==== END OF ALL ===
+\end{document}
