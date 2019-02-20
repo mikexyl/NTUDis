@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.2)  18 FEB 2019 03:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.2)  21 FEB 2019 00:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,6 +706,18 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 (/usr/local/texlive/2018/texmf-dist/tex/latex/mdwtools/mdwlist.sty
 Package: mdwlist 1996/05/02 1.1 Various list-related things
 )
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box43
+\UL@hyphenbox=\box44
+\UL@skip=\skip62
+\UL@hook=\toks43
+\UL@height=\dimen190
+\UL@pe=\count145
+\UL@pixel=\dimen191
+\ULC@box=\box45
+Package: ulem 2012/05/18
+\ULdepth=\dimen192
+)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
@@ -719,10 +731,10 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen190
-\pgfarrowlength=\dimen191
-\pgfarrowwidth=\dimen192
-\pgfarrowlinewidth=\dimen193
+\pgfarrowinset=\dimen193
+\pgfarrowlength=\dimen194
+\pgfarrowwidth=\dimen195
+\pgfarrowlinewidth=\dimen196
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
@@ -731,7 +743,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen194
+\arrowsize=\dimen197
 )) (./main.aux (./Title/titlepage.aux) (./Front/Abstract.aux)
 (./Front/Acknowledgement.aux) (./Front/Acronyms.aux) (./Front/Symbols.aux)
 (./Chapter1/Chapter1.aux) (./Chapter2/Chapter2.aux) (./Chapter3/Chapter3.aux)
@@ -739,21 +751,21 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 (./Appendix/appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -799,17 +811,17 @@ Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
-\scratchdimen=\dimen195
-\scratchbox=\box43
-\nofMPsegments=\count146
-\nofMParguments=\count147
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count148
-\MPscratchDim=\dimen196
-\MPnumerator=\count149
-\makeMPintoPDFobject=\count150
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count146
+\scratchdimen=\dimen198
+\scratchbox=\box46
+\nofMPsegments=\count147
+\nofMParguments=\count148
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count149
+\MPscratchDim=\dimen199
+\MPnumerator=\count150
+\makeMPintoPDFobject=\count151
+\everyMPtoPDFconversion=\toks45
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -828,8 +840,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 40.
+\AtBeginShipoutBox=\box47
+Package hyperref Info: Link coloring ON on input line 41.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -837,11 +849,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count151
+\c@section@level=\count152
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -860,7 +872,7 @@ Package epstopdf Info: Source file: <Title/logo.eps>
 o.pdf Title/logo.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
-<Title/logo-eps-converted-to.pdf, id=175, 469.755pt x 192.72pt>
+<Title/logo-eps-converted-to.pdf, id=187, 469.755pt x 192.72pt>
 File: Title/logo-eps-converted-to.pdf Graphic file (type pdf)
 <use Title/logo-eps-converted-to.pdf>
 Package pdftex.def Info: Title/logo-eps-converted-to.pdf  used on input line 5.
@@ -876,7 +888,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Title
 /logo-eps-converted-to.pdf>])
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
  (./main.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
@@ -951,7 +963,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 
 
-] (./main.lof)
+] (./main.lof
+Overfull \hbox (8.60762pt too wide) in paragraph at lines 7--7
+ \OT1/ptm/m/n/12 are se-lected from St Lu-cia dataset cor-re-spond-ing to the c
+ar rides recorded 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -967,8 +985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 ]
 \openout2 = `Chapter1/Chapter1.aux'.
 
-
-(./Chapter1/Chapter1.tex
+ (./Chapter1/Chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
@@ -999,7 +1016,7 @@ Package epstopdf Info: Source file: <Chapter1/boundingbox.eps>
 onverted-to.pdf Chapter1/boundingbox.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter1/boundingbox-eps-converted-to.pdf, id=281, 421.575pt x 316.18124pt>
+<Chapter1/boundingbox-eps-converted-to.pdf, id=305, 421.575pt x 316.18124pt>
 File: Chapter1/boundingbox-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter1/boundingbox-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter1/boundingbox-eps-converted-to.pdf  used on inp
@@ -1020,7 +1037,19 @@ Chapter 2.
 
 
 
-] [6]
+] [6] [7] [8] [9]
+Overfull \hbox (4.79962pt too wide) in paragraph at lines 128--129
+[]\OT1/ptm/m/n/12 Camera mo-tion es-ti-ma-tion, by syn-thetic view gen-er-a-tio
+n from the re-con-structed
+ []
+
+[10]
+Overfull \hbox (4.39008pt too wide) in paragraph at lines 145--146
+\OT1/ptm/m/n/12 phones with real-time per-for-mance, and also eval-u-ate the ac
+-cu-racy for low-resolution
+ []
+
+[11] [12]
 Package epstopdf Info: Source file: <Chapter2/ORBSLAMOverview.eps>
 (epstopdf)                    date: 2019-02-17 10:43:23
 (epstopdf)                    size: 6752730 bytes
@@ -1030,16 +1059,15 @@ pdf>
 (epstopdf)                    size: 382826 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/ORBSLAMOverview-e
 ps-converted-to.pdf Chapter2/ORBSLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/ORBSLAMOverview-eps-converted-to.pdf, id=334, 1194.4625pt x 936.49875
+<Chapter2/ORBSLAMOverview-eps-converted-to.pdf, id=474, 1194.4625pt x 936.49875
 pt>
 File: Chapter2/ORBSLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/ORBSLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/ORBSLAMOverview-eps-converted-to.pdf  used on
- input line 70.
+ input line 187.
 (pdftex.def)             Requested size: 289.07999pt x 226.65054pt.
- [7]
 Package epstopdf Info: Source file: <Chapter2/CORBSLAMOverview.eps>
 (epstopdf)                    date: 2019-02-17 10:47:01
 (epstopdf)                    size: 1591474 bytes
@@ -1049,17 +1077,107 @@ Package epstopdf Info: Source file: <Chapter2/CORBSLAMOverview.eps>
 (epstopdf)                    size: 77394 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/CORBSLAMOverview-
 eps-converted-to.pdf Chapter2/CORBSLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/CORBSLAMOverview-eps-converted-to.pdf, id=344, 853.1875pt x 308.15125
+<Chapter2/CORBSLAMOverview-eps-converted-to.pdf, id=476, 853.1875pt x 308.15125
 pt>
 File: Chapter2/CORBSLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/CORBSLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/CORBSLAMOverview-eps-converted-to.pdf  used o
-n input line 79.
+n input line 199.
 (pdftex.def)             Requested size: 289.07999pt x 104.40797pt.
- [8 <./Chapter2/ORBSLAMOverview-eps-converted-to.pdf> <./Chapter2/CORBSLAMOverv
-iew-eps-converted-to.pdf>]
+ [13 <./Chapter2/ORBSLAMOverview-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Chapter2/shadecompare1-0.eps>
+(epstopdf)                    date: 2019-02-20 22:13:48
+(epstopdf)                    size: 4784791 bytes
+(epstopdf)             Output file: <Chapter2/shadecompare1-0-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-02-20 22:34:42
+(epstopdf)                    size: 355893 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter2/shadecompare1-0-e
+ps-converted-to.pdf Chapter2/shadecompare1-0.eps>
+(epstopdf)             \includegraphics on input line 229.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter2/shadecompare1-0-eps-converted-to.pdf, id=498, 1027.84pt x 770.88pt>
+File: Chapter2/shadecompare1-0-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter2/shadecompare1-0-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter2/shadecompare1-0-eps-converted-to.pdf  used on
+ input line 229.
+(pdftex.def)             Requested size: 144.54pt x 108.40472pt.
+Package epstopdf Info: Source file: <Chapter2/shadecompare1-1.eps>
+(epstopdf)                    date: 2019-02-20 22:13:48
+(epstopdf)                    size: 4784791 bytes
+(epstopdf)             Output file: <Chapter2/shadecompare1-1-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-02-20 22:34:43
+(epstopdf)                    size: 396461 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter2/shadecompare1-1-e
+ps-converted-to.pdf Chapter2/shadecompare1-1.eps>
+(epstopdf)             \includegraphics on input line 236.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter2/shadecompare1-1-eps-converted-to.pdf, id=499, 1027.84pt x 770.88pt>
+File: Chapter2/shadecompare1-1-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter2/shadecompare1-1-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter2/shadecompare1-1-eps-converted-to.pdf  used on
+ input line 236.
+(pdftex.def)             Requested size: 144.54pt x 108.40472pt.
+ [14 <./Chapter2/CORBSLAMOverview-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Chapter2/iicompare1-0.eps>
+(epstopdf)                    date: 2019-02-20 23:33:11
+(epstopdf)                    size: 1600424 bytes
+(epstopdf)             Output file: <Chapter2/iicompare1-0-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-02-20 23:37:40
+(epstopdf)                    size: 400473 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter2/iicompare1-0-eps-
+converted-to.pdf Chapter2/iicompare1-0.eps>
+(epstopdf)             \includegraphics on input line 275.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter2/iicompare1-0-eps-converted-to.pdf, id=519, 1027.84pt x 770.88pt>
+File: Chapter2/iicompare1-0-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter2/iicompare1-0-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter2/iicompare1-0-eps-converted-to.pdf  used on in
+put line 275.
+(pdftex.def)             Requested size: 144.54pt x 108.40472pt.
+Package epstopdf Info: Source file: <Chapter2/iicompare1-1.eps>
+(epstopdf)                    date: 2019-02-20 23:33:22
+(epstopdf)                    size: 1600424 bytes
+(epstopdf)             Output file: <Chapter2/iicompare1-1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-02-20 23:37:41
+(epstopdf)                    size: 428400 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter2/iicompare1-1-eps-
+converted-to.pdf Chapter2/iicompare1-1.eps>
+(epstopdf)             \includegraphics on input line 282.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter2/iicompare1-1-eps-converted-to.pdf, id=520, 1027.84pt x 770.88pt>
+File: Chapter2/iicompare1-1-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter2/iicompare1-1-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter2/iicompare1-1-eps-converted-to.pdf  used on in
+put line 282.
+(pdftex.def)             Requested size: 144.54pt x 108.40472pt.
+ [15 <./Chapter2/shadecompare1-0-eps-converted-to.pdf> <./Chapter2/shadecompare
+1-1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Chapter2/OPENABLEOverview.eps>
+(epstopdf)                    date: 2019-02-18 04:12:37
+(epstopdf)                    size: 4003227 bytes
+(epstopdf)             Output file: <Chapter2/OPENABLEOverview-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2019-02-18 04:16:27
+(epstopdf)                    size: 203435 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter2/OPENABLEOverview-
+eps-converted-to.pdf Chapter2/OPENABLEOverview.eps>
+(epstopdf)             \includegraphics on input line 295.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter2/OPENABLEOverview-eps-converted-to.pdf, id=545, 1064.97874pt x 622.325
+pt>
+File: Chapter2/OPENABLEOverview-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter2/OPENABLEOverview-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter2/OPENABLEOverview-eps-converted-to.pdf  used o
+n input line 295.
+(pdftex.def)             Requested size: 289.07999pt x 168.9226pt.
+ [16 <./Chapter2/iicompare1-0-eps-converted-to.pdf> <./Chapter2/iicompare1-1-ep
+s-converted-to.pdf> <./Chapter2/OPENABLEOverview-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/COISLAMOverview.eps>
 (epstopdf)                    date: 2019-02-17 11:13:15
 (epstopdf)                    size: 4546461 bytes
@@ -1069,21 +1187,21 @@ pdf>
 (epstopdf)                    size: 123544 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/COISLAMOverview-e
 ps-converted-to.pdf Chapter2/COISLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/COISLAMOverview-eps-converted-to.pdf, id=359, 994.71625pt x 756.8275p
+<Chapter2/COISLAMOverview-eps-converted-to.pdf, id=567, 994.71625pt x 756.8275p
 t>
 File: Chapter2/COISLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/COISLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/COISLAMOverview-eps-converted-to.pdf  used on
- input line 112.
+ input line 304.
 (pdftex.def)             Requested size: 289.07999pt x 219.94783pt.
- [9] [10 <./Chapter2/COISLAMOverview-eps-converted-to.pdf>])
+ [17 <./Chapter2/COISLAMOverview-eps-converted-to.pdf>])
 \openout2 = `Chapter3/Chapter3.aux'.
 
  (./Chapter3/Chapter3.tex
 Chapter 3.
-[11
+[18
 
 
 
@@ -1092,7 +1210,7 @@ Chapter 3.
 
  (./Chapter4/Chapter4.tex
 Chapter 4.
-[12
+[19
 
 
 
@@ -1101,7 +1219,7 @@ Chapter 4.
 
  (./Chapter5/Chapter5.tex
 Chapter 5.
-[13
+[20
 
 
 
@@ -1110,43 +1228,44 @@ Chapter 5.
 
  (./Chapter6/Chapter6.tex
 Chapter 6.
-[14
+[21
 
 
 
-]) (./main.bbl [15
+]) (./main.bbl [22
 
 
-]) [16]
+] [23] [24] [25]) [26]
 \openout2 = `Appendix/appendix.aux'.
 
- (./Appendix/appendix.tex [17
+ (./Appendix/appendix.tex [27
 
 
-] [18
+]
+[28
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
- (./main.aux
-(./Title/titlepage.aux) (./Front/Abstract.aux) (./Front/Acknowledgement.aux)
-(./Front/Acronyms.aux) (./Front/Symbols.aux) (./Chapter1/Chapter1.aux)
-(./Chapter2/Chapter2.aux) (./Chapter3/Chapter3.aux) (./Chapter4/Chapter4.aux)
-(./Chapter5/Chapter5.aux) (./Chapter6/Chapter6.aux) (./Appendix/appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+ (./main.aux (./Title/titlepage.aux) (./Front/Abstract.aux)
+(./Front/Acknowledgement.aux) (./Front/Acronyms.aux) (./Front/Symbols.aux)
+(./Chapter1/Chapter1.aux) (./Chapter2/Chapter2.aux) (./Chapter3/Chapter3.aux)
+(./Chapter4/Chapter4.aux) (./Chapter5/Chapter5.aux) (./Chapter6/Chapter6.aux)
+(./Appendix/appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B87266923354C9784B7A52F08FD6A0F;2640.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+(rerunfilecheck)             Checksum: D078797EFB61280F3EFAF31CC77D8F8A;2885.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 19954 strings out of 492649
- 382733 string characters out of 6129622
- 455938 words of memory out of 5000000
- 23252 multiletter control sequences out of 15000+600000
- 30111 words of font info for 63 fonts, out of 8000000 for 9000
+ 20196 strings out of 492649
+ 386677 string characters out of 6129622
+ 465774 words of memory out of 5000000
+ 23395 multiletter control sequences out of 15000+600000
+ 31958 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,79p,745b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,79p,886b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -1155,10 +1274,10 @@ ve/2018/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on main.pdf (27 pages, 902739 bytes).
+Output written on main.pdf (37 pages, 2702567 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 374 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 620 compressed objects within 7 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 423 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -29,6 +29,56 @@ David Nist{\'e}r and Henrik Stew{\'e}nius.
 \newblock A minimal solution to the generalised 3-point pose problem.
 \newblock {\em Journal of Mathematical Imaging and Vision}, 27(1):67--79, 2007.
 
+\bibitem{rublee2011orb}
+Ethan Rublee, Vincent Rabaud, Kurt Konolige, and Gary Bradski.
+\newblock Orb: An efficient alternative to sift or surf.
+\newblock 2011.
+
+\bibitem{galvez2012bags}
+Dorian G{\'a}lvez-L{\'o}pez and Juan~D Tardos.
+\newblock Bags of binary words for fast place recognition in image sequences.
+\newblock {\em IEEE Transactions on Robotics}, 28(5):1188--1197, 2012.
+
+\bibitem{hartley2003multiple}
+Richard Hartley and Andrew Zisserman.
+\newblock {\em Multiple view geometry in computer vision}.
+\newblock Cambridge university press, 2003.
+
+\bibitem{triggs1999bundle}
+Bill Triggs, Philip~F McLauchlan, Richard~I Hartley, and Andrew~W Fitzgibbon.
+\newblock Bundle adjustment---a modern synthesis.
+\newblock In {\em International workshop on vision algorithms}, pages 298--372.
+  Springer, 1999.
+
+\bibitem{davison2003real}
+Andrew~J Davison.
+\newblock Real-time simultaneous localisation and mapping with a single camera.
+\newblock In {\em null}, page 1403. IEEE, 2003.
+
+\bibitem{davison2007monoslam}
+Andrew~J Davison, Ian~D Reid, Nicholas~D Molton, and Olivier Stasse.
+\newblock Monoslam: Real-time single camera slam.
+\newblock {\em IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+  (6):1052--1067, 2007.
+
+\bibitem{klein2007parallel}
+Georg Klein and David Murray.
+\newblock Parallel tracking and mapping for small ar workspaces.
+\newblock In {\em Proceedings of the 2007 6th IEEE and ACM International
+  Symposium on Mixed and Augmented Reality}, pages 1--10. IEEE Computer
+  Society, 2007.
+
+\bibitem{williams2007real}
+Brian Williams, Georg Klein, and Ian Reid.
+\newblock Real-time slam relocalisation.
+\newblock 2007.
+
+\bibitem{nister2004efficient}
+David Nist{\'e}r.
+\newblock An efficient solution to the five-point relative pose problem.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  26(6):0756--777, 2004.
+
 \bibitem{mur2015orb}
 Raul Mur-Artal, Jose Maria~Martinez Montiel, and Juan~D Tardos.
 \newblock Orb-slam: a versatile and accurate monocular slam system.
@@ -40,11 +90,116 @@ Raul Mur-Artal and Juan~D Tard{\'o}s.
   rgb-d cameras.
 \newblock {\em IEEE Transactions on Robotics}, 33(5):1255--1262, 2017.
 
+\bibitem{newcombe2011dtam}
+Richard~A Newcombe, Steven~J Lovegrove, and Andrew~J Davison.
+\newblock Dtam: Dense tracking and mapping in real-time.
+\newblock In {\em 2011 international conference on computer vision}, pages
+  2320--2327. IEEE, 2011.
+
+\bibitem{ondruvska2015mobilefusion}
+Peter Ondr{\'u}{\v{s}}ka, Pushmeet Kohli, and Shahram Izadi.
+\newblock Mobilefusion: Real-time volumetric surface reconstruction and dense
+  tracking on mobile phones.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  21(11):1251--1258, 2015.
+
+\bibitem{engel2014lsd}
+Jakob Engel, Thomas Sch{\"o}ps, and Daniel Cremers.
+\newblock Lsd-slam: Large-scale direct monocular slam.
+\newblock In {\em European conference on computer vision}, pages 834--849.
+  Springer, 2014.
+
+\bibitem{engel2013semi}
+Jakob Engel, Jurgen Sturm, and Daniel Cremers.
+\newblock Semi-dense visual odometry for a monocular camera.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 1449--1456, 2013.
+
+\bibitem{schops2014semi}
+Thomas Sch{\"o}ps, Jakob Engel, and Daniel Cremers.
+\newblock Semi-dense visual odometry for ar on a smartphone.
+\newblock In {\em 2014 IEEE international symposium on mixed and augmented
+  reality (ISMAR)}, pages 145--150. IEEE, 2014.
+
+\bibitem{caruso2015large}
+David Caruso, Jakob Engel, and Daniel Cremers.
+\newblock Large-scale direct slam for omnidirectional cameras.
+\newblock In {\em 2015 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 141--148. IEEE, 2015.
+
+\bibitem{engel2015large}
+Jakob Engel, J{\"o}rg St{\"u}ckler, and Daniel Cremers.
+\newblock Large-scale direct slam with stereo cameras.
+\newblock In {\em 2015 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 1935--1942. IEEE, 2015.
+
+\bibitem{newcombe2011kinectfusion}
+Richard~A Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim,
+  Andrew~J Davison, Pushmeet Kohi, Jamie Shotton, Steve Hodges, and Andrew
+  Fitzgibbon.
+\newblock Kinectfusion: Real-time dense surface mapping and tracking.
+\newblock In {\em 2011 IEEE International Symposium on Mixed and Augmented
+  Reality}, pages 127--136. IEEE, 2011.
+
+\bibitem{kahler2015very}
+Olaf K{\"a}hler, Victor~Adrian Prisacariu, Carl~Yuheng Ren, Xin Sun, Philip
+  Torr, and David Murray.
+\newblock Very high frame rate volumetric integration of depth images on mobile
+  devices.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  21(11):1241--1250, 2015.
+
+\bibitem{salas2013slam++}
+Renato~F Salas-Moreno, Richard~A Newcombe, Hauke Strasdat, Paul~HJ Kelly, and
+  Andrew~J Davison.
+\newblock Slam++: Simultaneous localisation and mapping at the level of
+  objects.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 1352--1359, 2013.
+
+\bibitem{tateno20162}
+Keisuke Tateno, Federico Tombari, and Nassir Navab.
+\newblock When 2.5 d is not enough: Simultaneous reconstruction, segmentation
+  and recognition on dense slam.
+\newblock In {\em 2016 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 2295--2302. IEEE, 2016.
+
+\bibitem{strasdat2010scale}
+Hauke Strasdat, J~Montiel, and Andrew~J Davison.
+\newblock Scale drift-aware large scale monocular slam.
+\newblock {\em Robotics: Science and Systems VI}, 2(3):7, 2010.
+
+\bibitem{strasdat2011double}
+Hauke Strasdat, Andrew~J Davison, JM~Mart{\`\i}nez Montiel, and Kurt Konolige.
+\newblock Double window optimisation for constant time visual slam.
+\newblock In {\em 2011 International Conference on Computer Vision}, pages
+  2352--2359. IEEE, 2011.
+
+\bibitem{mei2010closing}
+Christopher Mei, Gabe Sibley, and Paul Newman.
+\newblock Closing loops without places.
+\newblock In {\em 2010 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 3738--3744. IEEE, 2010.
+
 \bibitem{li2017corb}
 Fu~Li, Shaowu Yang, Xiaodong Yi, and Xuejun Yang.
 \newblock Corb-slam: a collaborative visual slam system for multiple robots.
 \newblock In {\em Eai International Conference on Collaborative Computing:
   Networking, Applications and Worksharing}, 2017.
+
+\bibitem{mcmanus2013distraction}
+Colin McManus, Winston Churchill, Ashley Napier, Ben Davis, and Paul Newman.
+\newblock Distraction suppression for vision-based pose estimation at city
+  scales.
+\newblock In {\em 2013 IEEE International Conference on Robotics and
+  Automation}, pages 3762--3769. IEEE, 2013.
+
+\bibitem{churchill2012practice}
+Winston Churchill and Paul Newman.
+\newblock Practice makes perfect? managing and leveraging visual experiences
+  for lifelong navigation.
+\newblock In {\em 2012 IEEE International Conference on Robotics and
+  Automation}, pages 4525--4532. IEEE, 2012.
 
 \bibitem{maddern2014illumination}
 Will Maddern, Alex Stewart, Colin McManus, Ben Upcroft, Winston Churchill, and
@@ -55,11 +210,40 @@ Will Maddern, Alex Stewart, Colin McManus, Ben Upcroft, Winston Churchill, and
   Environments Workshop, IEEE International Conference on Robotics and
   Automation (ICRA), Hong Kong, China}, volume~2, page~3, 2014.
 
+\bibitem{glover2010fab}
+Arren~J Glover, William~P Maddern, Michael~J Milford, and Gordon~F Wyeth.
+\newblock Fab-map+ ratslam: Appearance-based slam for multiple times of day.
+\newblock In {\em 2010 IEEE international conference on robotics and
+  automation}, pages 3507--3512. IEEE, 2010.
+
 \bibitem{arroyo2016openable}
 Roberto Arroyo, Pablo~F Alcantarilla, Luis~M Bergasa, and Eduardo Romera.
 \newblock Openable: An open-source toolbox for application in life-long visual
   localization of autonomous vehicles.
 \newblock In {\em Intelligent Transportation Systems (ITSC), 2016 IEEE 19th
   International Conference on}, pages 965--970. IEEE, 2016.
+
+\bibitem{arroyo2014bidirectional}
+Roberto Arroyo, Pablo~F Alcantarilla, Luis~M Bergasa, J~Javier Yebes, and
+  Sergio G{\'a}mez.
+\newblock Bidirectional loop closure detection on panoramas for visual
+  navigation.
+\newblock In {\em Intelligent Vehicles Symposium Proceedings, 2014 IEEE}, pages
+  1378--1383. IEEE, 2014.
+
+\bibitem{arroyo2014fast}
+Roberto Arroyo, Pablo~F Alcantarilla, Luis~M Bergasa, J~Javier Yebes, and
+  Sebasti{\'a}n Bronte.
+\newblock Fast and effective visual place recognition using binary codes and
+  disparity information.
+\newblock In {\em Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ
+  International Conference on}, pages 3089--3094. IEEE, 2014.
+
+\bibitem{arroyo2015towards}
+Roberto Arroyo, Pablo~F Alcantarilla, Luis~M Bergasa, and Eduardo Romera.
+\newblock Towards life-long visual localization using an efficient matching of
+  binary sequences from images.
+\newblock In {\em Robotics and Automation (ICRA), 2015 IEEE International
+  Conference on}, pages 6328--6335. IEEE, 2015.
 
 \end{thebibliography}
