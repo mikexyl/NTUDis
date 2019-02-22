@@ -113,7 +113,7 @@ Some popular vSLAM algorithms proposed in recent years are listed as follows:
 	
 	\item ORB-SLAM
 	
-	There have been proposed many SLAM algorithms based on PTAM. ORB-SLAM, one of the most popular vSLAM algorithm proposed in \cite{mur2015orb,mur2017orb}, also based on PTAM. The most important improvement of ORB-SLAM compared to PTAM, is ORB-SLAM employs a new loop detection thread. The details of ORB-SLAM are reviewed in Section \ref{chp:orbslam}.
+	There have been proposed many SLAM algorithms based on PTAM. ORB-SLAM, one of the most popular vSLAM algorithm proposed in \cite{mur2015orb,mur2017orb}, also based on PTAM. The most important improvement of ORB-SLAM compared to PTAM, is ORB-SLAM employs a new loop detection thread. The details of ORB-SLAM are reviewed in Chapter \ref{chp:orbslam}.
 \end{enumerate}
 
 \subsubsection{Direct Approach}
@@ -193,13 +193,40 @@ The tracking thread is in charge of localizing the camera with every frame and d
 \subsection{Multi Ground Robot System}
 \subsection{Multi Hybrid Robot System}
 \subsection{CORB-SLAM}
-\cite{li2017corb}
+Proposed by F.Li et al. in \cite{li2017corb}, CORB-SLAM is a vSLAM algorithm focusing on  multi-robot systems. As presented in Figure \ref{fig:corbslamoverview}, the system of CORB-SLAM consists of robot-end clients and a server.
 \begin{figure}[H]
 \centering
 \includegraphics[width=4in]{Chapter2/CORBSLAMOverview.eps}
 \caption{The framework of CORB-SLAM system.}
 \label{fig:corbslamoverview} 
 \end{figure}
+
+\subsubsection{Robot-end SLAM Client}
+The robot-end client of CORB-SLAM is an ORB-SLAM client extended to have the functionality to communicate with the server, transmitting the keyframe information, with all functions and modules in original ORB-SLAM as listed in Chapter \ref{chp:orbslam} reserved.
+
+\subsubsection{Map Fusing in the Server}
+In the server, the map fusing module receives and fuses the local maps from the clients, achieving an optimized global map. The map fusing algorithm is shown in Figure \ref{fig:corbslamserver}, including two main parts: map overlap detection and local-map fusion.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=4in]{Chapter2/corbslamserver.eps}
+	\caption{The flowchart of Map Fusing module.}
+	\label{fig:corbslamserver} 
+\end{figure}
+
+\begin{enumerate}[1.]
+	\item Initializing global map
+	
+	Initially,
+	
+	\item Map overlap detection
+	
+	To
+	
+	\item Local map fusing 
+	
+	To 
+\end{enumerate}
 
 \section{Illumination Variance}
 
@@ -262,7 +289,7 @@ Therefore, considering the peak spectral responses, $\alpha$ can be easily calcu
 \label{eq:ii2}
 \end{equation}
  
-The influence of applying the illumination invariant transformation is showed in \ref{fig:iicompare1}.
+The influence of applying the illumination invariant transformation is showed in Figure \ref{fig:iicompare1}.
 
 \begin{figure}
 	\centering
@@ -293,7 +320,7 @@ A graphic representation about how the methodology proposed by OpenABLE is showe
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=4in]{Chapter2/OPENABLEOverview.eps}
-	\caption{Block-flow diagram of the combined stereo localisation approach.}
+	\caption{A graphic representation about how the methodology proposed by ABLE works.}
 	\label{fig:openableoverview} 
 \end{figure}
 
@@ -306,5 +333,6 @@ The limitation of illumination variance approach is the transformation process p
 	\label{fig:iioverview} 
 \end{figure}
 
+In the framework presented in \ref{fig:iicompare1}, there is a second localizer making use of illumination invariant images in parallel with the main localization system. In \cite{maddern2014illumination}, although the metric relative poses calculated from illumination variant images tends wo be more noisy, the integrated localizer are less likely to fail if the scene appearance change is due to sunlight intensity direction or spectrum variation.
 %=== END OF CHAPTER TWO ===
 \newpage

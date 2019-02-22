@@ -4,14 +4,15 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Classic structure of Visual SLAM\relax }}{6}{figure.caption.10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces ORB-SLAM system overview.\relax }}{13}{figure.caption.17}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces The framework of CORB-SLAM system.\relax }}{14}{figure.caption.18}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Appearance changes caused by different lighting conditions. Pictures are selected from St Lucia dataset corresponding to the car rides recorded on 10/09/2009 at 8:45 am and at 2:10 pm\relax }}{15}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {pic1.}}}{15}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {pic2.}}}{15}{figure.caption.19}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of illumination invariance application in St Lucia dataset. It shows how this approach suppress the effects caused by sun\relax }}{16}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {pic1.}}}{16}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {pic2.}}}{16}{figure.caption.20}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Block-flow diagram of the combined stereo localisation approach.\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Block-flow diagram of the combined stereo localisation approach.\relax }}{17}{figure.caption.22}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The flowchart of Map Fusing module.\relax }}{14}{figure.caption.21}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Appearance changes caused by different lighting conditions. Pictures are selected from St Lucia dataset corresponding to the car rides recorded on 10/09/2009 at 8:45 am and at 2:10 pm\relax }}{16}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {pic1.}}}{16}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {pic2.}}}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces An example of illumination invariance application in St Lucia dataset. It shows how this approach suppress the effects caused by sun\relax }}{17}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {pic1.}}}{17}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {pic2.}}}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces A graphic representation about how the methodology proposed by ABLE works.\relax }}{17}{figure.caption.24}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Block-flow diagram of the combined stereo localisation approach.\relax }}{18}{figure.caption.25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

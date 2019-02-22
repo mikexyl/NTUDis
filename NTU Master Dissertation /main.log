@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.2)  21 FEB 2019 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.2)  21 FEB 2019 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,9 +964,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 
 ] (./main.lof
-Overfull \hbox (8.60762pt too wide) in paragraph at lines 7--7
+Overfull \hbox (8.60762pt too wide) in paragraph at lines 8--8
  \OT1/ptm/m/n/12 are se-lected from St Lu-cia dataset cor-re-spond-ing to the c
 ar rides recorded 
+ []
+
+
+Overfull \hbox (9.13612pt too wide) in paragraph at lines 14--14
+ [][] [][][]\OT1/ptm/m/n/12 A graphic rep-re-sen-ta-tion about how the method-o
+l-ogy pro-posed by ABLE 
  []
 
 )
@@ -1016,7 +1022,7 @@ Package epstopdf Info: Source file: <Chapter1/boundingbox.eps>
 onverted-to.pdf Chapter1/boundingbox.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter1/boundingbox-eps-converted-to.pdf, id=305, 421.575pt x 316.18124pt>
+<Chapter1/boundingbox-eps-converted-to.pdf, id=307, 421.575pt x 316.18124pt>
 File: Chapter1/boundingbox-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter1/boundingbox-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter1/boundingbox-eps-converted-to.pdf  used on inp
@@ -1061,7 +1067,7 @@ pdf>
 ps-converted-to.pdf Chapter2/ORBSLAMOverview.eps>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/ORBSLAMOverview-eps-converted-to.pdf, id=474, 1194.4625pt x 936.49875
+<Chapter2/ORBSLAMOverview-eps-converted-to.pdf, id=476, 1194.4625pt x 936.49875
 pt>
 File: Chapter2/ORBSLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/ORBSLAMOverview-eps-converted-to.pdf>
@@ -1079,7 +1085,7 @@ Package epstopdf Info: Source file: <Chapter2/CORBSLAMOverview.eps>
 eps-converted-to.pdf Chapter2/CORBSLAMOverview.eps>
 (epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/CORBSLAMOverview-eps-converted-to.pdf, id=476, 853.1875pt x 308.15125
+<Chapter2/CORBSLAMOverview-eps-converted-to.pdf, id=479, 853.1875pt x 308.15125
 pt>
 File: Chapter2/CORBSLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/CORBSLAMOverview-eps-converted-to.pdf>
@@ -1087,6 +1093,26 @@ Package pdftex.def Info: Chapter2/CORBSLAMOverview-eps-converted-to.pdf  used o
 n input line 199.
 (pdftex.def)             Requested size: 289.07999pt x 104.40797pt.
  [13 <./Chapter2/ORBSLAMOverview-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Chapter2/corbslamserver.eps>
+(epstopdf)                    date: 2019-02-21 00:24:08
+(epstopdf)                    size: 676012 bytes
+(epstopdf)             Output file: <Chapter2/corbslamserver-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-02-21 00:26:39
+(epstopdf)                    size: 23677 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter2/corbslamserver-ep
+s-converted-to.pdf Chapter2/corbslamserver.eps>
+(epstopdf)             \includegraphics on input line 212.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter2/corbslamserver-eps-converted-to.pdf, id=491, 981.6675pt x 339.2675pt>
+
+File: Chapter2/corbslamserver-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter2/corbslamserver-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter2/corbslamserver-eps-converted-to.pdf  used on 
+input line 212.
+(pdftex.def)             Requested size: 289.07999pt x 99.90703pt.
+ [14 <./Chapter2/CORBSLAMOverview-eps-converted-to.pdf> <./Chapter2/corbslamser
+ver-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/shadecompare1-0.eps>
 (epstopdf)                    date: 2019-02-20 22:13:48
 (epstopdf)                    size: 4784791 bytes
@@ -1096,13 +1122,13 @@ pdf>
 (epstopdf)                    size: 355893 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/shadecompare1-0-e
 ps-converted-to.pdf Chapter2/shadecompare1-0.eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/shadecompare1-0-eps-converted-to.pdf, id=498, 1027.84pt x 770.88pt>
+<Chapter2/shadecompare1-0-eps-converted-to.pdf, id=518, 1027.84pt x 770.88pt>
 File: Chapter2/shadecompare1-0-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/shadecompare1-0-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/shadecompare1-0-eps-converted-to.pdf  used on
- input line 229.
+ input line 256.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
 Package epstopdf Info: Source file: <Chapter2/shadecompare1-1.eps>
 (epstopdf)                    date: 2019-02-20 22:13:48
@@ -1113,15 +1139,15 @@ pdf>
 (epstopdf)                    size: 396461 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/shadecompare1-1-e
 ps-converted-to.pdf Chapter2/shadecompare1-1.eps>
-(epstopdf)             \includegraphics on input line 236.
+(epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/shadecompare1-1-eps-converted-to.pdf, id=499, 1027.84pt x 770.88pt>
+<Chapter2/shadecompare1-1-eps-converted-to.pdf, id=519, 1027.84pt x 770.88pt>
 File: Chapter2/shadecompare1-1-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/shadecompare1-1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/shadecompare1-1-eps-converted-to.pdf  used on
- input line 236.
+ input line 263.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
- [14 <./Chapter2/CORBSLAMOverview-eps-converted-to.pdf>]
+ [15]
 Package epstopdf Info: Source file: <Chapter2/iicompare1-0.eps>
 (epstopdf)                    date: 2019-02-20 23:33:11
 (epstopdf)                    size: 1600424 bytes
@@ -1131,13 +1157,13 @@ Package epstopdf Info: Source file: <Chapter2/iicompare1-0.eps>
 (epstopdf)                    size: 400473 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/iicompare1-0-eps-
 converted-to.pdf Chapter2/iicompare1-0.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 302.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/iicompare1-0-eps-converted-to.pdf, id=519, 1027.84pt x 770.88pt>
+<Chapter2/iicompare1-0-eps-converted-to.pdf, id=538, 1027.84pt x 770.88pt>
 File: Chapter2/iicompare1-0-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/iicompare1-0-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/iicompare1-0-eps-converted-to.pdf  used on in
-put line 275.
+put line 302.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
 Package epstopdf Info: Source file: <Chapter2/iicompare1-1.eps>
 (epstopdf)                    date: 2019-02-20 23:33:22
@@ -1148,15 +1174,15 @@ Package epstopdf Info: Source file: <Chapter2/iicompare1-1.eps>
 (epstopdf)                    size: 428400 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/iicompare1-1-eps-
 converted-to.pdf Chapter2/iicompare1-1.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/iicompare1-1-eps-converted-to.pdf, id=520, 1027.84pt x 770.88pt>
+<Chapter2/iicompare1-1-eps-converted-to.pdf, id=539, 1027.84pt x 770.88pt>
 File: Chapter2/iicompare1-1-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/iicompare1-1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/iicompare1-1-eps-converted-to.pdf  used on in
-put line 282.
+put line 309.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
- [15 <./Chapter2/shadecompare1-0-eps-converted-to.pdf> <./Chapter2/shadecompare
+ [16 <./Chapter2/shadecompare1-0-eps-converted-to.pdf> <./Chapter2/shadecompare
 1-1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/OPENABLEOverview.eps>
 (epstopdf)                    date: 2019-02-18 04:12:37
@@ -1167,17 +1193,15 @@ Package epstopdf Info: Source file: <Chapter2/OPENABLEOverview.eps>
 (epstopdf)                    size: 203435 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/OPENABLEOverview-
 eps-converted-to.pdf Chapter2/OPENABLEOverview.eps>
-(epstopdf)             \includegraphics on input line 295.
+(epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/OPENABLEOverview-eps-converted-to.pdf, id=545, 1064.97874pt x 622.325
+<Chapter2/OPENABLEOverview-eps-converted-to.pdf, id=567, 1064.97874pt x 622.325
 pt>
 File: Chapter2/OPENABLEOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/OPENABLEOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/OPENABLEOverview-eps-converted-to.pdf  used o
-n input line 295.
+n input line 322.
 (pdftex.def)             Requested size: 289.07999pt x 168.9226pt.
- [16 <./Chapter2/iicompare1-0-eps-converted-to.pdf> <./Chapter2/iicompare1-1-ep
-s-converted-to.pdf> <./Chapter2/OPENABLEOverview-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/COISLAMOverview.eps>
 (epstopdf)                    date: 2019-02-17 11:13:15
 (epstopdf)                    size: 4546461 bytes
@@ -1187,21 +1211,23 @@ pdf>
 (epstopdf)                    size: 123544 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/COISLAMOverview-e
 ps-converted-to.pdf Chapter2/COISLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 304.
+(epstopdf)             \includegraphics on input line 331.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/COISLAMOverview-eps-converted-to.pdf, id=567, 994.71625pt x 756.8275p
+<Chapter2/COISLAMOverview-eps-converted-to.pdf, id=570, 994.71625pt x 756.8275p
 t>
 File: Chapter2/COISLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/COISLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/COISLAMOverview-eps-converted-to.pdf  used on
- input line 304.
+ input line 331.
 (pdftex.def)             Requested size: 289.07999pt x 219.94783pt.
- [17 <./Chapter2/COISLAMOverview-eps-converted-to.pdf>])
+ [17 <./Chapter2/iicompare1-0-eps-converted-to.pdf> <./Chapter2/iicompare1-1-ep
+s-converted-to.pdf> <./Chapter2/OPENABLEOverview-eps-converted-to.pdf>] [18 <./
+Chapter2/COISLAMOverview-eps-converted-to.pdf>])
 \openout2 = `Chapter3/Chapter3.aux'.
 
  (./Chapter3/Chapter3.tex
 Chapter 3.
-[18
+[19
 
 
 
@@ -1210,7 +1236,7 @@ Chapter 3.
 
  (./Chapter4/Chapter4.tex
 Chapter 4.
-[19
+[20
 
 
 
@@ -1219,7 +1245,7 @@ Chapter 4.
 
  (./Chapter5/Chapter5.tex
 Chapter 5.
-[20
+[21
 
 
 
@@ -1228,21 +1254,21 @@ Chapter 5.
 
  (./Chapter6/Chapter6.tex
 Chapter 6.
-[21
+[22
 
 
 
-]) (./main.bbl [22
+]) (./main.bbl [23
 
 
-] [23] [24] [25]) [26]
+] [24] [25] [26]) [27]
 \openout2 = `Appendix/appendix.aux'.
 
- (./Appendix/appendix.tex [27
+ (./Appendix/appendix.tex [28
 
 
 ]
-[28
+[29
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -1255,14 +1281,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D078797EFB61280F3EFAF31CC77D8F8A;2885.
+(rerunfilecheck)             Checksum: 462042FFD458A0728E6F4D4C97A59E38;2818.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 20196 strings out of 492649
- 386677 string characters out of 6129622
- 465774 words of memory out of 5000000
- 23395 multiletter control sequences out of 15000+600000
+ 20209 strings out of 492649
+ 387001 string characters out of 6129622
+ 465855 words of memory out of 5000000
+ 23400 multiletter control sequences out of 15000+600000
  31958 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,79p,886b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1274,10 +1300,10 @@ ve/2018/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on main.pdf (37 pages, 2702567 bytes).
+Output written on main.pdf (38 pages, 2725706 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
- 620 compressed objects within 7 object streams
- 192 named destinations out of 1000 (max. 500000)
- 423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 

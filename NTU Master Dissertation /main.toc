@@ -26,26 +26,28 @@
 \contentsline {subsection}{\numberline {2.2.1}Multi Ground Robot System}{13}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Multi Hybrid Robot System}{13}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}CORB-SLAM}{13}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Illumination Variance}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Appearance Change From Illumination}{14}{subsection.2.3.1}
+\contentsline {subsubsection}{Robot-end SLAM Client}{14}{section*.19}
+\contentsline {subsubsection}{Map Fusing in the Server}{14}{section*.20}
+\contentsline {section}{\numberline {2.3}Illumination Variance}{15}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Appearance Change From Illumination}{15}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Illumination Variance}{15}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}??? Life-Long SLAM}{16}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}Approach (Actual work done and contribution, including literature survey)}{18}{chapter.3}
-\contentsline {section}{\numberline {3.1}Evaluation of CORBSLAM}{18}{section.3.1}
-\contentsline {section}{\numberline {3.2}Modification to CORBSLAM}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}CORBSLAM with Illumination Variance}{18}{section.3.3}
-\contentsline {chapter}{\numberline {4}Test and Experiments}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Evaluation of CORBSLAM}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Evaluation on multi ground robots}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Evaluation on multi hybrid robots}{19}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Evaluation under different illumination}{19}{section.4.2}
-\contentsline {chapter}{\numberline {5}Discussion}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}One}{20}{section.5.1}
-\contentsline {section}{\numberline {5.2}Two}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}Three}{20}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{21}{chapter.6}
-\contentsline {section}{\numberline {6.1}One}{21}{section.6.1}
-\contentsline {section}{\numberline {6.2}Two}{21}{section.6.2}
-\contentsline {section}{\numberline {6.3}Three}{21}{section.6.3}
-\contentsline {chapter}{Appendix A}{27}{chapter*.24}
-\contentsline {chapter}{Appendix B}{28}{chapter*.25}
+\contentsline {chapter}{\numberline {3}Approach}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Evaluation of CORBSLAM}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Modification to CORBSLAM}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}CORBSLAM with Illumination Variance}{19}{section.3.3}
+\contentsline {chapter}{\numberline {4}Test and Experiments}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Evaluation of CORBSLAM}{20}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Evaluation on multi ground robots}{20}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Evaluation on multi hybrid robots}{20}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evaluation under different illumination}{20}{section.4.2}
+\contentsline {chapter}{\numberline {5}Discussion}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}One}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Two}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Three}{21}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}One}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Two}{22}{section.6.2}
+\contentsline {section}{\numberline {6.3}Three}{22}{section.6.3}
+\contentsline {chapter}{Appendix A}{28}{chapter*.27}
+\contentsline {chapter}{Appendix B}{29}{chapter*.28}
