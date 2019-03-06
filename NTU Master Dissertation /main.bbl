@@ -246,4 +246,30 @@ Roberto Arroyo, Pablo~F Alcantarilla, Luis~M Bergasa, and Eduardo Romera.
 \newblock In {\em Robotics and Automation (ICRA), 2015 IEEE International
   Conference on}, pages 6328--6335. IEEE, 2015.
 
+\bibitem{zhang2018tutorial}
+Zichao Zhang and Davide Scaramuzza.
+\newblock A tutorial on quantitative trajectory evaluation for visual
+  (-inertial) odometry.
+\newblock In {\em 2018 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 7244--7251. IEEE, 2018.
+
+\bibitem{Menze2015CVPR}
+Moritz Menze and Andreas Geiger.
+\newblock Object scene flow for autonomous vehicles.
+\newblock In {\em Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2015.
+
+\bibitem{maddern20171}
+Will Maddern, Geoffrey Pascoe, Chris Linegar, and Paul Newman.
+\newblock 1 year, 1000 km: The oxford robotcar dataset.
+\newblock {\em The International Journal of Robotics Research}, 36(1):3--15,
+  2017.
+
+\bibitem{Geiger2012CVPR}
+Andreas Geiger, Philip Lenz, and Raquel Urtasun.
+\newblock Are we ready for autonomous driving? the kitti vision benchmark
+  suite.
+\newblock In {\em Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2012.
+
 \end{thebibliography}

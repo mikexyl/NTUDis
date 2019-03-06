@@ -18,45 +18,45 @@ Database file #1: Ref/refs.bib
 Warning--empty journal in rublee2011orb
 Warning--there's a number but no volume in davison2007monoslam
 Warning--empty journal in williams2007real
-You've used 39 entries,
+You've used 43 entries,
             1791 wiz_defined-function locations,
-            668 strings with 11854 characters,
-and the built_in function-call counts, 12910 in all, are:
-= -- 1264
-> -- 493
-< -- 24
-+ -- 178
-- -- 139
-* -- 807
-:= -- 1791
-add.period$ -- 137
-call.type$ -- 39
-change.case$ -- 38
+            690 strings with 12605 characters,
+and the built_in function-call counts, 13930 in all, are:
+= -- 1355
+> -- 534
+< -- 25
++ -- 193
+- -- 150
+* -- 863
+:= -- 1937
+add.period$ -- 150
+call.type$ -- 43
+change.case$ -- 42
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 644
-empty$ -- 1237
-format.name$ -- 139
-if$ -- 3089
+cite$ -- 46
+duplicate$ -- 700
+empty$ -- 1349
+format.name$ -- 150
+if$ -- 3332
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 40
-newline$ -- 198
-num.names$ -- 39
-pop$ -- 178
+int.to.str$ -- 43
+missing$ -- 44
+newline$ -- 218
+num.names$ -- 43
+pop$ -- 199
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 401
+skip$ -- 429
 stack$ -- 0
-substring$ -- 1031
-swap$ -- 285
-text.length$ -- 24
+substring$ -- 1087
+swap$ -- 303
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 124
-width$ -- 41
-write$ -- 445
+while$ -- 133
+width$ -- 45
+write$ -- 488
 (There were 3 warnings)
