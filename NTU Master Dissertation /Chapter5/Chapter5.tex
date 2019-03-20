@@ -3,13 +3,19 @@
 
 \chapter{Discussion}
 
-\section{One}
+\section{Results of multi ground robots cluster}
+\label{sec:disussmultiground}
+Seen graphically according to Figure \ref{fig:kittiresults}, the mapping results of CORB-SLAM clients is able to match the ground truth trajectory fairly well enough. And seeing the numeric analysis in Table \ref{tbl:kittiquanresult}, the completed map fused by the server has $8.34\%$ mean relative translation error and $0.54^\circ$ mean relative yaw error with all distance traveled.
 
+Comparing the fused map with the mapping results on the original unseparated sequence, according to the differences between Table \ref{tbl:kittiquanresult} and \ref{tbl:kitticlientquanresult}, map fusion in CORB-SLAM server slight reduces the accuracy on relative yaw and scaling. However from the table, the relative translation accuracy is numerically increased, of which a critical reason is the distance traveled by each client is inevitable shortened because the sequence is divided into two parts, which means translation errors on each client are accumulated during shorter distances. Therefore, it is not concluded so far that map fusion module in server can increase accuracy of relative translation.
 
-\section{Two}
+\section{Results of multi hybrid robots cluster}
+\label{sec:disussmultihybrid}
 
-\section{Three}
+\section{Failure Reasons and Drawbacks of Illumination Variance Method}
+\label{sec:discusslifelong}
 
+According to the ground truth information of the selected partial sequences of Oxford RobotCar Datasets, the correct fused estimate trajectories of clients should be coincident with very little offset seen as Figure \ref{fig:robotcarseq01servergt}. However the fused map using illumination variance method 
 
 %=== END OF CHAPTER FIVE ===
 \newpage

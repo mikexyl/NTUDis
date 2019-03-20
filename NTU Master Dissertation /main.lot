@@ -3,6 +3,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Information of datasets used \relax }}{23}{table.caption.28}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Partial datasets selected in RobotCar dataset.\relax }}{27}{table.caption.33}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Main characteristics of the rosbags in NTU Dataset used in the experiment.\relax }}{27}{table.caption.34}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Quantitative results of mapping unseparated Sequence 00.\relax }}{32}{table.caption.41}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Quantitative results of map fusion evaluation on KITTI partial sequences.\relax }}{34}{table.caption.46}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Quantitative results of evaluation on NTU Datasets.\relax }}{34}{table.caption.52}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Partial datasets selected in RobotCar dataset.\relax }}{38}{table.caption.57}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

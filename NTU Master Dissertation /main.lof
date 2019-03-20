@@ -20,18 +20,59 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Example image in KITTI Visual Odometry 2012 dataset.\relax }}{24}{figure.caption.29}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Example image in robotcar dataset.\relax }}{25}{figure.caption.30}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces The robotcar platform and sensor location diagram.\relax }}{26}{figure.caption.31}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ground truth trajectories of two sub sequences.\relax }}{27}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground truth trajectory of Seq.0.}}}{27}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ground truth trajectory of Seq.1.}}}{27}{figure.caption.34}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Image sequence with overexposed frames in RobotCar dataset.\relax }}{27}{figure.caption.32}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of images in different seasons in RobotCar dataset.\relax }}{28}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {pic1.}}}{28}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {pic2.}}}{28}{figure.caption.36}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of images in different illumination in RobotCar dataset.\relax }}{28}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {pic1.}}}{28}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {pic2.}}}{28}{figure.caption.37}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Overall ground truth trajectory of Seq.0 and Seq.1.\relax }}{28}{figure.caption.35}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Overview picture of NTU Husky platform.\relax }}{29}{figure.caption.38}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Example images of NTU dataset.\relax }}{29}{figure.caption.39}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of images captured in the same location in different seasons in RobotCar dataset.\relax }}{27}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Image captured in 14:49 07/14/2014.}}}{27}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Image captured in 12:32 02/24/2015.}}}{27}{figure.caption.32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of images captured in the same location in different seasons in RobotCar dataset.\relax }}{28}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground truth trajectory of Bag.0.}}}{28}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ground truth trajectory of Bag.1.}}}{28}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Ground truth trajectory of Bag.2.}}}{28}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Ground truth trajectory of Bag.3.}}}{28}{figure.caption.33}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Overview picture of NTU Husky platform.\relax }}{28}{figure.caption.35}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Overview picture of NTU Husky platform.\relax }}{29}{figure.caption.36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example images of NTU dataset.\relax }}{29}{figure.caption.37}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Ground truth trajectory of partial and complete sequences of KITTI Datasets.\relax }}{31}{figure.caption.39}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground truth trajectory of Seq.0.}}}{31}{figure.caption.39}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ground truth trajectory of Seq.1.}}}{31}{figure.caption.39}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Ground truth trajectory of complete Sequence 00.}}}{31}{figure.caption.39}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Quantitative evaluation results of CORB-SLAM client mapping the entire KITTI Sequence 00.\relax }}{31}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Relative translation error.}}}{31}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Relative translation error by percent.}}}{31}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Relative yaw error.}}}{31}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Scale error.}}}{31}{figure.caption.40}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mapping results of the entire sequence without partial sequence.\relax }}{32}{figure.caption.43}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Mapping results of Seq.0 and Seq.1, and the map fusion results of KITTI Datasets.\relax }}{33}{figure.caption.44}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapping result of Seq.0 compared with ground truth.}}}{33}{figure.caption.44}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mapping result of Seq.1 compared with ground truth.}}}{33}{figure.caption.44}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Map Fusion results of Seq.0 and Seq.1 compared with ground truth.}}}{33}{figure.caption.44}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Quantitative evaluation results of fused map of KITTI Datasets.\relax }}{33}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Relative translation error.}}}{33}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Relative translation error by percent.}}}{33}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Relative yaw error.}}}{33}{figure.caption.45}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Scale error.}}}{33}{figure.caption.45}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Ground truth trajectory of partial and complete bags of NTU Datasets.\relax }}{35}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground truth trajectory of Bag.0.}}}{35}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ground truth trajectory of Bag.1.}}}{35}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Complete ground truth trajectory of Bag.0 and Bag.1.}}}{35}{figure.caption.49}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Mapping results of Bag.0 and Bag.1 and the map fusion result of server.\relax }}{36}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapping result of Bag.0 compared with ground truth.}}}{36}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mapping result of Bag.1 compared with ground truth.}}}{36}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Map Fusion results in server end of Bag.0 and Bag.1.}}}{36}{figure.caption.50}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Quantitative evaluation results of fused map of NTU Datasets.\relax }}{36}{figure.caption.51}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Relative translation error.}}}{36}{figure.caption.51}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Relative translation error by percent.}}}{36}{figure.caption.51}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Relative yaw error.}}}{36}{figure.caption.51}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Scale error.}}}{36}{figure.caption.51}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Image sequence with overexposed frames in RobotCar dataset.\relax }}{37}{figure.caption.55}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Images when traffic congestion occurred in RobotCar datasets.\relax }}{37}{figure.caption.56}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Map fusion results of Seq.0 and Seq.1 without ground truth in Oxford RobotCar Datasets.\relax }}{38}{figure.caption.60}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Ground truth individual and overall trajectories of Seq.0 and Seq.1 in Oxford RobotCar Datasets.\relax }}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ground truth trajectory of Seq.0.}}}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ground truth trajectory of Seq.0.}}}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Overall ground truth trajectory of Seq.0 and Seq.1.}}}{39}{figure.caption.58}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Mapping results of Seq.0 and Seq.1 and the map fusion result of server in Oxford RobotCar Datasets.\relax }}{40}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapping result of Seq.0.}}}{40}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mapping result of Seq.1.}}}{40}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Map Fusion results in server end of Seq.0 and Seq.1.}}}{40}{figure.caption.59}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

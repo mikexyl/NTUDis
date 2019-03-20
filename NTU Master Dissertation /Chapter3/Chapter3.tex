@@ -35,7 +35,25 @@ The previous work of CORB-SLAM in \cite{li2017corb} only provides a rough overvi
 
 In \cite{maddern2014illumination} and \cite{arroyo2016openable}, the results of the illumination variance localization are also only briefly introduced, with no quantitative results given.
 
- In this paper, mapping results of CORB-SLAM and CORB-SLAM integrated with  is evaluated following the quantitative trajectory evaluation method proposed in \cite{zhang2018tutorial}.
+ In this paper, mapping results of CORB-SLAM and CORB-SLAM integrated with  is evaluated following the quantitative trajectory evaluation method proposed in \cite{zhang2018tutorial}. Quantitative evaluation results of each datasets are demonstrated in several figures and tables including contents as follows, and see Section \ref{sec:kittievaluate} as an example: 
+ 
+ \begin{enumerate}[1.]
+ 	\item Ground truth trajectories of each partial sequence and the complete dataset for reference, e.g. Figure \ref{fig:kittigt}.
+ 	\item Mapping results of each client and fused map in server end, compared with ground truth trajectories, e.g. Figure \ref{fig:kittiresults}.
+ 	\item Four charts of quantitative results, e.g. Figure \ref{fig:kittiquanresult}, including 
+ 	\label{enum:chartsinfo}
+ 		\begin{enumerate}[1).]
+ 			\item Chart of relative translation error in meter, e.g. Figure \ref{sfig:kittireltran}.
+ 			\item Chart of relative translation error in percent, e.g. Figure \ref{sfig:kittireltranper}.
+ 			\item Chart of relative yaw error in degree, e.g. Figure \ref{sfig:kittirelyaw}.
+ 			\item Chart of scale error in percent, e.g. Figure \ref{sfig:kittiscaleerr}.
+ 		\end{enumerate}
+ 	\item A table presenting numeric results of charts in \ref{enum:chartsinfo}, e.g. Table \ref{tbl:kittiquanresult}.
+ 	\item (if applicable) The mapping results of CORB-SLAM mapping the entire sequence without partial sequences for reference, e.g. Figure \ref{fig:kitticlientmapping}.
+ 	\item (if applicable) Charts of quantitative results of mapping the entire sequence for reference, in the same format of \ref{enum:chartsinfo}, e.g. Figure \ref{fig:kittientirequanresult}.
+ 	\label{enum:refchartinfo}
+ 	\item (if applicable) A table presenting numeric results of charts in \ref{enum:refchartinfo}, e.g. Table \ref{tbl:kitticlientquanresult}.
+ \end{enumerate}
  
 \begin{figure}[H]
 	\centering

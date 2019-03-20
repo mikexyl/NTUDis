@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{li2017corb}
+Fu~Li, Shaowu Yang, Xiaodong Yi, and Xuejun Yang.
+\newblock Corb-slam: a collaborative visual slam system for multiple robots.
+\newblock In {\em Eai International Conference on Collaborative Computing:
+  Networking, Applications and Worksharing}, 2017.
+
 \bibitem{saeedi2016multiple}
 Sajad Saeedi, Michael Trentini, Mae Seto, and Howard Li.
 \newblock Multiple-robot simultaneous localization and mapping: A review.
@@ -180,12 +186,6 @@ Christopher Mei, Gabe Sibley, and Paul Newman.
 \newblock Closing loops without places.
 \newblock In {\em 2010 IEEE/RSJ International Conference on Intelligent Robots
   and Systems}, pages 3738--3744. IEEE, 2010.
-
-\bibitem{li2017corb}
-Fu~Li, Shaowu Yang, Xiaodong Yi, and Xuejun Yang.
-\newblock Corb-slam: a collaborative visual slam system for multiple robots.
-\newblock In {\em Eai International Conference on Collaborative Computing:
-  Networking, Applications and Worksharing}, 2017.
 
 \bibitem{mcmanus2013distraction}
 Colin McManus, Winston Churchill, Ashley Napier, Ben Davis, and Paul Newman.
