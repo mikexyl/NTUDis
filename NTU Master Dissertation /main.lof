@@ -75,4 +75,8 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mapping result of Seq.1.}}}{40}{figure.caption.59}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Map Fusion results in server end of Seq.0 and Seq.1.}}}{40}{figure.caption.59}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ORB Keypoint matching results of raw and illumination variance images in Oxford RobotCar Datasets.\relax }}{43}{figure.caption.62}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Generated illumination variance images of example raw images in Oxford RobotCar Datasets.\relax }}{44}{figure.caption.61}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Corresponding illumination variance image of Figure \ref {sfig:robotcarjulyraw}.}}}{44}{figure.caption.61}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding illumination variance image of Figure \ref {sfig:robotcarfebraw}.}}}{44}{figure.caption.61}
 \addvspace {10\p@ }

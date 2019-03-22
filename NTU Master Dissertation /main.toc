@@ -51,9 +51,9 @@
 \contentsline {section}{\numberline {5.1}Results of multi ground robots cluster}{41}{section.5.1}
 \contentsline {section}{\numberline {5.2}Results of multi hybrid robots cluster}{42}{section.5.2}
 \contentsline {section}{\numberline {5.3}Failure Reasons and Drawbacks of Illumination Variance Method}{42}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}One}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Two}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Three}{43}{section.6.3}
-\contentsline {chapter}{Appendix A}{50}{chapter*.62}
-\contentsline {chapter}{Appendix B}{51}{chapter*.63}
+\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{46}{chapter.6}
+\contentsline {section}{\numberline {6.1}One}{46}{section.6.1}
+\contentsline {section}{\numberline {6.2}Two}{46}{section.6.2}
+\contentsline {section}{\numberline {6.3}Three}{46}{section.6.3}
+\contentsline {chapter}{Appendix A}{53}{chapter*.64}
+\contentsline {chapter}{Appendix B}{54}{chapter*.65}

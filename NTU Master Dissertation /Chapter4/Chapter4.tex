@@ -69,11 +69,10 @@ The RobotCar platform and the sensor locations are demonstrated in Figure \ref{f
 
 RobotCar dataset is especially suitable to evaluate life-long SLAM systems, since it contains images taken in different hours of daytime under different illumination conditions, and in different seasons. The comparison between image in different illumination conditions and different seasons is shown in Figure \ref{fig:robotcarcomparisonseason}.
 
-
-
 \begin{figure}
 	\centering
 	\subfigure[Image captured in 14:49 07/14/2014.]{
+		\label{sfig:robotcarjulyraw}
 		\begin{minipage}[t]{0.4\linewidth}
 			\centering
 			\includegraphics[width=2in]{Chapter4/robotcarfeb.eps}
@@ -81,6 +80,7 @@ RobotCar dataset is especially suitable to evaluate life-long SLAM systems, sinc
 		\end{minipage}
 	}
 	\subfigure[Image captured in 12:32 02/24/2015.]{
+	\label{sfig:robotcarfebraw}
 		\begin{minipage}[t]{0.4\linewidth}
 			\centering
 			\includegraphics[width=2in]{Chapter4/robotcardec.eps}
@@ -632,6 +632,7 @@ According to the above selection principles, the two sub sequences selected are 
 	\caption{Map fusion results of Seq.0 and Seq.1 without ground truth in Oxford RobotCar Datasets.}
 	\label{fig:robotcarmfresult} 
 \end{figure}
+
 
 
 %=== END OF CHAPTER FOUR ===

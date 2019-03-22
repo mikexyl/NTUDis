@@ -272,4 +272,10 @@ Andreas Geiger, Philip Lenz, and Raquel Urtasun.
 \newblock In {\em Conference on Computer Vision and Pattern Recognition
   (CVPR)}, 2012.
 
+\bibitem{milford2012visual}
+Michael Milford.
+\newblock Visual route recognition with a handful of bits.
+\newblock {\em Proc. 2012 Robotics: Science and Systems VIII}, pages 297--304,
+  2012.
+
 \end{thebibliography}
