@@ -2,11 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Information of datasets used \relax }}{23}{table.caption.28}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Main characteristics of the rosbags in NTU Dataset used in the experiment.\relax }}{27}{table.caption.34}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Quantitative results of mapping unseparated Sequence 00.\relax }}{32}{table.caption.41}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Quantitative results of map fusion evaluation on KITTI partial sequences.\relax }}{34}{table.caption.46}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Quantitative results of evaluation on NTU Datasets.\relax }}{34}{table.caption.52}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Partial datasets selected in RobotCar dataset.\relax }}{38}{table.caption.57}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Information of datasets used \relax }}{24}{table.caption.28}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Main characteristics of the rosbags in NTU Dataset used in the experiment.\relax }}{28}{table.caption.34}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Quantitative results of mapping unseparated Sequence 00.\relax }}{32}{table.caption.42}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Quantitative results of mapping Seq.0.\relax }}{33}{table.caption.44}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Quantitative results of mapping Seq.1.\relax }}{33}{table.caption.46}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Quantitative results of map fusion evaluation on KITTI partial sequences.\relax }}{34}{table.caption.51}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Quantitative results of mapping evaluation on Bag.0 NTU Datasets.\relax }}{38}{table.caption.59}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Quantitative results of mapping evaluation on Bag.1 NTU Datasets.\relax }}{39}{table.caption.61}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Quantitative results of map fusion evaluation on NTU Datasets.\relax }}{39}{table.caption.63}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Partial datasets selected in RobotCar dataset.\relax }}{41}{table.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

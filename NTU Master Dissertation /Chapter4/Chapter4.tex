@@ -97,7 +97,7 @@ Our NTU dataset is collected by multi hybrid robots consisting of a husky UGV pl
 
 Our UGV platform is a HUSKY Clearpath robot, equipped with a ZED stereo camera $\times$ 1, 672$\times$376, $87^{\circ}$ HFoV, $56^{\circ}$ VFoV. The picture of the platform and example images are shown in Figure \ref{fig:ntuugvplatform} and \ref{fig:ntuexamples}.
 
-The UAV platform is assembled with: PIXRACER V1.0 AUTOPILOT Controller Module, DJI E Series 620S Motor Package, a uBLOXNEO-M8N GPS Module and a monocular camera mounted at a depression angle of 20 degree. The overview picture of the UAV is shown in Figure \ref{fig:ntuuavplatform}
+%The UAV platform is assembled with: PIXRACER V1.0 AUTOPILOT Controller Module, DJI E Series 620S Motor Package, a uBLOXNEO-M8N GPS Module and a monocular camera mounted at a depression angle of 20 degree. The overview picture of the UAV is shown in Figure \ref{fig:ntuuavplatform}
 
 The dataset provides 4 rosbag files. 3 of them are recorded by UGV, while the other one is recorded by UAV. The basic information of 4 rosbags are listed in Table \ref{tbl:ntubagsinfo}. And the ground truth trajectories are shown in Figure \ref{fig:ntugt}.
 
@@ -106,33 +106,33 @@ The dataset provides 4 rosbag files. 3 of them are recorded by UGV, while the ot
 	\subfigure[Ground truth trajectory of Bag.0.]{
 		\begin{minipage}[t]{0.4\linewidth}
 			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/0446/trajectory_top_gt_sim3_-1.pdf}
+			\includegraphics[width=2in]{Chapter4/NTU/0446/plots/trajectory_top_gt_sim3_-1.pdf}
 			%\caption{fig1}
 		\end{minipage}
 	}
 	\subfigure[Ground truth trajectory of Bag.1.]{
 		\begin{minipage}[t]{0.4\linewidth}
 			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/0454/trajectory_top_gt_sim3_-1.pdf}
+			\includegraphics[width=2in]{Chapter4/NTU/0454/plots/trajectory_top_gt_sim3_-1.pdf}
 			%\caption{fig2}
 		\end{minipage}
 	}
-	\vfill
-		\subfigure[Ground truth trajectory of Bag.2.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/UGV/plots/trajectory_top_gt_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Ground truth trajectory of Bag.3.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{thereisafigure.eps}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\caption{Comparison of images captured in the same location in different seasons in RobotCar dataset.}
+%	\vfill
+%		\subfigure[Ground truth trajectory of Bag.2.]{
+%		\begin{minipage}[t]{0.4\linewidth}
+%			\centering
+%			\includegraphics[width=2in]{Chapter4/NTU/UGV/plots/trajectory_top_gt_sim3_-1.pdf}
+%			%\caption{fig1}
+%		\end{minipage}
+%	}
+%	\subfigure[Ground truth trajectory of Bag.3.]{
+%		\begin{minipage}[t]{0.4\linewidth}
+%			\centering
+%			\includegraphics[width=2in]{thereisafigure.eps}
+%			%\caption{fig2}
+%		\end{minipage}
+%	}
+	\caption{Ground truth information of each rosbags in NTU Dataset.}
 	\label{fig:ntugt}
 \end{figure}
 
@@ -147,10 +147,10 @@ The dataset provides 4 rosbag files. 3 of them are recorded by UGV, while the ot
 		\hline
 		1&10/27/2018& UGV & $\approx 0.7m$ & $0^\circ$ \\
 		\hline
-		2&03/08/2019& UGV & $\approx 0.7m$ & $0^\circ$ \\
-		\hline
-		3&03/08/2019& UAV & $\approx 2m$ & $20^\circ$ \\
-		\hline
+%		2&03/08/2019& UGV & $\approx 0.7m$ & $0^\circ$ \\
+%		\hline
+%		3&03/08/2019& UAV & $\approx 2m$ & $20^\circ$ \\
+%		\hline
 	\end{tabular}
 	\label{tbl:ntubagsinfo}
 \end{table*}
@@ -162,12 +162,12 @@ The dataset provides 4 rosbag files. 3 of them are recorded by UGV, while the ot
 	\label{fig:ntuugvplatform} 
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=5in]{Chapter4/ntuuav0.eps}
-	\caption{Overview picture of NTU Husky platform.}
-	\label{fig:ntuuavplatform} 
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=5in]{Chapter4/ntuuav0.eps}
+%	\caption{Overview picture of NTU Husky platform.}
+%	\label{fig:ntuuavplatform} 
+%\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -187,343 +187,22 @@ Therefore, in this case, Sequence 00 containing $f=4541frames$ and covering a to
 
 The ground truth information of Seq.0, Seq.1 and the complete ground truth trajectory of Sequence 00 are shown for reference in Figure \ref{fig:kittigt}. And Figure \ref{fig:kittiresults} demonstrates mapping results of each partial sequence and the map fusion results of the server. Four charts in Figure \ref{fig:kittiquanresult} contains quantitative evaluation results, with corresponding numeric results shown in Table \ref{tbl:ntuquanresult}.
 
-Because the two partial sequences are extracted from Sequence 00, so the completed mapping results of CORB-SLAM client on Sequence 00 can be provided as a comparison by Figure \ref{fig:kittientirequanresult}, \ref{fig:kitticlientmapping} and Table \ref{tbl:kitticlientquanresult} in the same format as above. Results are further discussed in Section \ref{sec:disussmultiground}.
+Clients' quantitative mapping results of each partial sequence are provided in Figure \ref{fig:kittiseq0quanresult}, \ref{fig:kittiseq1quanresult}  and Table \ref{tbl:kittiseq0quanresult}, \ref{tbl:kittiseq1quanresult}. And because the two partial sequences are extracted from Sequence 00, so the completed mapping results of CORB-SLAM client on Sequence 00 can be provided as a comparison by Figure \ref{fig:kittientirequanresult}, \ref{fig:kitticlientmapping} and Table \ref{tbl:kitticlientquanresult} in the same format as above. Results are further discussed in Section \ref{sec:disussmultiground}.
 
-\begin{figure}
-	\centering
-	\subfigure[Ground truth trajectory of Seq.0.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/32/plots/trajectory_side_gt_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Ground truth trajectory of Seq.1.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/33/plots/trajectory_side_gt_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Ground truth trajectory of complete Sequence 00.]{
-		\begin{minipage}[t]{\linewidth}
-			\centering
-			\includegraphics[width=5in]{Chapter4/KITTI/00server/plots/trajectory_side_gt_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\caption{Ground truth trajectory of partial and complete sequences of KITTI Datasets.}
-	\label{fig:kittigt}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\subfigure[Relative translation error.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00/gps/plots/rel_translation_error.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Relative translation error by percent.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00/gps/plots/rel_translation_error_perc.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Relative yaw error.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00/gps/plots/rel_yaw_error.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Scale error.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00/gps/plots/scale_error_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\caption{Quantitative evaluation results of CORB-SLAM client mapping the entire KITTI Sequence 00.}
-	\label{fig:kittientirequanresult}
-\end{figure}
-
-\begin{table*}
-	\centering
-	\caption{Quantitative results of mapping unseparated Sequence 00.}
-	\begin{threeparttable}
-		\begin{tabular}{|c|c|c|c|c|}
-			\hline
-			Distance(m)\tnote{1} & Rel. Trans.(m)\tnote{2}  & Rel. Trans.($\%$)\tnote{3} & Rel. Yaw(deg)\tnote{4} & Scale Err.($\%$)\tnote{5}  \\
-			\hline
-			371& 229.69 & 61.91 & 0.37 & - \\
-			\hline
-			742&260.10& 35.05 & 0.37 & - \\
-			\hline
-			1113&260.20& 23.38 & 0.31 & - \\
-			\hline
-			1485&240.93& 16.22 & 0.40 & - \\
-			\hline
-			1856&255.16& 13.74 & 0.32 & - \\
-			\hline
-			-&-&- & - &  0.05\\
-			\hline
-		\end{tabular}
-		\begin{tablenotes}
-			\footnotesize
-			\item[1] Distance in meter traveled before each time of statistics. 
-			\item[2] Mean relative translation error in meter.
-			\item[3] Mean relative translation error in percent.
-			\item[4] Mean relative yaw error in degree.
-			\item[5] Median scale error in percent.
-		\end{tablenotes}
-	\end{threeparttable}
-	\label{tbl:kitticlientquanresult}
-\end{table*}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=5in]{Chapter4/KITTI/00/gps/plots/trajectory_side_sim3_-1.pdf}
-	\caption{Mapping results of the entire sequence without partial sequence.}
-	\label{fig:kitticlientmapping} 
-\end{figure}
-
-\begin{figure}
-	\centering
-	\subfigure[Mapping result of Seq.0 compared with ground truth.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/32/plots/trajectory_side_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Mapping result of Seq.1 compared with ground truth.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/33/plots/trajectory_side_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Map Fusion results of Seq.0 and Seq.1 compared with ground truth.]{
-		\begin{minipage}[t]{\linewidth}
-			\centering
-			\includegraphics[width=5in]{Chapter4/KITTI/00server/plots/trajectory_side_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\caption{Mapping results of Seq.0 and Seq.1, and the map fusion results of KITTI Datasets.}
-	\label{fig:kittiresults}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\subfigure[Relative translation error.]{
-		\label{sfig:kittireltran}
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/plots/rel_translation_error.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Relative translation error by percent.]{
-		\label{sfig:kittireltranper}
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/plots/rel_translation_error_perc.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Relative yaw error.]{
-		\label{sfig:kittirelyaw}
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/plots/rel_yaw_error.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Scale error.]{
-		\label{sfig:kittiscaleerr}
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/KITTI/00server/plots/scale_error_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\caption{Quantitative evaluation results of fused map of KITTI Datasets.}
-	\label{fig:kittiquanresult}
-\end{figure}
-
-\begin{table*}
-	\centering
-	\caption{Quantitative results of map fusion evaluation on KITTI partial sequences.}
-	\begin{threeparttable}
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		Distance(m)\tnote{1} & Rel. Trans.(m)\tnote{2}  & Rel. Trans.($\%$)\tnote{3} & Rel. Yaw(deg)\tnote{4} & Scale Err.($\%$)\tnote{5}  \\
-		\hline
-		526& 283.40 & 53.88 & 0.46& - \\
-		\hline
-		1053&276.16& 26.23 & 0.51 & - \\
-		\hline
-		1580&153.74& 9.73 & 0.48 & - \\
-		\hline
-		2106&284.95& 13.53 & 0.57 & - \\
-		\hline
-		2633&219.66& 8.34 & 0.54 & - \\
-		\hline
-		-&-&- & - &  -0.15\\
-		\hline
-	\end{tabular}
-      \begin{tablenotes}
-		\footnotesize
-		\item[1] Distance in meter traveled before each time of statistics. 
-		\item[2] Mean relative translation error in meter.
-		\item[3] Mean relative translation error in percent.
-		\item[4] Mean relative yaw error in degree.
-		\item[5] Median scale error in percent.
-	\end{tablenotes}
-	\end{threeparttable}
-	\label{tbl:kittiquanresult}
-\end{table*}
+\input{Chapter4/KITTI/KITTI_Figures}
 
 \subsubsection{NTU Datasets}
 
 An obvious drawback of the evaluation on KITTI dataset is the images which are overlapped by two clients are exactly identical because they are extracted from the same sequence. Therefore, the results are expected to be much better than real-world applications in which case it is impossible the images recorded by different clients can be identical.
 
-In order to get more reliable and convincing evaluation results of  CORB-SLAM system, another evaluation on multi ground robots is performed utilizing NTU Datasets. Bag.0 and Bag.1 described in Section \ref{sec:ntuinfo} are selected in this test. These two bags recorded by two UGVs, have different starting and ending location, with limited overlapping, which is much more similar to the case of real-world applications. Clients' mapping results and map fusion results in the server end compared to ground truth trajectories are demonstrated in Figure \ref{fig:ntubag01serverresults}. And ground truth information is provided in Figure \ref{fig:ntubag01gt} for reference. Quantitative results are represented in Figure \ref{fig:ntuquanresult} and Table \ref{tbl:ntuquanresult}. Results are further discussed in Section \ref{sec:disussmultiground}.
+In order to get more reliable and convincing evaluation results of  CORB-SLAM system, another evaluation on multi ground robots is performed utilizing NTU Datasets. Bag.0 and Bag.1 described in Section \ref{sec:ntuinfo} are selected in this test. These two bags recorded by two UGVs, have different starting and ending location, with limited overlapping, which is much more similar to the case of real-world applications. Clients' mapping results and map fusion results in the server end compared to ground truth trajectories are demonstrated in Figure \ref{fig:ntubag01serverresults}. And ground truth information is provided in Figure \ref{fig:ntubag01gt} for reference. Quantitative results of the fused global map are represented in Figure \ref{fig:ntuquanresult} and Table \ref{tbl:ntuquanresult}. Quantitative results of each client are provided in Figure \ref{fig:ntubag0quanresult}, \ref{fig:ntubag1quanresult} and Table \ref{tbl:ntubag0quanresult}, \ref{tbl:ntubag1quanresult} in the same format as above.
 
-\begin{figure}
-	\centering
-	\subfigure[Ground truth trajectory of Bag.0.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/0446/trajectory_top_gt_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Ground truth trajectory of Bag.1.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/0454/trajectory_top_gt_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Complete ground truth trajectory of Bag.0 and Bag.1.]{
-		\begin{minipage}[t]{\linewidth}
-			\centering
-			\includegraphics[width=5in]{Chapter4/NTU/server/trajectory_top_gt_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\caption{Ground truth trajectory of partial and complete bags of NTU Datasets.}
-	\label{fig:ntubag01gt}
-\end{figure}
+Results are further discussed in Section \ref{sec:disussmultiground}.
 
-\begin{figure}
-	\centering
-	\subfigure[Mapping result of Bag.0 compared with ground truth.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/0446/trajectory_top_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Mapping result of Bag.1 compared with ground truth.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/0454/trajectory_top_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Map Fusion results in server end of Bag.0 and Bag.1.]{
-		\begin{minipage}[t]{\linewidth}
-			\centering
-			\includegraphics[width=5in]{Chapter4/NTU/server/trajectory_top_sim3_-1.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\caption{Mapping results of Bag.0 and Bag.1 and the map fusion result of server.}
-	\label{fig:ntubag01serverresults}
-\end{figure}
+\input{Chapter4/NTU/NTU_Figures}
 
-\begin{figure}
-	\centering
-	\subfigure[Relative translation error.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/server/rel_translation_error.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Relative translation error by percent.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/server/rel_translation_error_perc.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\vfill
-	\subfigure[Relative yaw error.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/server/rel_yaw_error.pdf}
-			%\caption{fig1}
-		\end{minipage}
-	}
-	\subfigure[Scale error.]{
-		\begin{minipage}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=2in]{Chapter4/NTU/server/scale_error_sim3_-1.pdf}
-			%\caption{fig2}
-		\end{minipage}
-	}
-	\caption{Quantitative evaluation results of fused map of NTU Datasets.}
-	\label{fig:ntuquanresult}
-\end{figure}
-
-\begin{table*}
-	\centering
-	\caption{Quantitative results of evaluation on NTU Datasets.}
-	\begin{threeparttable}
-		\begin{tabular}{|c|c|c|c|c|}
-			\hline
-			Distance(m)\tnote{1} & Rel. Trans.(m)\tnote{2}  & Rel. Trans.($\%$)\tnote{3} & Rel. Yaw(deg)\tnote{4} & Scale Err.($\%$)\tnote{5}  \\
-			\hline
-			54& 39.38 & 72.93 & 44.39& - \\
-			\hline
-			109&44.88& 41.18 & 57.01 & - \\
-			\hline
-			163&26.09& 16.00 & 32.12 & - \\
-			\hline
-			218&54.99& 25.23 & 46.11 & - \\
-			\hline
-			272&64.66& 23.77 & 54.65 & - \\
-			\hline
-			-&-&- & - &  0.10\\
-			\hline
-		\end{tabular}
-		\begin{tablenotes}
-			\footnotesize
-			\item[1] Distance in meter traveled before each time of statistics. 
-			\item[2] Mean relative translation error in meter.
-			\item[3] Mean relative translation error in percent.
-			\item[4] Mean relative yaw error in degree.
-			\item[5] Median scale error in percent.
-		\end{tablenotes}
-	\end{threeparttable}
-	\label{tbl:ntuquanresult}
-\end{table*}
-
-\subsection{Evaluation on multi hybrid robots}
-The evaluation of 
+%\subsection{Evaluation on multi hybrid robots}
+%The evaluation of 
 
 \section{Evaluation under different illumination}
 \subsubsection{Oxford RobotCar Datasets}
@@ -541,14 +220,14 @@ Two partial sequences are selected according the following principles:
 		\label{fig:robotcaroverexposed} 
 	\end{figure}
 
-	\item Avoid partial sequences where traffic congestion occurred. Because RobotCar Datasets are recorded in different hours during daytime, there are congestion starting at approximately 15:00, as shown in   
+	\item Avoid partial sequences where traffic congestion occurred. Because RobotCar Datasets are recorded in different hours during daytime, there are congestion starting at approximately 15:00.
 	
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=5in]{thereisafigure.eps}
-	\caption{Images when traffic congestion occurred in RobotCar datasets.}
-	\label{fig:robotcarcongestion} 
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=5in]{thereisafigure.eps}
+%	\caption{Images when traffic congestion occurred in RobotCar datasets.}
+%	\label{fig:robotcarcongestion} 
+%\end{figure}
 
 	\item Select partial sequence containing images with overlapping under different illumination conditions and in different season, as shown in Figure \ref{fig:robotcarcomparisonseason}. 
 \end{enumerate}

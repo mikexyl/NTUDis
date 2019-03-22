@@ -5,12 +5,17 @@
 
 \section{Results of multi ground robots cluster}
 \label{sec:disussmultiground}
+
 Seen graphically according to Figure \ref{fig:kittiresults}, the mapping results of CORB-SLAM clients is able to match the ground truth trajectory fairly well enough. And seeing the numeric analysis in Table \ref{tbl:kittiquanresult}, the completed map fused by the server has $8.34\%$ mean relative translation error and $0.54^\circ$ mean relative yaw error with all distance traveled.
 
 Comparing the fused map with the mapping results on the original unseparated sequence, according to the differences between Table \ref{tbl:kittiquanresult} and \ref{tbl:kitticlientquanresult}, map fusion in CORB-SLAM server slight reduces the accuracy on relative yaw and scaling. However from the table, the relative translation accuracy is numerically increased, of which a critical reason is the distance traveled by each client is inevitable shortened because the sequence is divided into two parts, which means translation errors on each client are accumulated during shorter distances. Therefore, it is not concluded so far that map fusion module in server can increase accuracy of relative translation.
 
-\section{Results of multi hybrid robots cluster}
-\label{sec:disussmultihybrid}
+Evaluation on KITTI Dataset is an ideal circumstance, with all overlapped images identical. To evaluate under a more general real-world circumstance to get more universal and convincing results, another evaluation is performed utilizing NTU Dataset. 
+
+According to the comparison of quantitative map fusion result ( in Figure \ref{fig:ntuquanresult} and Table \ref{tbl:ntuquanresult} ) and mapping results of single bags ( in Figure \ref{fig:ntubag0quanresult}, \ref{fig:ntubag1quanresult} and Table \ref{tbl:ntubag0quanresult}, \ref{tbl:ntubag1quanresult} ), compared to 6.32$\%$ relative translation error of client of Bag.0, and 30.70$\%$ of Bag.1, the global fused map in server has an error of 23.77$\%$, which can be considered as an acceptable result, considering Bag.1 has a complicated trajectory consisting both parts of indoor and outdoor environment causing client map has a relatively higher translation error.
+
+%\section{Results of multi hybrid robots cluster}
+%\label{sec:disussmultihybrid}
 
 \section{Failure Reasons and Drawbacks of Illumination Variance Method}
 \label{sec:discusslifelong}

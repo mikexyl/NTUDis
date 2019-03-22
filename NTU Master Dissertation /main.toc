@@ -1,9 +1,9 @@
-\contentsline {chapter}{Abstract}{iv}{chapter*.3}
-\contentsline {chapter}{Acknowledgement}{v}{chapter*.4}
-\contentsline {chapter}{Acronyms}{vi}{chapter*.5}
-\contentsline {chapter}{Symbols}{vii}{chapter*.6}
-\contentsline {chapter}{Lists of Figures}{ix}{chapter*.7}
-\contentsline {chapter}{Lists of Tables}{x}{chapter*.8}
+\contentsline {chapter}{Abstract}{iii}{chapter*.3}
+\contentsline {chapter}{Acknowledgement}{iv}{chapter*.4}
+\contentsline {chapter}{Acronyms}{v}{chapter*.5}
+\contentsline {chapter}{Symbols}{vi}{chapter*.6}
+\contentsline {chapter}{Lists of Figures}{viii}{chapter*.7}
+\contentsline {chapter}{Lists of Tables}{ix}{chapter*.8}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motivation and Objectives}{3}{section.1.2}
@@ -33,27 +33,25 @@
 \contentsline {subsection}{\numberline {2.3.2}Illumination Variance}{16}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}??? Life-Long SLAM}{17}{subsection.2.3.3}
 \contentsline {chapter}{\numberline {3}Approach}{20}{chapter.3}
-\contentsline {section}{\numberline {3.1}CORBSLAM with Illumination Variance}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}Quantitative Trajectory Evaluation Method}{21}{section.3.2}
-\contentsline {chapter}{\numberline {4}Test and Experiments}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Datasets}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}KITTI Visual Odometry Dataset}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Oxford RobotCar Dataset}{24}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}NTU Dataset}{27}{subsection.4.1.3}
+\contentsline {section}{\numberline {3.1}Quantitative Trajectory Evaluation Method}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}CORBSLAM with Illumination Variance}{22}{section.3.2}
+\contentsline {chapter}{\numberline {4}Test and Experiments}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Datasets}{24}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}KITTI Visual Odometry Dataset}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Oxford RobotCar Dataset}{25}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}NTU Dataset}{28}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}Evaluation of CORBSLAM}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Evaluation on multi ground robots}{30}{subsection.4.2.1}
-\contentsline {subsubsection}{KITTI Datasets}{30}{section*.38}
-\contentsline {subsubsection}{NTU Datasets}{32}{section*.48}
-\contentsline {subsection}{\numberline {4.2.2}Evaluation on multi hybrid robots}{35}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Evaluation under different illumination}{35}{section.4.3}
-\contentsline {subsubsection}{Oxford RobotCar Datasets}{35}{section*.54}
-\contentsline {chapter}{\numberline {5}Discussion}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}Results of multi ground robots cluster}{41}{section.5.1}
-\contentsline {section}{\numberline {5.2}Results of multi hybrid robots cluster}{42}{section.5.2}
-\contentsline {section}{\numberline {5.3}Failure Reasons and Drawbacks of Illumination Variance Method}{42}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{46}{chapter.6}
-\contentsline {section}{\numberline {6.1}One}{46}{section.6.1}
-\contentsline {section}{\numberline {6.2}Two}{46}{section.6.2}
-\contentsline {section}{\numberline {6.3}Three}{46}{section.6.3}
-\contentsline {chapter}{Appendix A}{53}{chapter*.64}
-\contentsline {chapter}{Appendix B}{54}{chapter*.65}
+\contentsline {subsubsection}{KITTI Datasets}{30}{section*.37}
+\contentsline {subsubsection}{NTU Datasets}{34}{section*.53}
+\contentsline {section}{\numberline {4.3}Evaluation under different illumination}{36}{section.4.3}
+\contentsline {subsubsection}{Oxford RobotCar Datasets}{36}{section*.65}
+\contentsline {chapter}{\numberline {5}Discussion}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}Results of multi ground robots cluster}{44}{section.5.1}
+\contentsline {section}{\numberline {5.2}Failure Reasons and Drawbacks of Illumination Variance Method}{45}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusion and Recommendations}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}One}{49}{section.6.1}
+\contentsline {section}{\numberline {6.2}Two}{49}{section.6.2}
+\contentsline {section}{\numberline {6.3}Three}{49}{section.6.3}
+\contentsline {chapter}{Appendix A}{56}{chapter*.74}
+\contentsline {chapter}{Appendix B}{57}{chapter*.75}

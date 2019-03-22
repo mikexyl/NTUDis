@@ -25,8 +25,8 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{Illumination Variance}{section.2.3}% 25
 \BOOKMARK [2][-]{subsection.2.3.3}{??? Life-Long SLAM}{section.2.3}% 26
 \BOOKMARK [0][-]{chapter.3}{Approach}{}% 27
-\BOOKMARK [1][-]{section.3.1}{CORBSLAM with Illumination Variance}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{Quantitative Trajectory Evaluation Method}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.1}{Quantitative Trajectory Evaluation Method}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{CORBSLAM with Illumination Variance}{chapter.3}% 29
 \BOOKMARK [0][-]{chapter.4}{Test and Experiments}{}% 30
 \BOOKMARK [1][-]{section.4.1}{Datasets}{chapter.4}% 31
 \BOOKMARK [2][-]{subsection.4.1.1}{KITTI Visual Odometry Dataset}{section.4.1}% 32
@@ -34,15 +34,13 @@
 \BOOKMARK [2][-]{subsection.4.1.3}{NTU Dataset}{section.4.1}% 34
 \BOOKMARK [1][-]{section.4.2}{Evaluation of CORBSLAM}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.2.1}{Evaluation on multi ground robots}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.2}{Evaluation on multi hybrid robots}{section.4.2}% 37
-\BOOKMARK [1][-]{section.4.3}{Evaluation under different illumination}{chapter.4}% 38
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Results of multi ground robots cluster}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Results of multi hybrid robots cluster}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.3}{Failure Reasons and Drawbacks of Illumination Variance Method}{chapter.5}% 42
-\BOOKMARK [0][-]{chapter.6}{Conclusion and Recommendations}{}% 43
-\BOOKMARK [1][-]{section.6.1}{One}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.2}{Two}{chapter.6}% 45
-\BOOKMARK [1][-]{section.6.3}{Three}{chapter.6}% 46
-\BOOKMARK [0][-]{chapter*.64}{Appendix A}{}% 47
-\BOOKMARK [0][-]{chapter*.65}{Appendix B}{}% 48
+\BOOKMARK [1][-]{section.4.3}{Evaluation under different illumination}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 38
+\BOOKMARK [1][-]{section.5.1}{Results of multi ground robots cluster}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.2}{Failure Reasons and Drawbacks of Illumination Variance Method}{chapter.5}% 40
+\BOOKMARK [0][-]{chapter.6}{Conclusion and Recommendations}{}% 41
+\BOOKMARK [1][-]{section.6.1}{One}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{Two}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.3}{Three}{chapter.6}% 44
+\BOOKMARK [0][-]{chapter*.74}{Appendix A}{}% 45
+\BOOKMARK [0][-]{chapter*.75}{Appendix B}{}% 46
