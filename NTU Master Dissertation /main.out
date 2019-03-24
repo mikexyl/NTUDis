@@ -1,46 +1,44 @@
 \BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 1
 \BOOKMARK [0][-]{chapter*.4}{Acknowledgement}{}% 2
-\BOOKMARK [0][-]{chapter*.5}{Acronyms}{}% 3
-\BOOKMARK [0][-]{chapter*.6}{Symbols}{}% 4
-\BOOKMARK [0][-]{chapter*.7}{Lists of Figures}{}% 5
-\BOOKMARK [0][-]{chapter*.8}{Lists of Tables}{}% 6
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
-\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.2}{Motivation and Objectives}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.3}{Major contribution of the Dissertation}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.4}{Organisation of the Dissertation}{chapter.1}% 11
-\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 12
-\BOOKMARK [1][-]{section.2.1}{Visual SLAM}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.1.1}{Introduction}{section.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.1.2}{Framework}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.3}{Related Techniques}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.4}{Algorithms}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.5}{ORB-SLAM}{section.2.1}% 18
-\BOOKMARK [1][-]{section.2.2}{Multi-Robot Algorithms}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.1}{Multi Ground Robot System}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.2}{Multi Hybrid Robot System}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.3}{CORB-SLAM}{section.2.2}% 22
-\BOOKMARK [1][-]{section.2.3}{Illumination Variance}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.3.1}{Appearance Change From Illumination}{section.2.3}% 24
-\BOOKMARK [2][-]{subsection.2.3.2}{Illumination Variance}{section.2.3}% 25
-\BOOKMARK [2][-]{subsection.2.3.3}{??? Life-Long SLAM}{section.2.3}% 26
-\BOOKMARK [0][-]{chapter.3}{Approach}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Quantitative Trajectory Evaluation Method}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{CORBSLAM with Illumination Variance}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Test and Experiments}{}% 30
-\BOOKMARK [1][-]{section.4.1}{Datasets}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.1.1}{KITTI Visual Odometry Dataset}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.2}{Oxford RobotCar Dataset}{section.4.1}% 33
-\BOOKMARK [2][-]{subsection.4.1.3}{NTU Dataset}{section.4.1}% 34
-\BOOKMARK [1][-]{section.4.2}{Evaluation of CORBSLAM}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.2.1}{Evaluation on multi ground robots}{section.4.2}% 36
-\BOOKMARK [1][-]{section.4.3}{Evaluation under different illumination}{chapter.4}% 37
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 38
-\BOOKMARK [1][-]{section.5.1}{Results of multi ground robots cluster}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.2}{Failure Reasons and Drawbacks of Illumination Variance Method}{chapter.5}% 40
-\BOOKMARK [0][-]{chapter.6}{Conclusion and Recommendations}{}% 41
-\BOOKMARK [1][-]{section.6.1}{One}{chapter.6}% 42
-\BOOKMARK [1][-]{section.6.2}{Two}{chapter.6}% 43
-\BOOKMARK [1][-]{section.6.3}{Three}{chapter.6}% 44
-\BOOKMARK [0][-]{chapter*.74}{Appendix A}{}% 45
-\BOOKMARK [0][-]{chapter*.75}{Appendix B}{}% 46
+\BOOKMARK [0][-]{chapter*.5}{Lists of Figures}{}% 3
+\BOOKMARK [0][-]{chapter*.6}{Lists of Tables}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Motivation and Objectives}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Major contribution of the Dissertation}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Organisation of the Dissertation}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Visual SLAM}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{Introduction}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{Framework}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{Related Techniques}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.4}{Algorithms}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.5}{ORB-SLAM}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Multi-Robot Algorithms}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Multi Ground Robot System}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.2}{Multi Hybrid Robot System}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.3}{CORB-SLAM}{section.2.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Illumination Variance}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.3.1}{Appearance Change From Illumination}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.2}{Illumination Variance}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.3}{??? Life-Long SLAM}{section.2.3}% 24
+\BOOKMARK [0][-]{chapter.3}{Approach}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Quantitative Trajectory Evaluation Method}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{CORBSLAM with Illumination Variance}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Test and Experiments}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Datasets}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.1.1}{KITTI Visual Odometry Dataset}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.2}{Oxford RobotCar Dataset}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.3}{NTU Dataset}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Evaluation of CORBSLAM}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{KITTI Datasets}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{NTU Datasets}{section.4.2}% 35
+\BOOKMARK [1][-]{section.4.3}{Evaluation under different illumination}{chapter.4}% 36
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Results of multi ground robots cluster}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{Failure Reasons and Drawbacks of Illumination Variance Method}{chapter.5}% 39
+\BOOKMARK [0][-]{chapter.6}{Conclusions and Future Work}{}% 40
+\BOOKMARK [1][-]{section.6.1}{Conclusions}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 42
+\BOOKMARK [0][-]{chapter*.71}{Appendix A: Example Code}{}% 43
+\BOOKMARK [0][-]{chapter*.74}{Appendix B: Detailed Table of Quantitative Trajectory Evaluation Results}{}% 44

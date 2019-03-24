@@ -1,13 +1,174 @@
 %=== APPENDIX ===
 %=== APPENDIX ===
 
-\chapter*{Appendix A}
-\addcontentsline{toc}{chapter}{Appendix A}
+\chapter*{Appendix A: Example Code}
+\addcontentsline{toc}{chapter}{Appendix A: Example Code}
 \label{sec:appendixa}
-(Code Here)
 
-\chapter*{Appendix B}
-\addcontentsline{toc}{chapter}{Appendix B}
+\subsubsection{Map Fuse To Global Map}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+	backgroundcolor=\color{backgroundColour},   
+	commentstyle=\color{mGreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{mGray},
+	stringstyle=\color{mPurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2,
+	language=C
+}
+
+
+\begin{lstlisting}[style=CStyle]
+bool MapFusion::mapFuseToGlobalMap(ServerMap *sMap) {
+	// if global map is null, this submap is inserted into the global map and does not do transform
+	{
+		std::unique_lock<mutex> lock( nullGlobalMapMutex );
+		if( ifNullGlobalMap ) {
+		
+			cv::Mat Tnorm = cv::Mat::eye(4,4, CV_32F);
+			std::unique_lock<mutex> lock(mSubMapUpdatedMutex);
+			insertServerMapToGlobleMap(sMap, Tnorm);
+			ifSubToGlobalMap[(*sMap).pCacher->pClientId] = true;
+			subMapTransM[(*sMap).pCacher->pClientId] = Tnorm;
+			pubToClient->transMs[ (*sMap).pCacher->pClientId ] = Tnorm;
+			sMap->clear();
+			ifNullGlobalMap = false;
+		
+			cout <<"Global Map is not null!\n";
+			return true;
+		}
+	}
+	
+	bool flag = false;
+	std::vector<KeyFrame*> allKeyFramesInMapy = sMap->pMap->GetAllKeyFrames();
+	
+	bool bOK = false;
+	std::vector<KeyFrame *> candidateKFs;
+	KeyFrame * currentKF;
+	
+	for( int mit = 0; mit < (int)allKeyFramesInMapy.size(); mit++ ) {
+	
+		KeyFrame * tKF = allKeyFramesInMapy[mit];
+		
+		cv::Mat oldTwc = tKF->GetPoseInverse();
+		cv::Mat oldTcw = tKF->GetPose();
+		cv::Mat newTcw = cv::Mat::eye(4,4, newTcw.type());
+		
+		candidateKFs.clear();
+		currentKF = tKF;
+		
+		bOK = detectKeyFrameInServerMap( globalMap, tKF, newTcw, candidateKFs);
+		
+		if( bOK ) {
+		
+			mpGBA->setCurentKeyFrame( currentKF );
+			
+			mpGBA->setCandidates( candidateKFs );
+			
+			if( mpGBA->ComputeSim3() ) {
+			
+				ROS_INFO("Detect In serverMap[%d], from keyframe id[%d]", 
+				(int)sMap->pCacher->pClientId, (int)tKF->mnId);
+				// if this keyframe is deteted in the serverMapx
+			
+				cv::Mat To2n = oldTwc * newTcw;
+				cv::Mat Tnorm = cv::Mat::eye(4,4, newTcw.type());
+			
+				flag = true;
+			
+				subMapTransM[ (*sMap).pCacher->pClientId ] = To2n;
+				pubToClient->transMs[ (*sMap).pCacher->pClientId ] = To2n;
+				ifSubToGlobalMap[ (*sMap).pCacher->pClientId ] = true;
+				insertServerMapToGlobleMap( sMap, To2n );
+				sMap->clear();
+			}
+			
+			mpGBA->CorrectLoop();
+			
+			time_t end_t = clock();
+			
+			cout << "mapfuse " << globalMap->pMap->KeyFramesInMap() << " " << allKeyFramesInMapy.size() << " " << (double)( end_t - start_t )/(double)CLOCKS_PER_SEC << endl;
+			
+			break;
+			
+			}
+			
+		}
+	
+	}
+	
+	if( flag ){
+	resentGlobalMapToClient();
+	}
+	return flag;
+}
+\end{lstlisting}
+
+\subsubsection{Illumination Variance Conversion}
+
+\begin{lstlisting}[style=CStyle]
+Mat illumination_conversion(Mat image){
+	vector<Mat> channels(3);
+	split(image, channels);
+	
+	Mat imageB,imageG,imageR;
+	Mat imageI = Mat(Size(image.cols,image.rows),CV_32FC1);
+	Mat imageI8U = Mat(Size(image.cols,image.rows),CV_8UC1);
+	
+	channels[0].convertTo(imageB, CV_32FC1, 1.0/255.0, 0);
+	channels[1].convertTo(imageG, CV_32FC1, 1.0/255.0, 0);
+	channels[2].convertTo(imageR, CV_32FC1, 1.0/255.0, 0);
+	
+	float valueG, valueB, valueR;
+	for (int i = 0; i < imageI.rows; i++){
+	for (int j = 0; j < imageI.cols; j++){
+	
+			if (imageG.at<float>(i,j) != 0)
+				valueG=log(imageG.at<float>(i,j));
+			else
+				valueG=0;
+			
+			if (imageB.at<float>(i,j) != 0)
+				valueB=alpha*log(imageB.at<float>(i,j));
+			else
+				valueB=0;
+			
+			if (imageR.at<float>(i,j) != 0)
+				valueR=(1-alpha)*log(imageR.at<float>(i,j));
+			else
+				valueR=0;
+			
+			imageI.at<float>(i,j) = 0.5 + valueG - valueB - valueR;
+			
+			if (imageI.at<float>(i,j)<0) imageI.at<float>(i,j) = 1;
+			
+		}
+	
+	}
+	
+	imageI.convertTo(imageI8U, CV_8UC1, 255.0, 0);
+	
+	return imageI8U;
+}
+\end{lstlisting}
+
+\chapter*{Appendix B: Detailed Table of Quantitative Trajectory Evaluation Results}
+\addcontentsline{toc}{chapter}{Appendix B: Detailed Table of Quantitative Trajectory Evaluation Results}
 (Code Here)
 
 

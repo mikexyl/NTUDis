@@ -5,7 +5,7 @@
 
 \section{Datasets}
 
-Evaluation are performed in several datasets including KITTI stereo 2015 dataset\cite{Menze2015CVPR},  Oxford RobotCar dataset\cite{maddern20171} and NTU dataset collected in NTU. The listing of used datasets is shown in Table \ref{tbl:datasetsinfo}
+Evaluation are performed in several datasets including KITTI Visual Odometry 2012 dataset\cite{Geiger2012CVPR},  Oxford RobotCar dataset\cite{maddern20171} and NTU dataset collected in NTU. The listing of used datasets is shown in Table \ref{tbl:datasetsinfo}
 
 
 \begin{table*}
@@ -93,7 +93,7 @@ RobotCar dataset is especially suitable to evaluate life-long SLAM systems, sinc
 	
 \subsection{NTU Dataset}
 \label{sec:ntuinfo}
-Our NTU dataset is collected by multi hybrid robots consisting of a husky UGV platform and a UAV, recording driving around the carpark in front of School of EEE.
+Our NTU dataset \cite{zhang2018two} is collected by multi ground robots consisting of two husky UGV platforms, recording driving around the carpark in front of School of EEE building.
 
 Our UGV platform is a HUSKY Clearpath robot, equipped with a ZED stereo camera $\times$ 1, 672$\times$376, $87^{\circ}$ HFoV, $56^{\circ}$ VFoV. The picture of the platform and example images are shown in Figure \ref{fig:ntuugvplatform} and \ref{fig:ntuexamples}.
 
@@ -177,9 +177,12 @@ The dataset provides 4 rosbag files. 3 of them are recorded by UGV, while the ot
 \end{figure}
 
 \section{Evaluation of CORBSLAM}
-\subsection{Evaluation on multi ground robots}
 
-\subsubsection{KITTI Datasets}
+\ifoutputscaleerror
+\subsection{Evaluation on multi ground robots}
+\fi
+
+\subsection{KITTI Datasets}
 \label{sec:kittievaluate}
 In order to evaluate CORB-SLAM system, sequence 00 is utilized and separated into two sub sequences with proper length of overlap. The following separating method is employed: We assume the time period of a KITTI sequence if $Seq.0[0,t]$. Then the sequence is separated into two sub sequences $Seq.01[0,\frac{t}{2}+\delta{t}]$ and $Seq.02[\frac{t}{2},t]$ as the assumed input of two client robots. 
 
@@ -191,7 +194,7 @@ Clients' quantitative mapping results of each partial sequence are provided in F
 
 \input{Chapter4/KITTI/KITTI_Figures}
 
-\subsubsection{NTU Datasets}
+\subsection{NTU Datasets}
 
 An obvious drawback of the evaluation on KITTI dataset is the images which are overlapped by two clients are exactly identical because they are extracted from the same sequence. Therefore, the results are expected to be much better than real-world applications in which case it is impossible the images recorded by different clients can be identical.
 

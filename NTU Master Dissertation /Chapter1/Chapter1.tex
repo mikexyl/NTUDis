@@ -23,45 +23,40 @@ However, Adapting SLAM technology to multiple-robot scenario brings some new cha
 
 Because of the limitation of the difficulties mentioned above, the development of multiple-robot SLAM is much slower than single-robot SLAM. Finding a solution to these problem will push the adaption of SLAM technology to a new level.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=5in]{Chapter1/boundingbox.eps}
-\caption{TBD}
-\label{fig:boundingboxexample} 
-\end{figure}
-
-
 \section{Motivation and Objectives}
 
-Recently, some solutions for Multi-robot SLAM systems have been proposed.\cite{mcmanus2014shady}
+Recently, some solutions for multi-robot SLAM systems have been proposed. One of them is CORB-SLAM proposed in \cite{li2017corb}. But in its initial work, the accuracy of its map fusion results are not evaluate in a quantitative evaluation results, while only a rough demonstration of its mapping results given. Therefore, quantitative evaluation of CORB-SLAM with mapping results of single-robot ORB-SLAM system and CORB-SLAM clients given for comparison can help understand the performance of this multi-robot slam algorithm and assess the feasibility of its potential applications.
 
-
-
+Another critical requirement of applications of multi-robot slam algorithms is its ability to fuse sub maps under different illumination conditions and season, which is named as life-long application circumstances. Illumination variance method proposed in \cite{maddern2014illumination}  with advantages of easy implement and low computational cost, may be able to help CORB-SLAM to deal with illumination and season changes. Therefore related experiments are undertaken in this work in order to find a effective way to combine CORB-SLAM with illumination variance.
 
 \section{Major contribution of the Dissertation}
 \begin{enumerate}[1.]
-	\item Evaluation of CORB-SLAM on NTU datasets collected by a cluster of multi ground robots or multi hybrid robots.
-	\item Modification of CORB-SLAM to improve its stability and accuracy.
-	\item Combination of CORB-SLAM and shade dealing algorithms to enhance its ability to deal with illumination changes.
+	\item Evaluation of CORB-SLAM on several datasets with quantitative trajectory evaluation results provided.
+	\item Experiment of combination of CORB-SLAM with illumination variance algorithm to test whether illumination variance method is suitable to enhance ability of CORB-SLAM to deal with illumination changes.
 \end{enumerate}
-
 
 \section{Organisation of the Dissertation}
 This dissertation is organised into several chapters:
 \begin{enumerate}[1.]
-	\item Chapter 2 briefly outlines the development of visual SLAM technique. Firstly, the classic structure of visual SLAM system is introduced, and the critical algorithms involved are elaborated. The existing solutions are classified into single-robot and multi-robot systems. This chapter also explores prior work in shade dealing algorithms required to implement life-long SLAM.
+	\item Chapter 2 briefly outlines the development of visual SLAM technique. Firstly, the classic structure of visual SLAM system is introduced, and the critical algorithms involved are elaborated, so as the classifications of visual SLAM systems. Then some existing solutions of each category are demonstrated. This chapter also explores prior work in shade dealing algorithms required to implement life-long SLAM.
 	
-	\item Chapter 3 explains the methodology used in this dissertation to improve the stability and accuracy of CORB-SLAM, and how to combine illumination variance method with CORB-SLAM system to enhance the ability of CORB-SLAM to deal with illumination changes.
+	\item Chapter 3 explains the methodology used in this dissertation to evaluate map fusion performance of CORB-SLAM, and how to combine illumination variance method with CORB-SLAM system to test if illumination variance can be utilized to enhance the ability of CORB-SLAM to deal with illumination changes.
 	
 	\item Chapter 4 shows the results of 
-	\begin{inparaenum}[(i)]
-		\item the evaluation of CORB-SLAM with NTU datasets.
-		\item the evaluation of illumination variant CORB-SLAM with datasets collected under different illumination conditions.
+	
+	\begin{inparaenum}[(a)]
+		\item the evaluation of CORB-SLAM on selected 2 datasets including 
+		\begin{inparaenum}[(i)]
+			\item KITTI Visual Odometry Dataset \cite{Geiger2012CVPR},
+			\item NTU Dataset \cite{zhang2018two},
+		\end{inparaenum}
+	
+		\item the evaluation of CORB-SLAM combined with illumination variance on Oxford RobotCar Dataset \cite{maddern20171}.
 		\end{inparaenum}
 		
 	\item Chapter 5 analysis the results demonstrated in chapter 4 in detail, discussing the improvement and the disadvantages.
 	
-	\item Chapter 6 summarizes the work done in this dissertation, and comments on the significance and some potential applications of the proposed solutions.  
+	\item Chapter 6 concludes the work done in this dissertation, and comments on some limitation and drawbacks of algorithms used in this work, which future work need focus on.  
 
 \end{enumerate}
 

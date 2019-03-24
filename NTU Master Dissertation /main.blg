@@ -4,8 +4,6 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Title/titlepage.aux
 A level-1 auxiliary file: Front/Abstract.aux
 A level-1 auxiliary file: Front/Acknowledgement.aux
-A level-1 auxiliary file: Front/Acronyms.aux
-A level-1 auxiliary file: Front/Symbols.aux
 A level-1 auxiliary file: Chapter1/Chapter1.aux
 A level-1 auxiliary file: Chapter2/Chapter2.aux
 A level-1 auxiliary file: Chapter3/Chapter3.aux
@@ -18,45 +16,45 @@ Database file #1: Ref/refs.bib
 Warning--empty journal in rublee2011orb
 Warning--there's a number but no volume in davison2007monoslam
 Warning--empty journal in williams2007real
-You've used 44 entries,
+You've used 45 entries,
             1791 wiz_defined-function locations,
-            695 strings with 12738 characters,
-and the built_in function-call counts, 14243 in all, are:
-= -- 1390
-> -- 538
-< -- 26
-+ -- 195
-- -- 151
-* -- 877
-:= -- 1977
-add.period$ -- 153
-call.type$ -- 44
-change.case$ -- 43
+            698 strings with 13005 characters,
+and the built_in function-call counts, 14705 in all, are:
+= -- 1436
+> -- 558
+< -- 27
++ -- 202
+- -- 157
+* -- 906
+:= -- 2038
+add.period$ -- 157
+call.type$ -- 45
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 718
-empty$ -- 1378
-format.name$ -- 151
-if$ -- 3409
+cite$ -- 48
+duplicate$ -- 741
+empty$ -- 1419
+format.name$ -- 157
+if$ -- 3522
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 45
-newline$ -- 223
-num.names$ -- 44
-pop$ -- 202
+int.to.str$ -- 45
+missing$ -- 46
+newline$ -- 228
+num.names$ -- 45
+pop$ -- 208
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 444
+skip$ -- 461
 stack$ -- 0
-substring$ -- 1119
-swap$ -- 313
-text.length$ -- 26
+substring$ -- 1159
+swap$ -- 326
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 137
-width$ -- 46
-write$ -- 499
+while$ -- 141
+width$ -- 47
+write$ -- 511
 (There were 3 warnings)

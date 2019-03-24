@@ -1,14 +1,30 @@
 %=== CHAPTER SIX (6) ===
 %=== Conclusion and Recommendations ===
 
-\chapter{Conclusion and Recommendations}
+\chapter{Conclusions and Future Work}
 
-\section{One}
+\section{Conclusions}
 
-\section{Two}
+By analyzing results of the experiments in this work, we can conclude:
 
-\section{Three}
+\begin{enumerate}[1.]
+	\item On systems consisting of multi ground robots, CORB-SLAM provides promising map fusion results, without bringing in obvious relative translation and yaw error.
+	\item Illumination variance method proposed for dealing with illumination changes, does not cooperate with CORB-SLAM effectively, because of its characteristic of basic equations to generate low resolution images, while ORB Keypoint extraction, DBoW2 bag of words and keypoint-based mapping algorithms are all feature-based which highly rely on high resolution of input images.
+\end{enumerate}
 
+\section{Future Work}
+
+Despite of the outstanding map fusion performance of CORB-SLAM system, it still have some drawbacks that remain to improve in future work.
+
+\begin{enumerate}[1.]
+	\item In server end, filtering conditions of 
+	\begin{inparaenum}[(i)]
+		\item loop closure detection,
+		\item keypoint inliers in iterations of the Perspective-n-Point solver (PnP Solver),
+	\end{inparaenum}
+	are set significantly strictly in order to achieve high accuracy in computation of translation matrix between client maps, but as a result, the application of the system are also limited to circumstances where images of clients should have high similarity, with only very slight  illumination and season change allowed, so as the point of view difference, which means the application on multi hybrid robot systems is also seriously limited.
+	\item In the current version of CORB-SLAM server, the map fusion modules stops when a translation matrix accurate enough to satisfy the filtering condition. But in fact, the computation of translation matrix can be in an incremental way where current part of client maps are fused to the global map by the current translation matrix, after a new relation is calculated, the next part of client map is fused by the new matrix. By this way, the map fusion accuracy should be improved with simple modifications.
+\end{enumerate} 
 
 %=== END OF CHAPTER SIX ===
 \newpage
