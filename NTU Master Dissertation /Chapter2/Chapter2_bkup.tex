@@ -1,0 +1,338 @@
+%=== CHAPTER TWO (2) ===
+%=== Literature Review ===
+
+\chapter{Literature Review}
+
+\section{Visual SLAM}
+
+\subsection{Introduction}
+Simultaneous Localizaiton and Mapping (SLAM) is a technique to obtain 3D structure of an unknown environment and sensor motion in the environment. After years of development, SLAM-based application have become widely broadened such as computer vision based 3D modeling, augmented reality(AR)-based visualization and self-driving cars. 
+
+In early SLAM algorithms, there exit many different modalities of sensors integrated in SLAM systems, such as rotary encoders, light detection and ranging radar (LiDAR), inertial sensors, GPS and cameras. In recent years, SLAM using cameras only,  specifically referred to as visual SLAM (vSLAM), has been actively discussed because the sensor configuration is simple, low-cost, and contains abundant information. But meanwhile this technique also brings more difficulties than others using integrated sensors\cite{taketomi2017visual}. 
+
+vSLAM algorithms have proposed widely in the field of computer vision, robotics and AR. The low requirement on the modalities of sensors, requiring cameras only, is the major advantage of vSLAM technique, so that it is very suitable for low-cost unmanned vehicles, robots with limited load capacity and power supply like drones, or mobile devices such as camera-mounted tablets or smart phones.
+
+However, the difficulties brought by vSLAM can not be ignored. Instead of obtaining depth and location information directly from LiDAR, GPS or depth camera in integrated SLAM systems, vSLAM technique needs to compute all these information from color or gray images, which reduces stability and accuracy for several estimation steps involved in this process. Also obviously the computational cost are significantly higher. Therefore, the problem of how to improve the performance and reduce computational cost of vSLAM has always been widely concerned.
+
+
+\subsection{Framework}
+
+The framework of visual SLAM is mainly composed of five modules as follows:
+\begin{enumerate}[1.]
+	\item Sensor Data Collection
+	\item Visual Odometry
+	\item Global Map Optimization
+	\item Loop Detection
+	\item Mapping
+\end{enumerate}
+ This framework is illustrated in Figure \ref{fig:vslamframe}.
+
+\begin{figure}[!ht]
+  \centering
+ % \hspace*{-135pt}
+  \begin{tikzpicture}[node distance = 2cm, auto]
+    % nodes
+    \node [block] (init) { Sensor Data Collection};
+    \node [block, below of = init] (contact) { Visual Odometry};
+    \node [block, below of = contact] (consent) { Global Map Optimization};
+    \node [block, below of = consent] (screening) { Mapping};
+  \node [block, right of =contact, node distance =5cm](lc){ Loop Detection};
+    % edges
+    \path [line] (init) -- (contact);
+    \path [line] (contact) -- (consent);
+    \path [line] (consent) -- (screening);
+    \path[line](init)--(lc);
+   \path[line](lc)--(consent);
+      \end{tikzpicture}
+      \caption{Classic structure of Visual SLAM}
+      \label{fig:vslamframe}
+\end{figure}
+
+Sensor data collection module in visual SLAM systems, is responsible to read and preprocess the image information collected from cameras.
+
+In the module of visual odometry (VO), the reconstrcuted map is tracked in the image to estimate the camera pose of the image with respect to the map. In order to do this, feature tracking or feature matching is executed to obtain 2D-3D correspondences between the image and the map. Then, the camera pose is computed by solving the Perspective-n-point (PnP) problem from the correspondences \cite{klette1998three,nister2007minimal}. 
+
+The other module is loop detection, or loop closing, which is a technique to acquire the reference information. In this module, loop closure is detected by matching a current image with previously acquired images. if a closed loop is detected, it means one of the previously observed place is revisited. In this case, the accumulative error can be estimated. The closed loops and the estimated accumulative error will be sent to the next module of global map optimization.
+
+The next module is global map optimization. The reconstructed map includes accumulative estimation error according to the movement distance of the camera. To suppress the accumulative error, the global map optimization is usually performed. In this module, the map is refined according to the consistency of the entire map. When a place is revisited and a closed loop is detected, reference information that represents the accumulative error can be computed. Then global map optimizer can suppress the accumulative error using loop closure from the reference information as a constraint.
+
+Mapping is the last module. In this module, the map is constructed and expanded by computing the 3D structure of the environment according to the information collected and computed in the prior modules.
+
+\subsection{Related Techniques}
+
+\subsubsection{ORB Features}
+\cite{rublee2011orb}
+\subsubsection{Bag-of-Words Fast Place Recognition}
+\cite{galvez2012bags}
+\subsubsection{Bundle Adjustment}
+\cite{hartley2003multiple}\cite{triggs1999bundle}
+
+
+\subsection{Algorithms}
+ According to the different types of the information used in VO, the existing vSLAM algorithms can be categorized into feature-based, direct, and RGB-D camera-based approaches:
+\begin{inparaenum}[(i)]
+	\item Feature-based approaches attract and track feature points,
+	\item Direct approaches track a whole image without detecting feature points,
+	\item RGB-D approaches use both monocular RGB images and its depth.
+\end{inparaenum}
+Some popular vSLAM algorithms proposed in recent years are listed as follows:
+
+\subsubsection{Feature-based Approach}
+\begin{enumerate}[1.]
+	\item MonoSLAM
+	
+	MonoSLAM is the first monocular vSLAM, developed in 2003, by Davison et al. \cite{davison2003real,davison2007monoslam}, which is considered as the representative method in filter-based vSLAM algorithms. In MonoSLAM, An extended Kalman filter (EKF) is used to simultaneously estimate the camera motion and 3D structure of an unknown environment. 3D positions of feature points and 6 degree of freedom (DoF) camera motion are represented as a state vector in EKF. The EKF in MonoSLAM assume uniform motion as a prediction model, and a result of feature point tracking as the observation. New feature points are added to the state vector depending on camera movement. The initial map is created by observing a known object where a global coordinate system is defined. In conclusion, there are two components in MonoSLAM system:
+	\begin{enumerate}
+		\item Map initialization, done by using a known object.
+		\item 3D positions of feature points and camera motion, estimated using EKF.
+	\end{enumerate}
+	the limitation of this algorithm is its computational cost increases proportionally with the size of an environment. In large environments, the number of feature points increase causing the size of the state vector to be large. Therefore, real-time performance is difficult to achieve in large environments.
+
+	\item PTAM
+	
+	In order to solve the problem of computational cost in MonoSLAM, Parallel Tracking and Mapping (PTAM) proposed in \cite{klein2007parallel} split the tracking and the mapping tasks into different threads. These two thread are running in parallel, then the computational cost in the mapping thread have no effect on tracking. As a result, bundle adjustment (BA) which requires extra computational cost in optimization can be added in the mapping. This means the tracking thread can estimate camera motion in real-time, and meanwhile the mapping thread can estimate accurate 3D positions of the features points with higher computational cost, with causing no effect on the real-time performance of the tracking thread.
+	
+	A significant of PTAM is to firstly introduce the concept of keyframe. PTAM is the first vSLAM algorithm to  use keyframe-based mapping. In the mapping, 3D positions of new feature points are computed using triangulation at certain frames called keyframes. To achieve accurate triangulation, an input frame is selected as a new keyframe, when a large disparity is measured between the input frame and the previous keyframes. Also, a new relocalization algorithm \cite{williams2007real} in tracking is employed in the newer version of PTAM, which uses a randomized tree-based feature classifier to match input frames with keyframes. 
+%	The mapping thread is illustrated in Figure \ref{fig:ptammapping}.
+
+%	\begin{figure}[H]
+%		\centering
+%		\includegraphics[width=5in]{Chapter2/ptammapping.eps}
+%		\caption{The asynchronous mapping thread in PTAM. After initialization, this thread runs in an endless loop, occasionally receiving new frames from the tracker.}
+%		\label{fig:ptammapping} 
+%	\end{figure}
+
+	In summary, PTAM has the following four components:
+	
+	\begin{enumerate}
+		\item Map initialization, done by the five-point algorithm \cite{nister2004efficient}.
+		\item Camera pose estimation, from matched feature points between the input image and map points.
+		\item 3D positions of feature points estimation, by triangulation computation, and optimized by BA.
+		\item Tracking process, recovered by a randomized tree-based searching.
+	\end{enumerate}
+	
+	\item ORB-SLAM
+	
+	There have been proposed many SLAM algorithms based on PTAM. ORB-SLAM, one of the most popular vSLAM algorithm proposed in \cite{mur2015orb,mur2017orb}, also based on PTAM. The most important improvement of ORB-SLAM compared to PTAM, is ORB-SLAM employs a new loop detection thread. The details of ORB-SLAM are reviewed in Chapter \ref{chp:orbslam}.
+\end{enumerate}
+
+\subsubsection{Direct Approach}
+\begin{enumerate}[1.]
+	\item DTAM
+	
+	Dense Tracking and Mapping (DTAM) was proposed by Newcombe et al. in \cite{newcombe2011dtam}, is fully direct method. In DTAM, the input image is compared with 
+	synthetic view images generated from the reconstructed map. This is equivalent to registration of an image on the 3D model of a map, which can be efficiently implemented on GPU. The initial depth map is created using stereo measurement like PTAM. In summary, there are three main components in DTAM:
+	
+	\begin{enumerate}
+		\item Map initialization, done by stereo measurement.
+		\item Camera motion estimation, by synthetic view generation from the reconstructed map.
+		\item Pixel depth information estimation, using multi-baseline stereo, then optimized by considering space continuity.
+	\end{enumerate}
+	
+	DTAM is optimized to achieving real-time processing on mobile phones in \cite{ondruvska2015mobilefusion}.
+	
+	\item LSD-SLAM
+	
+	Large-scale direct monocular SLAM (LSD-SLAM), proposed in \cite{engel2014lsd}, is another leading direct method, which follows the idea from semi-dense VO \cite{engel2013semi}. Compared to DTAM which reconstructs full areas, the reconstruction targets are limited to areas only which have intensity gradient in LSD-SLAM. Therefore, in LSD-SLAM, textureless areas are ignored where it is difficult to estimate depth information. In the mapping, initial depth values for each pixel is set to random values, and then optimized considering photometric consistency. In conclusion, four components of LSD-SLAM are as follows:
+	
+	\begin{enumerate}
+		\item Initial depth value, set as random values.
+		\item Camera motion, estimated by synthetic view generated from the reconstructed map.
+		\item Area reconstructed, limited to high-intensity gradient areas.
+		\item 7 DoF pose-graph optimization, employed to obtain geometrically consistent map.
+	\end{enumerate}
+	
+	In \cite{schops2014semi}, they optimized the LSD-SLAM algorithms to be able to run on mobile phones with real-time performance, and also evaluate the accuracy for low-resolution images. In \cite{caruso2015large, engel2015large}, LSD-SLAM is extended to stereo camera and omni-directional cameras.
+\end{enumerate}
+
+\subsubsection{RGB-D Approach}
+	Recently, with structure light-based RGB-D cameras such as Microsoft-Kinect getting cheaper and smaller, RGB-D SLAM algorithms with RGB-D camera become more popular and affordable.
+\begin{enumerate}[1.]
+	\item KinectFusion 
+	
+	KinectFusion was proposed by Newcombe et al. in \cite{newcombe2011kinectfusion}. In KinectFusion, a voxel space is used for representing the 3D structure of the environment. The 3D structure of the environment is reconstructed by combining obtained depth maps in the voxel space, and camera motion is estimated by the ICP algorithm using an estimated 3D structure and the input depth map, which is depth-based vSLAM.and it is optimized with GPU to achieve real-time performance.
+	
+	In \cite{kahler2015very}, KinectFusion is optimized to run on mobile devices in real time. To 
+	%\cite{whelan2016elasticfusion}
+	
+	\item SLAM++
+	
+	SLAM++ was proposed as an object level RGB-D vSLAM algorithm by Salas-Moreno et al in  \cite{salas2013slam++}. In SLAM++, several 3D objects are registered into the database in advance, and these objects are recognized in an online process. The estimated map is refined by recognizing 3D objects, and 3D points are replaced by 3D objects to reduce the amount of data.
+	
+	As a similar algorithm, another real-time segmentation method for RGB-D SLAM in 
+	\cite{tateno20162} by Tateno et al. Segmented objects are labeled and then used as recognition targets.
+	
+\end{enumerate}
+
+\subsection{ORB-SLAM}
+\label{chp:orbslam}
+One of the state-of-the-art vSLAM solutions for single-robot systems is ORB-SLAM, initially proposed in \cite{mur2015orb}, and upgraded to a second version in \cite{mur2017orb}.
+
+ORB-SLAM is a feature-based monocular SLAM system that operates in real time, in small and large, indoor and outdoor environments. In the proposed work in \cite{mur2015orb}, ORB-SLAM is built on the main ideas of PTAM, the place recognition work of G\'alvez-L\'opez and Tard\'os \cite{galvez2012bags}, the scale-aware loop closing of Strasdat et. al \cite{strasdat2010scale} and the use of covisibility information for large scale operation \cite{strasdat2011double}, \cite{mei2010closing}. As a novel monocular SLAM system, the main contributions of ORB-SLAM are:
+\begin{enumerate}[1.]
+	\item {\color{red} !!!}The same features are used in all tasks: tracking, mapping, relocalization and loop closing. Using same features makes the system more efficient, reliable and simple. And using ORB features allows real-time performance without GPUs, with good invariance to changes in viewpoint and illumination.
+	\item Real time performance in large environments. The tracking and mapping modules focus in a local covisible area, independent of the global map, thanks to the use of a covisibility graph.
+	\item Real time loop closing. The optimization of a pose graph called the Essential Graph is adapted to realize real time loop closing performance. The Essential Graph is built from loop closures links, strong edges from the covisibility graph and a spanning tree maintained by the system.
+	\item Real time camera relocalization with significant invariance to viewpoint and illumination. This allows recovery from tracking failure and also enhances map reuse.
+	\item A new automatic and robust initialization procedure based on model selection that permits to create an initial map of planar and non-planar scenes.
+	\item A survival of the fittest approach to map point and keyframe selection that is generous in the spawning but very restrictive in the culling. This policy improves tracking robustness, and enhances life-long operation because redundant keyframes are discarded.
+\end{enumerate}
+
+ORB-SLAM system, see on Figure \ref{fig:orbslamoverview}, incorporates three threads that run in parallel: tracking, local mapping and loop closing. 
+
+The tracking thread is in charge of localizing the camera with every frame and deciding when to insert a new keyframe.	The module firstly match current frames with previous frames, and optimize the pose using motion-only bundle adjustment. If the 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=5in]{Chapter2/ORBSLAMOverview.eps}
+\caption{ORB-SLAM system overview.}
+\label{fig:orbslamoverview} 
+\end{figure}
+
+\section{Multi-Robot Algorithms}
+\subsection{Multi Ground Robot System}
+\subsection{Multi Hybrid Robot System}
+\subsection{CORB-SLAM}
+Proposed by F.Li et al. in \cite{li2017corb}, CORB-SLAM is a vSLAM algorithm focusing on  multi-robot systems. As presented in Figure \ref{fig:corbslamoverview}, the system of CORB-SLAM consists of robot-end clients and a server.
+\begin{figure}[H]
+\centering
+\includegraphics[width=5in]{Chapter2/CORBSLAMOverview.eps}
+\caption{The framework of CORB-SLAM system.}
+\label{fig:corbslamoverview} 
+\end{figure}
+
+\subsubsection{Robot-end SLAM Client}
+The robot-end client of CORB-SLAM is an ORB-SLAM client extended to have the functionality to communicate with the server, transmitting the keyframe information, with all functions and modules in original ORB-SLAM as listed in Chapter \ref{chp:orbslam} reserved.
+
+\subsubsection{Map Fusing in the Server}
+In the server, the map fusing module receives and fuses the local maps from the clients, achieving an optimized global map. The map fusing algorithm is shown in Figure \ref{fig:corbslamserver}, including two main parts: map overlap detection and local-map fusion.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{Chapter2/corbslamserver.eps}
+	\caption{The flowchart of Map Fusing module.}
+	\label{fig:corbslamserver} 
+\end{figure}
+
+\begin{enumerate}[1.]
+	\item Initializing global map
+	
+	Initially,
+	
+	\item Map overlap detection
+	
+	To
+	
+	\item Local map fusing 
+	
+	To 
+\end{enumerate}
+
+\section{Illumination Variance}
+
+\subsection{Appearance Change From Illumination}
+For vision systems concerned with localizing in known environments, dealing with appearance changes is an ongoing challenge. Appearance changes can result from several sources, such as 
+\begin{inparaenum}[(i)]
+	\item different lighting conditions,	
+		\label{ls:appearancechange1}
+	\item varying weather conditions, and
+		\label{ls:appearancechange2}
+	\item dynamic objects like pedestrians or vehicles.
+		\label{ls:appearancechange3}
+\end{inparaenum}
+
+In previous work of Colin McManus et al. , they demonstrated how to leverage knowledge of prior 3D structure to suppress distracting objects for improved pose estimation in busy urban environments \cite{mcmanus2013distraction}, and how to cope with long-term appearance variation caused by changing weather conditions \cite{churchill2012practice}. In \cite{maddern2014illumination}, they proposed a new approach to address problem (\ref{ls:appearancechange1} named as Illumination Variance Approach. 
+
+Appearance change caused by different lighting conditions in (\ref{ls:appearancechange1}) is illustrated in Figure \ref{fig:shadecompare1} with pictures selected from St Lucia dataset \cite{glover2010fab}. Compared to approaches proposed in \cite{mcmanus2013distraction} and \cite{churchill2012practice}, illumination variance approach is not model-based, requiring less computational cost. And in most of applications of vSLAM, appearance changes caused by (\ref{ls:appearancechange1}) are a more common problem than (\ref{ls:appearancechange2})(\ref{ls:appearancechange3}). Therefore, how to combine illumination variance approach with multi-robot SLAM algorithms, to improve the performance of place recognition in changing illumination conditions, is the major objective focused on in this work.
+
+\begin{figure}
+	\centering
+	\subfigure[pic1.]{
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=2in]{Chapter2/shadecompare1-0.eps}
+			%\caption{fig1}
+		\end{minipage}
+	}
+	\subfigure[pic2.]{
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=2in]{Chapter2/shadecompare1-1.eps}
+			%\caption{fig2}
+		\end{minipage}
+	}
+\caption{Appearance changes caused by different lighting conditions. Pictures are selected from St Lucia dataset corresponding to the car rides recorded on 10/09/2009 at 8:45 am and at 2:10 pm}
+\label{fig:shadecompare1}
+\end{figure}
+
+
+\subsection{Illumination Variance}
+Illumination variance approach proposed in \cite{maddern2014illumination}, is a simple method based on only one equation computing illumination variant images. The basic idea of this approach is to map color images to an illumination invariant color space, where illumination change caused by different lighting condition like shade can be suppressed. The mapping equation
+ is presented in Equation \ref{eq:iifinal}.
+ 
+\begin{equation}
+I=\log(G)-\alpha\log(B)-(1-\alpha)\log(R)
+\label{eq:iifinal}
+\end{equation}
+
+where, $R, G, B$ are the color channels of the input image, and $I$ is the resultant illumination invariant image. As shown in \ref{eq:ii1}, $\alpha$ is a parameter which depends on the peak spectral responses of each color channel ($\lambda_R, \lambda_G, \lambda_B$), which are usually available in camera specifications.
+
+\begin{equation}
+\frac{1}{\lambda_G}=\frac{\alpha}{\lambda_B}+\frac{1-\alpha}{\lambda_R}
+\label{eq:ii1}
+\end{equation}
+
+Therefore, considering the peak spectral responses, $\alpha$ can be easily calculated as exposed in Equation \ref{eq:ii2}.
+
+\begin{equation}
+\alpha=\frac{(\frac{\lambda_B}{\lambda_G}-\frac{\lambda_B}{\lambda_R})}{(1-\frac{\lambda_B}{\lambda_R})}
+\label{eq:ii2}
+\end{equation}
+ 
+The influence of applying the illumination invariant transformation is showed in Figure \ref{fig:iicompare1}.
+
+\begin{figure}
+	\centering
+	\subfigure[pic1.]{
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=2in]{Chapter2/iicompare1-0.eps}
+			%\caption{fig1}
+		\end{minipage}
+	}
+	\subfigure[pic2.]{
+		\begin{minipage}[t]{0.4\linewidth}
+			\centering
+			\includegraphics[width=2in]{Chapter2/iicompare1-1.eps}
+			%\caption{fig2}
+		\end{minipage}
+	}
+	\caption{An example of illumination invariance application in St Lucia dataset. It shows how this approach suppress the effects caused by sun}
+	\label{fig:iicompare1}
+\end{figure}
+
+\subsection{??? Life-Long SLAM}
+
+An open source toolbox named as OpenABLE, for life-long visual localization is implemented in \cite{arroyo2016openable}. The proposed implementation in \cite{arroyo2016openable} employs the philosophy of the topological place recognition approach named ABLE introduced in \cite{arroyo2014bidirectional, arroyo2014fast, arroyo2015towards} which uses illumination variant images for relocalization.
+
+A graphic representation about how the methodology proposed by OpenABLE is showed in Figure \ref{fig:openableoverview}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{Chapter2/OPENABLEOverview.eps}
+	\caption{A graphic representation about how the methodology proposed by ABLE works.}
+	\label{fig:openableoverview} 
+\end{figure}
+
+The limitation of illumination variance approach is the transformation process produces resultant images with low resolution because all pixel values are turned into log values. These low-resolution resultant images still can be used as the input images of visual topological localization where high resolution images are actually not needed. But in the mapping task, illumination variant images are too blurry to estimate camera motion and then reconstruct the map. Therefore, to improve the mapping performance in changing illumination conditions, rgb images and illumination variant images are both needed to perform relocalization and mapping, as the block-flow proposed in \cite{mcmanus2014shady} presented in \ref{fig:iioverview}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{Chapter2/COISLAMOverview.eps}
+	\caption{Block-flow diagram of the combined stereo localisation approach.}
+	\label{fig:iioverview} 
+\end{figure}
+
+In the framework presented in \ref{fig:iicompare1}, there is a second localizer making use of illumination invariant images in parallel with the main localization system. In \cite{maddern2014illumination}, although the metric relative poses calculated from illumination variant images tends wo be more noisy, the integrated localizer are less likely to fail if the scene appearance change is due to sunlight intensity direction or spectrum variation.
+%=== END OF CHAPTER TWO ===
+\newpage
