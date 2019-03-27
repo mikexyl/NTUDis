@@ -14,7 +14,7 @@ By analyzing results of the experiments in this work, we can conclude:
 
 \section{Future Work}
 
-Despite of the outstanding map fusion performance of CORB-SLAM system, it still have some drawbacks that remain to improve in future work.
+As a multi-robot SLAM system which fulfills its cooperative functionality by modifications based on ORB-SLAM2, it inherits the advantages of ORB-SLAM2 system, and meanwhile its disadvantage. Despite of the outstanding map fusion performance of CORB-SLAM system, there are several new drawbacks brought in by introduction of map fusion server that remain to improve in future work. 
 
 \begin{enumerate}[1.]
 	\item In server end, filtering conditions of 
@@ -23,7 +23,8 @@ Despite of the outstanding map fusion performance of CORB-SLAM system, it still 
 		\item keypoint inliers in iterations of the Perspective-n-Point solver (PnP Solver),
 	\end{inparaenum}
 	are set significantly strictly in order to achieve high accuracy in computation of translation matrix between client maps, but as a result, the application of the system are also limited to circumstances where images of clients should have high similarity, with only very slight  illumination and season change allowed, so as the point of view difference, which means the application on multi hybrid robot systems is also seriously limited.
-	\item In the current version of CORB-SLAM server, the map fusion modules stops when a translation matrix accurate enough to satisfy the filtering condition. But in fact, the computation of translation matrix can be in an incremental way where current part of client maps are fused to the global map by the current translation matrix, after a new relation is calculated, the next part of client map is fused by the new matrix. By this way, the map fusion accuracy should be improved with simple modifications.
+%	\item In the current version of CORB-SLAM server, the map fusion modules stops when a translation matrix accurate enough to satisfy the filtering condition. But in fact, the computation of translation matrix can be in an incremental way where current part of client maps are fused to the global map by the current translation matrix, after a new relation is calculated, the next part of client map is fused by the new matrix. By this way, the map fusion accuracy should be improved with simple modifications.
+	\item In the current version of CORB-SLAM, after client maps are successfully fused to global map, the new global map will be resent to each client, which is necessary to enable each client robot to run if they go offline. But in this way, this operation will dramatically increase the memory usage, especially when the server is running simultaneously with a client on a single robot. During the experiment in this work, when processing some datasets with high resolution of raw image, the memory usage of the server may reach up to 3 gigabytes, which is obviously a extra burden for any robot running as a client and the server at the same time.
 \end{enumerate} 
 
 %=== END OF CHAPTER SIX ===

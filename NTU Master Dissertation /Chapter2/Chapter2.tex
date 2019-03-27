@@ -6,35 +6,37 @@
 \section{Visual SLAM}
 
 \subsection{Introduction}
-Simultaneous Localizaiton and Mapping (SLAM) is a technique to obtain 3D structure of an unknown environment and sensor motion in the environment. After years of development, SLAM-based application have become widely broadened such as computer vision based 3D modeling, augmented reality(AR)-based visualization and self-driving cars. 
+Simultaneous Localizaiton and Mapping (SLAM) is a technique for obtaining an unknown environment's 3D structure and sensor movement in the environment. Following years of development, SLAM-based application has become widespread, such as 3D modeling based on computer vision, self-driving cars and augmented reality(AR) visualization. 
 
-In early SLAM algorithms, there exit many different modalities of sensors integrated in SLAM systems, such as rotary encoders, light detection and ranging radar (LiDAR), inertial sensors, GPS and cameras. In recent years, SLAM using cameras only,  specifically referred to as visual SLAM (vSLAM), has been actively discussed because the sensor configuration is simple, low-cost, and contains abundant information. But meanwhile this technique also brings more difficulties than others using integrated sensors\cite{taketomi2017visual}. 
+In early SLAM algorithms, there exit many different modalities of sensors integrated in SLAM systems, such as rotary encoders, light detection and ranging radar (LiDAR), inertial sensors, GPS and cameras. In recent years, SLAM using cameras only,  specifically named as visual SLAM (vSLAM), has been actively discussed because of the simple, low-cost the sensor configuration, and  abundant information. But meanwhile this technique also brings more difficulties than others using integrated sensors\cite{taketomi2017visual}. 
 
 vSLAM algorithms have proposed widely in the field of computer vision, robotics and AR. The low requirement on the modalities of sensors, requiring cameras only, is the major advantage of vSLAM technique, so that it is very suitable for low-cost unmanned vehicles, robots with limited load capacity and power supply like drones, or mobile devices such as camera-mounted tablets or smart phones.
 
 However, the difficulties brought by vSLAM can not be ignored. Instead of obtaining depth and location information directly from LiDAR, GPS or depth camera in integrated SLAM systems, vSLAM technique needs to compute all these information from color or gray images, which reduces stability and accuracy for several estimation steps involved in this process. Also obviously the computational cost are significantly higher. Therefore, the problem of how to improve the performance and reduce computational cost of vSLAM has always been widely concerned.
 
-\subsection{Feature-based Algorithm}
 
-\subsection{Segmentation-based Algorithm}
+
+%\subsection{Feature-based Algorithm}
+
+%\subsection{Segmentation-based Algorithm}
 
 \subsection{ORB-SLAM}
 \label{chp:orbslam}
 One of the state-of-the-art vSLAM solutions for single-robot systems is ORB-SLAM, initially proposed in \cite{mur2015orb}, and upgraded to a second version in \cite{mur2017orb}.
 
-ORB-SLAM is a feature-based monocular SLAM system that operates in real time, in small and large, indoor and outdoor environments. Upgraded to ORB-SLAM2 in \cite{mur2017orb}, the new vision is capable of processing monocular, stereo and RGB-D input. In the proposed work in \cite{mur2015orb}, ORB-SLAM is built on the main ideas of PTAM, the place recognition work of G\'alvez-L\'opez and Tard\'os \cite{galvez2012bags}, the scale-aware loop closing of Strasdat et. al \cite{strasdat2010scale} and the use of covisibility information for large scale operation \cite{strasdat2011double}, \cite{mei2010closing}. As a novel monocular SLAM system, the main contributions of ORB-SLAM are:
+Initially proposed as a monocular SLAM system based on features, ORB-SLAM enables robots to map in real time small or large, indoor or outdoor environments with input of single camera images. The new vision has been upgraded to ORB-SLAM2 in \cite{mur2017orb} and can process monocular, stereo and RGB-D inputs. As stated in the proposed work \cite{mur2015orb}, ORB-SLAM is based on the main ideas of PTAM, the place recognition algorithm in \cite{galvez2012bags}, the use of covisibility information for large-scale operation \cite{strasdat2011double}, \cite{mei2010closing} and the scale-aware loop closure in \cite{strasdat2010scale}.  As a novel monocular SLAM system, the main contributions of ORB-SLAM are:
 \begin{enumerate}[1.]
-	\item The same features are used in all tasks: tracking, mapping, relocalization and loop closing. Using same features makes the system more efficient, reliable and simple. And using ORB features allows real-time performance without GPUs, with good invariance to changes in viewpoint and illumination.
-	\item Real time performance in large environments. The tracking and mapping modules focus in a local covisible area, independent of the global map, thanks to the use of a covisibility graph.
-	\item Real time loop closing. The optimization of a pose graph called the Essential Graph is adapted to realize real time loop closing performance. The Essential Graph is built from loop closures links, strong edges from the covisibility graph and a spanning tree maintained by the system.
-	\item Real time camera relocalization with significant invariance to viewpoint and illumination. This allows recovery from tracking failure and also enhances map reuse.
-	\item A new automatic and robust initialization procedure based on model selection that permits to create an initial map of planar and non-planar scenes.
-	\item A survival of the fittest approach to map point and keyframe selection that is generous in the spawning but very restrictive in the culling. This policy improves tracking robustness, and enhances life-long operation because redundant keyframes are discarded.
+	\item In all tasks, the same features are used: tracking, mapping, closing of loops and relocation. Making the system more efficient, reliable and simple with the same features. And using ORB features enables GPU-free real-time performance, with signiticant invariance to changes in lighting and viewpoint. 
+	\item In large environments, real-time performance. Due to the advantage of using a covisibility graph, the tracking and mapping modules are focused in a local visible area, independent of the global map. 
+	\item Loop closing in real time. Optimizing a pose graph called the Essential Graph is adapted to perform the closing performance of the real-time loop. The Essential Graph is created from links to loop closures, strong edges in the covisibility graph, and a system maintained spanning tree. \item Real time camera relocation with exceptional viewpoint and illumination invariance. This improves the reuse of maps and also allows recovery from failure tracking. 
+	\item A new robust and automatic initialization procedure 
+	mode-selection-based that creates an initial map.
+	\item A survival of the most appropriate approach to keyframe selection and map point, very restrictive in culling but generous in spawning. This policy enhances service life and improves the robustness of tracking because redundant key frames are discarded.
 \end{enumerate}
 
-ORB-SLAM system, see on Figure \ref{fig:orbslamoverview}, incorporates three threads that run in parallel: tracking, local mapping and loop closing. 
+ORB-SLAM system, see on Figure \ref{fig:orbslamoverview}, performs three threads that run in parallel: tracking, local mapping and loop closing. 
 
-The tracking thread is in charge of localizing the camera with every frame and deciding when to insert a new keyframe.	The module firstly match current frames with previous frames, and optimize the pose using motion-only bundle adjustment. If the 
+%The tracking thread is in charge of localizing the camera with every frame and deciding when to insert a new keyframe.	The module firstly match current frames with previous frames, and optimize the pose using motion-only bundle adjustment. If the 
 
 \begin{figure}[H]
 	\centering
@@ -43,20 +45,30 @@ The tracking thread is in charge of localizing the camera with every frame and d
 	\label{fig:orbslamoverview} 
 \end{figure}
 
+\section{Multi-robot SLAM}
+
+Multi-robot SLAM (MR-SLAM) uses several collaborative robots to map an unknown environment as an extended system of single-robot SLAM. However, the extension can not be easily implemented as each client maps their surroundings on their own local frame of reference. Therefore, in order to merge the sub map of several clients into a consistent global map, the map fusion server needs to be able to connect and find the transformation between different local client reference frames.The environment can be mapped significantly faster using MR-SLAM technique on a cluster of multi ground or hybrid robots and the uncertainty in the system can be reduced due to data redundancy.
+Furthermore, if separate robots are equipped with heterogeneous sensors, the fused global map may contain much more feature information than a single robot map. Another obvious advantage is the robustness of one or more robots to fail, particularly when data is decentralized. 
+
+As concluded in \cite{10.1007/978-3-319-78452-6_15}, besides the advantages above, MR-SLAM systems also face problems and choices in the following aspects:
+
+\begin{inparaenum}[1.]
+	\item Centralization or Decentralization. Determining where data processing takes place is one of the main questions building MR-SLAM systems. Data is processed in centralized approaches on a central server, performing the task to fuse  the information collected by all robots and distribut global map information to clients to improve their ability to self-locate\cite{forster2013collaborative, li2012laser,li2017corb}. By contrast, decentralized MR-SLAM systems usually have several clients, interconnected with each other and managed by a coordinating structure that allows systems to efficiently deal with large numbers of agents\cite{bresson2013consistent,fox2006distributed}. 
+	
+	\item Communication and information sharing. Decentralized data processing and consistent global map sharing have high requirements for communication bandwidth, latency and coverage area. Not only the connection characteristics e.g. connection architecture and protocol, but also the transmitting period and content etc. need to be selected carefully when designing MR-SLAM software systems.
+\end{inparaenum}
+
 \subsection{CORB-SLAM}
-Proposed by F.Li et al. in \cite{li2017corb}, CORB-SLAM is a vSLAM algorithm focusing on  multi-robot systems. As presented in Figure \ref{fig:corbslamoverview}, the system of CORB-SLAM consists of robot-end clients and a server.
+Proposed by F.Li et al. in \cite{li2017corb}, CORB-SLAM is centralized visual MR-SLAM systems based on ORB-SLAM2. As presented in Figure \ref{fig:corbslamoverview}, the system of CORB-SLAM consists of robot-end clients running ORB-SLAM2 modified to transmit map information via ROS and a central server responsible to fuse maps and resend global maps.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5in]{Chapter2/CORBSLAMOverview.eps}
-	\caption{The framework of CORB-SLAM system.}
+	\caption{The structure of CORB-SLAM system.}
 	\label{fig:corbslamoverview} 
 \end{figure}
 
-\subsubsection{Robot-end SLAM Client}
-The robot-end client of CORB-SLAM is an ORB-SLAM client extended to have the functionality to communicate with the server, transmitting the keyframe information, with all functions and modules in original ORB-SLAM as listed in Chapter \ref{chp:orbslam} reserved.
-
-\subsubsection{Map Fusing in the Server}
-In the server, the map fusing module receives and fuses the local maps from the clients, achieving an optimized global map. The map fusing algorithm is shown in Figure \ref{fig:corbslamserver}, including two main parts: map overlap detection and local-map fusion.
+\subsubsection{CORB-SLAM Client}
+The robot-end client of CORB-SLAM is an ORB-SLAM client extended to have the functionality to communicate with the server, transmitting the local map information, with all functions and modules in original ORB-SLAM as listed in Chapter \ref{chp:orbslam} reserved.
 
 \begin{figure}[H]
 	\centering
@@ -65,37 +77,44 @@ In the server, the map fusing module receives and fuses the local maps from the 
 	\label{fig:corbslamserver} 
 \end{figure}
 
+\subsubsection{Map Fusion}
+The server's map fusion module receives and fuses the clients ' local maps to achieve an optimized global map. Figure \ref{fig:corbslamserver} shows the map fusion algorithm, which includes three main parts: global map initialization, map overlap detection, and local map fusion.
+
 \begin{enumerate}[1.]
 	\item Initializing global map
 	
-	Initially,
+	As the server system starts at the beginning, the initial global map is set to empty. As clients keep mapping and creating their local maps, the server receive data of local maps. After a first local map reaches the server, it will set as the initial global, based on which the global reference frame is decided.
 	
 	\item Map overlap detection
 	
-	To
+	To calculate relations between local maps, the server firstly detects the overlaps among local maps and then computes the transform matrices using Perspective-n-Point method.
 	
-	\item Local map fusing 
+	The map overlap detection module follows the same solution of ORB-SLAM2, which firstly extract keypoints from input images using ORB features, then compute similarities between images by distance between image descriptors based on Bag of Binary Words (DBoW3) approach.
+	Then, after map overlaps are detected, RANSAC iterations are adopted to calculate the 7 degrees-of-freedom (DoF) transform matrix between the current keyframe and all rough candidates detected. With enough inliers, a similar candidata, $K_{\alpha}$ is optimized. If an enough number of inliers are calculated, the overlap with $K_\alpha$ is accepted with the pose of $K_\alpha$, $T_{wc}$ calculate at the same time during optimization.
 	
-	To 
+	\item Local-map fusing 
+	
+	Local maps are merged into the consistent global map after an acceptable transform matrix has been obtained. Using Bundle Adjustment (BA), a global 7 DoF optimization is then performed to suppress map errors caused by various SLAM clients.
 \end{enumerate}
+
+After all process finished, the fused global map is resent to clients, and each client continues its own work to detect loop closure and correct loops on the received global map. If the global map is updated by computation on clients, the changes will be uploaded to server to update the map, and further transmitted to other clients by the server.
 
 \section{Illumination Variance}
 
 \subsection{Appearance Change From Illumination}
 
-For vision systems concerned with localizing in known environments, dealing with appearance changes is an ongoing challenge. Appearance changes can result from several sources, such as 
-\begin{inparaenum}[(i)]
+Facing appearance changes is an ongoing challenge for vision systems concerned with locating in known environments. Changes in appearance can result from several sources, for example, \begin{inparaenum}[(i)]
 	\item different lighting conditions,	
 	\label{ls:appearancechange1}
 	\item varying weather conditions, and
 	\label{ls:appearancechange2}
-	\item dynamic objects like pedestrians or vehicles.
+	\item dynamic objects such as pedestrians or vehicles.
 	\label{ls:appearancechange3}
 \end{inparaenum}
 
-In previous work of Colin McManus et al. , they demonstrated how to leverage knowledge of prior 3D structure to suppress distracting objects for improved pose estimation in busy urban environments \cite{mcmanus2013distraction}, and how to cope with long-term appearance variation caused by changing weather conditions \cite{churchill2012practice}. In \cite{maddern2014illumination}, they proposed a new approach to address problem (\ref{ls:appearancechange1}) named as Illumination Variance Approach. 
+In previous work by Colin McManus et al., they showed how to leverage knowledge of previous 3D structure to suppress distracting objects for improved pose estimation in busy urban environments \cite{mcmanus2013distraction}, and how to cope with long-term variation in appearance caused by changing weather conditions\cite{churchill2012practice}. They proposed a new approach to addressing problem in \cite{maddern2014illumination} called the Illumination Variance Approach. 
 
-Appearance change caused by different lighting conditions in (\ref{ls:appearancechange1}) is illustrated in Figure \ref{fig:shadecompare1} with pictures selected from St Lucia dataset \cite{glover2010fab}. Compared to approaches proposed in \cite{mcmanus2013distraction} and \cite{churchill2012practice}, illumination variance approach is not model-based, requiring less computational cost. And in most of applications of vSLAM, appearance changes caused by (\ref{ls:appearancechange1}) are a more common problem than (\ref{ls:appearancechange2}, \ref{ls:appearancechange3}). Therefore, how to combine illumination variance approach with multi-robot SLAM algorithms, to improve the performance of place recognition in changing illumination conditions, is the major objective focused on in this work.
+Appearance change caused by different lighting conditions in (\ref{ls:appearancechange1}) is illustrated in Figure \ref{fig:shadecompare1} with pictures selected from St Lucia dataset \cite{glover2010fab}. Compared to approaches proposed in \cite{mcmanus2013distraction} and \cite{churchill2012practice}, illumination variance approach is not model-based, requiring less computational cost. And in most of applications of vSLAM, appearance changes caused by (\ref{ls:appearancechange1}) are a more common problem than (\ref{ls:appearancechange2}, \ref{ls:appearancechange3}). Therefore, how to combine illumination variance approach with multi-robot SLAM algorithms, to improve the performance of place recognition modules in environments under changing illumination conditions, is one of the major objectives focused on in this work.
 
 \begin{figure}
 	\centering
@@ -113,7 +132,7 @@ Appearance change caused by different lighting conditions in (\ref{ls:appearance
 			%\caption{fig2}
 		\end{minipage}
 	}
-	\caption{Appearance changes caused by different lighting conditions. Pictures are selected from St Lucia dataset corresponding to the car rides recorded on 10/09/2009 at 8:45 am and at 2:10 pm}
+	\caption{Appearance changes caused by different lighting conditions. Pictures are selected from St Lucia dataset recording on 10/09/2009 8:45 am and 2:10 pm}
 	\label{fig:shadecompare1}
 \end{figure}
 
@@ -122,14 +141,14 @@ Illumination variance approach proposed in \cite{maddern2014illumination}, is a 
 is presented in Equation \ref{eq:iifinal}.
 
 \begin{equation}
-I=\log(G)-\alpha\log(B)-(1-\alpha)\log(R)
+I=\log(R)-\alpha\log(G)-(1-\alpha)\log(B)
 \label{eq:iifinal}
 \end{equation}
 
-where, $R, G, B$ are the color channels of the input image, and $I$ is the resultant illumination invariant image. As shown in \ref{eq:ii1}, $\alpha$ is a parameter which depends on the peak spectral responses of each color channel ($\lambda_R, \lambda_G, \lambda_B$), which are usually available in camera specifications.
+Where, $R, G, B$ are the raw image color channels and $I$ is the resulting invariant image illumination. As shown in \ref{eq: ii1}, $\alpha$ is a parameter that depends on each color channel's peak spectral responses ($ \lambda R, \lambda G, \lambda B$), normally available in camera specifications. 
 
 \begin{equation}
-\frac{1}{\lambda_G}=\frac{\alpha}{\lambda_B}+\frac{1-\alpha}{\lambda_R}
+\frac{1}{\lambda_R}=\frac{\alpha}{\lambda_G}+\frac{1-\alpha}{\lambda_B}
 \label{eq:ii1}
 \end{equation}
 
@@ -140,7 +159,7 @@ Therefore, considering the peak spectral responses, $\alpha$ can be easily calcu
 \label{eq:ii2}
 \end{equation}
 
-The influence of applying the illumination invariant transformation is showed in Figure \ref{fig:iicompare1}.
+the result images of illumination variance conversion are showed in Figure \ref{fig:iicompare1}.
 
 \begin{figure}
 	\centering
@@ -158,19 +177,19 @@ The influence of applying the illumination invariant transformation is showed in
 			%\caption{fig2}
 		\end{minipage}
 	}
-	\caption{An example of illumination invariance application in St Lucia dataset. It shows how this approach suppress the effects caused by sun}
+	\caption{Illumination invariance result images in St Lucia dataset. It shows how this approach suppress the effects caused by sun}
 	\label{fig:iicompare1}
 \end{figure}
 
 \subsection{Application of Localization}
-An open source toolbox named as OpenABLE, for life-long visual localization is implemented in \cite{arroyo2016openable}. The proposed implementation in \cite{arroyo2016openable} employs the philosophy of the topological place recognition approach named ABLE introduced in \cite{arroyo2014bidirectional, arroyo2014fast, arroyo2015towards} which uses illumination variant images for relocalization.
+An open source toolbox called OpenABLE is implemented in \cite{arroyo2016openable} for lifelong visual localization. The proposed implementation in \cite{arroyo2016openable} uses the philosophy of the topological location recognition approach called ABLE introduced in \cite{arroyo2014bidirectional, arroyo2014fast, arroyo2015towards} using illumination variant images for relocation. 
 
 A graphic representation about how the methodology proposed by OpenABLE is showed in Figure \ref{fig:openableoverview}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5in]{Chapter2/OPENABLEOverview.eps}
-	\caption{A graphic representation about how the methodology proposed by ABLE works.}
+	\caption{A graphic demonstration about how ABLE works.}
 	\label{fig:openableoverview} 
 \end{figure}
 

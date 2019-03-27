@@ -5,20 +5,20 @@
 
 \section{Background}
 
-SLAM(Simultaneous localization and mapping) is a key component in mobile autonomous systems. It describes the ability of a vehicle, once placed in an unknown environment, to explore and map that environment, while at the same time estimating its own position in the environment, using only its onboard sensing capabilities.
+SLAM(Simultaneous localization and mapping) is an important component in developing mobile autonomous systems. It enable a vehicle the ability to explore and map an unknown environment, while at the same time estimating its own position in the environment, using only its sensors equipped onboard.
 
-SLAM systems can be accomplished by both single or multiple robots. Multiple-robot SLAM or MRSLAM, offer several advantages compared to there single robot counterpart, for example:
+SLAM systems can be accomplished by both single or multiple robots. Multiple-robot SLAM or MRSLAM, offer several advantages compared to single robot SLAM, for example:
 \begin{itemize}
-	\item Robustness to single robot failure,
-	\item Quicker exploration of environments in time critical SaR(Search and Rescue) mission.
+	\item Robustness to failure of single robots,
+	\item Faster environment exploration in time critical Search and Rescue(SaR) mission.
 \end{itemize} 
 
 
 However, Adapting SLAM technology to multiple-robot scenario brings some new changes as identified by Saeedi et al \cite{saeedi2016multiple}:
 \begin{itemize}
-	\item Relative Poses of Robots. In multiple-robot SLAM, the map provided by each robot in its own reference coordinates is called the local map. It is difficult task to integrate all of the local maps provided by the other robots to generate a global map of the environment, because the required alignments or transformation matrices, which relate these maps to each other, are in general unknown.
-	\item Closing Loops. Loop closure, is defined as identifying a place observed previously but not very recent. Solving this problem for a team of multiple robots requires using all resources of information from individual robots.in Multi-robot SLAM, various events can trigger loop closure, such as direct encounter of the robots or rendezvous and indirect encounter, when the robots see the same area of features in the world.
-	\item Communications. Availability of a medium for data sharing among robots is an important requirement in multiple‐robot SLAM. Information between robots can be exchanged via communication channels. The quality of the communication channels is dependent on the environment. For instance, communication issues are a challenging problem for a team of robots in underwater environments, where the environment imposes limitations on the bandwidth and data rate.
+	\item Relative Poses of Robots. The map created by each robot in MR-SLAM systems in its own reference is called the local map. It is a difficult task to merge all the local client maps created by each robot to create a globally consistent map of the environment, as the required transformation or alignment matrices that relate these maps to each other are generally unknown. 
+	\item Closing Loops. Loop closure is defined as identifying a previously observed but not very recent place. Solving this problem for a multiple robot cluster requires taking advantage of all information resources from each client. In multi-robot SLAM, different events can trigger loop closure, such as direct or indirect robots encounter, when robots see the same area of features worldwide. 
+	\item Communications. Multi-robot SLAM requires a medium to be highly available for data sharing between robots. It is possible to exchange information between robots via communication channels. The quality of the channels of communication depends on the environment. Communication, for example, is a challenging issue for a robots team in underwater environments, where the environment imposes limitations on data rate and bandwidth. 
 \end{itemize}
 
 Because of the limitation of the difficulties mentioned above, the development of multiple-robot SLAM is much slower than single-robot SLAM. Finding a solution to these problem will push the adaption of SLAM technology to a new level.

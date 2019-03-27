@@ -50,7 +50,7 @@ The main task of map fusion module of multi robot SLAM server is to find relativ
 	\item Relative Yaw Error.
 \end{inparaenum}
 
-Computation of relative error follows the basic idea stated in \cite{zhang2018tutorial}, that the estimation quality can be measured by computing relative relations between states in different times, since no global reference including global position and yaw, is provided in VO systems.
+Relative error computation follows the basic idea stated in \cite{zhang2018tutorial } that estimation quality can be measured by computing relative relationships between states at different times, as there is no global reference in VO systems, including global position and yaw.
 
 Formally, given the ground truth trajectory ${\bm{X}}$ and the estimated trajectory $\hat{\bm{X}}$:
 
@@ -68,7 +68,7 @@ where, $p_i\in\Re^3$ is the position, $R_i\in{SO(3)}$ is the rotation matrix and
 	\item Given the ground truth positions$ {{{p}_i}} $ and estimated positions ${{\hat{p}}_i}$, the estimated trajectory can be aligned to the aligned estimated trajectory $\bm{\hat{X}}'$ by finding a similarity transformation $S'=\{s', {R}', {t}'\}$ that minimize:
 	
 	\begin{equation}
-	S'=\argmin_{S=\{s, R, t\}}{\sum_{i=0}^{N-1}{\|{p}_i-sR{\hat{p}_i}-t\|^{2}}}.
+	S'=\argmin{\sum_{i=0}^{N-1}{\|{p}_i-sR{\hat{p}_i}-t\|^{2}}}.
 	\end{equation}
 	
 	Then,
@@ -123,14 +123,6 @@ where, $p_i\in\Re^3$ is the position, $R_i\in{SO(3)}$ is the rotation matrix and
 \section{CORBSLAM with Illumination Variance}
 
 To experiment whether illumination variance method is possible to be utilized to enhance the ability of CORB-SLAM to map in different illumination conditions and seasons, it is combined into the map fusion modules of CORB-SLAM server in this work. 
-
-The block diagram of the integrated system is illustrated in Figure \ref{fig:coislamoverview}.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=5in]{thereisafigure.eps}
-	\caption{The block diagram of the modified system of CORB-SLAM integrated with illumination variance.}
-	\label{fig:coislamoverview} 
-\end{figure}
 
 In the client end, the following modifications are made:
 
