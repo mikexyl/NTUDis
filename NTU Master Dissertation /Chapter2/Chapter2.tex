@@ -14,8 +14,6 @@ vSLAM algorithms have proposed widely in the field of computer vision, robotics 
 
 However, the difficulties brought by vSLAM can not be ignored. Instead of obtaining depth and location information directly from LiDAR, GPS or depth camera in integrated SLAM systems, vSLAM technique needs to compute all these information from color or gray images, which reduces stability and accuracy for several estimation steps involved in this process. Also obviously the computational cost are significantly higher. Therefore, the problem of how to improve the performance and reduce computational cost of vSLAM has always been widely concerned.
 
-
-
 %\subsection{Feature-based Algorithm}
 
 %\subsection{Segmentation-based Algorithm}
@@ -77,24 +75,23 @@ The robot-end client of CORB-SLAM is an ORB-SLAM client extended to have the fun
 	\label{fig:corbslamserver} 
 \end{figure}
 
-\subsubsection{Map Fusion}
-The server's map fusion module receives and fuses the clients ' local maps to achieve an optimized global map. Figure \ref{fig:corbslamserver} shows the map fusion algorithm, which includes three main parts: global map initialization, map overlap detection, and local map fusion.
+The server's map fusion module receives and fuses the clients ' local maps to achieve an optimized global map. Figure \ref{fig:corbslamserver} shows the map fusion algorithm, which includes three main parts: global map initialization, map overlap detection, as well as local map fusion.
 
 \begin{enumerate}[1.]
-	\item Initializing global map
+	\item Global map initialization
 	
-	As the server system starts at the beginning, the initial global map is set to empty. As clients keep mapping and creating their local maps, the server receive data of local maps. After a first local map reaches the server, it will set as the initial global, based on which the global reference frame is decided.
+	As the server system starts at the beginning, the server set the initial global map empty. As clients keep mapping and creating their local maps, the server receive data of local maps. After a first local map reaches the server, it will set as the initial global, based on which the global reference frame is decided.
 	
 	\item Map overlap detection
 	
-	To calculate relations between local maps, the server firstly detects the overlaps among local maps and then computes the transform matrices using Perspective-n-Point method.
+	To calculate relations between client maps, the server firstly detects the overlaps between local maps and then computes the transformation using Perspective-n-Point method.
 	
 	The map overlap detection module follows the same solution of ORB-SLAM2, which firstly extract keypoints from input images using ORB features, then compute similarities between images by distance between image descriptors based on Bag of Binary Words (DBoW3) approach.
-	Then, after map overlaps are detected, RANSAC iterations are adopted to calculate the 7 degrees-of-freedom (DoF) transform matrix between the current keyframe and all rough candidates detected. With enough inliers, a similar candidata, $K_{\alpha}$ is optimized. If an enough number of inliers are calculated, the overlap with $K_\alpha$ is accepted with the pose of $K_\alpha$, $T_{wc}$ calculate at the same time during optimization.
+	Then, after map overlaps are detected, RANSAC iterations are adopted to calculate the 7 degrees-of-freedom (DoF) transform matrix between the current keyframe and all rough candidates detected. With enough inliers, a similar candidata, $K_{\alpha}$ is optimized. If an enough number of inliers are calculated, the image overlap with $K_\alpha$ is accepted with the pose of $K_\alpha$, $T_{wc}$ calculate at the same time during optimization.
 	
-	\item Local-map fusing 
+	\item Local map fusion 
 	
-	Local maps are merged into the consistent global map after an acceptable transform matrix has been obtained. Using Bundle Adjustment (BA), a global 7 DoF optimization is then performed to suppress map errors caused by various SLAM clients.
+	Local maps created by clients are merged into the consistent global map after an acceptable transform matrix has been obtained. Using Bundle Adjustment (BA), a global 7 DoF optimization is then performed to suppress map errors accumulated during the mapping process of each SLAM clients.
 \end{enumerate}
 
 After all process finished, the fused global map is resent to clients, and each client continues its own work to detect loop closure and correct loops on the received global map. If the global map is updated by computation on clients, the changes will be uploaded to server to update the map, and further transmitted to other clients by the server.
@@ -103,7 +100,8 @@ After all process finished, the fused global map is resent to clients, and each 
 
 \subsection{Appearance Change From Illumination}
 
-Facing appearance changes is an ongoing challenge for vision systems concerned with locating in known environments. Changes in appearance can result from several sources, for example, \begin{inparaenum}[(i)]
+For vision systems concerned with locating in known environments, facing changes in appearance is an ongoing challenge. Changes in appearance can result from multiple sources, for example, 
+\begin{inparaenum}[(i)]
 	\item different lighting conditions,	
 	\label{ls:appearancechange1}
 	\item varying weather conditions, and
@@ -112,9 +110,9 @@ Facing appearance changes is an ongoing challenge for vision systems concerned w
 	\label{ls:appearancechange3}
 \end{inparaenum}
 
-In previous work by Colin McManus et al., they showed how to leverage knowledge of previous 3D structure to suppress distracting objects for improved pose estimation in busy urban environments \cite{mcmanus2013distraction}, and how to cope with long-term variation in appearance caused by changing weather conditions\cite{churchill2012practice}. They proposed a new approach to addressing problem in \cite{maddern2014illumination} called the Illumination Variance Approach. 
+During previous works by Colin McManus et al., they showed how to harness previous 3D structure knowledge, to suppress distracting objects, and how they are coped with by changing climate conditions, for an improved pose measurement in busy urban environments  \cite{churchill2012practice}. They proposed a new approach to addressing problem in \cite{maddern2014illumination} called the Illumination Variance Approach. 
 
-Appearance change caused by different lighting conditions in (\ref{ls:appearancechange1}) is illustrated in Figure \ref{fig:shadecompare1} with pictures selected from St Lucia dataset \cite{glover2010fab}. Compared to approaches proposed in \cite{mcmanus2013distraction} and \cite{churchill2012practice}, illumination variance approach is not model-based, requiring less computational cost. And in most of applications of vSLAM, appearance changes caused by (\ref{ls:appearancechange1}) are a more common problem than (\ref{ls:appearancechange2}, \ref{ls:appearancechange3}). Therefore, how to combine illumination variance approach with multi-robot SLAM algorithms, to improve the performance of place recognition modules in environments under changing illumination conditions, is one of the major objectives focused on in this work.
+Appearance change caused by different lighting conditions in (\ref{ls:appearancechange1}) is illustrated in Figure \ref{fig:shadecompare1} with pictures selected from St Lucia dataset \cite{glover2010fab}. Compared to approaches proposed in \cite{mcmanus2013distraction} and \cite{churchill2012practice}, illumination variance approach is not model-based, requiring less computational cost. And in most of applications of vSLAM, appearance changes caused by (\ref{ls:appearancechange1}) are a more common problem than (\ref{ls:appearancechange2}, \ref{ls:appearancechange3}). Therefore, how to combine illumination variance approach with multi-robot SLAM algorithms, One of the main aims focused on in this work is to improve the performance of location recognition modules in environments under changing lighting conditions.
 
 \begin{figure}
 	\centering
@@ -145,7 +143,7 @@ I=\log(R)-\alpha\log(G)-(1-\alpha)\log(B)
 \label{eq:iifinal}
 \end{equation}
 
-Where, $R, G, B$ are the raw image color channels and $I$ is the resulting invariant image illumination. As shown in \ref{eq: ii1}, $\alpha$ is a parameter that depends on each color channel's peak spectral responses ($ \lambda R, \lambda G, \lambda B$), normally available in camera specifications. 
+Where, the raw image color channels are noted as $R, G, B$ and $I$ is the resulting invariant image illumination. As shown in \ref{eq:ii1}, $\alpha$ is a parameter that depends on each color channel's peak spectral responses ($ \lambda R, \lambda G, \lambda B$), normally obtainable in camera specifications. 
 
 \begin{equation}
 \frac{1}{\lambda_R}=\frac{\alpha}{\lambda_G}+\frac{1-\alpha}{\lambda_B}

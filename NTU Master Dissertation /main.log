@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.2)  27 MAR 2019 00:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.2)  27 MAR 2019 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,14 +1072,14 @@ pdf>
 (epstopdf)                    size: 382826 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/ORBSLAMOverview-e
 ps-converted-to.pdf Chapter2/ORBSLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 <Chapter2/ORBSLAMOverview-eps-converted-to.pdf, id=427, 1194.4625pt x 936.49875
 pt>
 File: Chapter2/ORBSLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/ORBSLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/ORBSLAMOverview-eps-converted-to.pdf  used on
- input line 43.
+ input line 41.
 (pdftex.def)             Requested size: 361.34999pt x 283.3096pt.
  [7 <./Chapter2/ORBSLAMOverview-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/CORBSLAMOverview.eps>
@@ -1091,14 +1091,14 @@ Package epstopdf Info: Source file: <Chapter2/CORBSLAMOverview.eps>
 (epstopdf)                    size: 77394 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/CORBSLAMOverview-
 eps-converted-to.pdf Chapter2/CORBSLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
 <Chapter2/CORBSLAMOverview-eps-converted-to.pdf, id=446, 853.1875pt x 308.15125
 pt>
 File: Chapter2/CORBSLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/CORBSLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/CORBSLAMOverview-eps-converted-to.pdf  used o
-n input line 65.
+n input line 63.
 (pdftex.def)             Requested size: 361.34999pt x 130.51349pt.
  [8]
 Package epstopdf Info: Source file: <Chapter2/corbslamserver.eps>
@@ -1110,14 +1110,14 @@ df>
 (epstopdf)                    size: 23677 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/corbslamserver-ep
 s-converted-to.pdf Chapter2/corbslamserver.eps>
-(epstopdf)             \includegraphics on input line 75.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 <Chapter2/corbslamserver-eps-converted-to.pdf, id=459, 981.6675pt x 339.2675pt>
 
 File: Chapter2/corbslamserver-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/corbslamserver-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/corbslamserver-eps-converted-to.pdf  used on 
-input line 75.
+input line 73.
 (pdftex.def)             Requested size: 361.34999pt x 124.8799pt.
  [9 <./Chapter2/CORBSLAMOverview-eps-converted-to.pdf> <./Chapter2/corbslamserv
 er-eps-converted-to.pdf>] [10]
@@ -1130,13 +1130,13 @@ pdf>
 (epstopdf)                    size: 355893 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/shadecompare1-0-e
 ps-converted-to.pdf Chapter2/shadecompare1-0.eps>
-(epstopdf)             \includegraphics on input line 127.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/shadecompare1-0-eps-converted-to.pdf, id=494, 1027.84pt x 770.88pt>
+<Chapter2/shadecompare1-0-eps-converted-to.pdf, id=492, 1027.84pt x 770.88pt>
 File: Chapter2/shadecompare1-0-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/shadecompare1-0-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/shadecompare1-0-eps-converted-to.pdf  used on
- input line 127.
+ input line 125.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
 Package epstopdf Info: Source file: <Chapter2/shadecompare1-1.eps>
 (epstopdf)                    date: 2019-02-20 22:13:48
@@ -1147,18 +1147,16 @@ pdf>
 (epstopdf)                    size: 396461 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/shadecompare1-1-e
 ps-converted-to.pdf Chapter2/shadecompare1-1.eps>
-(epstopdf)             \includegraphics on input line 134.
+(epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/shadecompare1-1-eps-converted-to.pdf, id=495, 1027.84pt x 770.88pt>
+<Chapter2/shadecompare1-1-eps-converted-to.pdf, id=493, 1027.84pt x 770.88pt>
 File: Chapter2/shadecompare1-1-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/shadecompare1-1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/shadecompare1-1-eps-converted-to.pdf  used on
- input line 134.
+ input line 132.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
- [11]
-
-LaTeX Warning: Reference `eq: ii1' on page 12 undefined on input line 148.
-
+ [11 <./Chapter2/shadecompare1-0-eps-converted-to.pdf> <./Chapter2/shadecompare
+1-1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/iicompare1-0.eps>
 (epstopdf)                    date: 2019-02-20 23:33:11
 (epstopdf)                    size: 1600424 bytes
@@ -1168,13 +1166,13 @@ Package epstopdf Info: Source file: <Chapter2/iicompare1-0.eps>
 (epstopdf)                    size: 400473 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/iicompare1-0-eps-
 converted-to.pdf Chapter2/iicompare1-0.eps>
-(epstopdf)             \includegraphics on input line 172.
+(epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/iicompare1-0-eps-converted-to.pdf, id=512, 1027.84pt x 770.88pt>
+<Chapter2/iicompare1-0-eps-converted-to.pdf, id=518, 1027.84pt x 770.88pt>
 File: Chapter2/iicompare1-0-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/iicompare1-0-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/iicompare1-0-eps-converted-to.pdf  used on in
-put line 172.
+put line 170.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
 Package epstopdf Info: Source file: <Chapter2/iicompare1-1.eps>
 (epstopdf)                    date: 2019-02-20 23:33:22
@@ -1185,14 +1183,16 @@ Package epstopdf Info: Source file: <Chapter2/iicompare1-1.eps>
 (epstopdf)                    size: 428400 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/iicompare1-1-eps-
 converted-to.pdf Chapter2/iicompare1-1.eps>
-(epstopdf)             \includegraphics on input line 179.
+(epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/iicompare1-1-eps-converted-to.pdf, id=513, 1027.84pt x 770.88pt>
+<Chapter2/iicompare1-1-eps-converted-to.pdf, id=519, 1027.84pt x 770.88pt>
 File: Chapter2/iicompare1-1-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/iicompare1-1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/iicompare1-1-eps-converted-to.pdf  used on in
-put line 179.
+put line 177.
 (pdftex.def)             Requested size: 144.54pt x 108.40472pt.
+ [12 <./Chapter2/iicompare1-0-eps-converted-to.pdf> <./Chapter2/iicompare1-1-ep
+s-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/OPENABLEOverview.eps>
 (epstopdf)                    date: 2019-02-18 04:12:37
 (epstopdf)                    size: 4003227 bytes
@@ -1202,17 +1202,15 @@ Package epstopdf Info: Source file: <Chapter2/OPENABLEOverview.eps>
 (epstopdf)                    size: 203435 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/OPENABLEOverview-
 eps-converted-to.pdf Chapter2/OPENABLEOverview.eps>
-(epstopdf)             \includegraphics on input line 191.
+(epstopdf)             \includegraphics on input line 189.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/OPENABLEOverview-eps-converted-to.pdf, id=519, 1064.97874pt x 622.325
+<Chapter2/OPENABLEOverview-eps-converted-to.pdf, id=542, 1064.97874pt x 622.325
 pt>
 File: Chapter2/OPENABLEOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/OPENABLEOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/OPENABLEOverview-eps-converted-to.pdf  used o
-n input line 191.
+n input line 189.
 (pdftex.def)             Requested size: 361.34999pt x 211.15088pt.
-[12 <./Chapter2/shadecompare1-0-eps-converted-to.pdf> <./Chapter2/shadecompare1
--1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter2/COISLAMOverview.eps>
 (epstopdf)                    date: 2019-02-17 11:13:15
 (epstopdf)                    size: 4546461 bytes
@@ -1222,22 +1220,20 @@ pdf>
 (epstopdf)                    size: 123544 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter2/COISLAMOverview-e
 ps-converted-to.pdf Chapter2/COISLAMOverview.eps>
-(epstopdf)             \includegraphics on input line 200.
+(epstopdf)             \includegraphics on input line 198.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter2/COISLAMOverview-eps-converted-to.pdf, id=541, 994.71625pt x 756.8275p
+<Chapter2/COISLAMOverview-eps-converted-to.pdf, id=545, 994.71625pt x 756.8275p
 t>
 File: Chapter2/COISLAMOverview-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter2/COISLAMOverview-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter2/COISLAMOverview-eps-converted-to.pdf  used on
- input line 200.
+ input line 198.
 (pdftex.def)             Requested size: 361.34999pt x 274.92902pt.
- [13 <./Chapter2/iicompare1-0-eps-converted-to.pdf> <./Chapter2/iicompare1-1-ep
-s-converted-to.pdf> <./Chapter2/OPENABLEOverview-eps-converted-to.pdf>] [14 <./
-Chapter2/COISLAMOverview-eps-converted-to.pdf>])
+ [13 <./Chapter2/OPENABLEOverview-eps-converted-to.pdf>] [14 <./Chapter2/COISLA
+MOverview-eps-converted-to.pdf>])
 \openout2 = `Chapter3/Chapter3.aux'.
 
-
-(./Chapter3/Chapter3.tex
+ (./Chapter3/Chapter3.tex
 Chapter 3.
 [15
 
@@ -1259,7 +1255,7 @@ df>
 s-converted-to.pdf Chapter3/corbslamresult.eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter3/corbslamresult-eps-converted-to.pdf, id=602, 773.89125pt x 293.095pt>
+<Chapter3/corbslamresult-eps-converted-to.pdf, id=601, 773.89125pt x 293.095pt>
 
 File: Chapter3/corbslamresult-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter3/corbslamresult-eps-converted-to.pdf>
@@ -1277,7 +1273,7 @@ Package epstopdf Info: Source file: <Chapter3/relerr.eps>
 ted-to.pdf Chapter3/relerr.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter3/relerr-eps-converted-to.pdf, id=645, 808.01875pt x 512.91624pt>
+<Chapter3/relerr-eps-converted-to.pdf, id=644, 808.01875pt x 512.91624pt>
 File: Chapter3/relerr-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter3/relerr-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter3/relerr-eps-converted-to.pdf  used on input li
@@ -1294,7 +1290,7 @@ Package epstopdf Info: Source file: <Chapter3/kp_rgb.eps>
 ted-to.pdf Chapter3/kp_rgb.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter3/kp_rgb-eps-converted-to.pdf, id=657, 1284.8pt x 963.6pt>
+<Chapter3/kp_rgb-eps-converted-to.pdf, id=656, 1284.8pt x 963.6pt>
 File: Chapter3/kp_rgb-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter3/kp_rgb-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter3/kp_rgb-eps-converted-to.pdf  used on input li
@@ -1310,7 +1306,7 @@ Package epstopdf Info: Source file: <Chapter3/kp_ii.eps>
 ed-to.pdf Chapter3/kp_ii.eps>
 (epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter3/kp_ii-eps-converted-to.pdf, id=658, 1284.8pt x 963.6pt>
+<Chapter3/kp_ii-eps-converted-to.pdf, id=657, 1284.8pt x 963.6pt>
 File: Chapter3/kp_ii-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter3/kp_ii-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter3/kp_ii-eps-converted-to.pdf  used on input lin
@@ -1338,7 +1334,7 @@ f>
 -converted-to.pdf Chapter4/kittiexamples.eps>
 (epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/kittiexamples-eps-converted-to.pdf, id=683, 864.22874pt x 437.635pt>
+<Chapter4/kittiexamples-eps-converted-to.pdf, id=682, 864.22874pt x 437.635pt>
 File: Chapter4/kittiexamples-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/kittiexamples-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/kittiexamples-eps-converted-to.pdf  used on i
@@ -1360,7 +1356,7 @@ Package epstopdf Info: Source file: <Chapter4/robotcarexamples.eps>
 eps-converted-to.pdf Chapter4/robotcarexamples.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcarexamples-eps-converted-to.pdf, id=691, 1101.11375pt x 726.715
+<Chapter4/robotcarexamples-eps-converted-to.pdf, id=690, 1101.11375pt x 726.715
 pt>
 File: Chapter4/robotcarexamples-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/robotcarexamples-eps-converted-to.pdf>
@@ -1391,7 +1387,7 @@ ted-to.pdf>
 ation-eps-converted-to.pdf Chapter4/robotcarsensorlocation.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcarsensorlocation-eps-converted-to.pdf, id=701, 492.84125pt x 63
+<Chapter4/robotcarsensorlocation-eps-converted-to.pdf, id=700, 492.84125pt x 63
 0.355pt>
 File: Chapter4/robotcarsensorlocation-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1411,7 +1407,7 @@ Package epstopdf Info: Source file: <Chapter4/robotcarfeb.eps>
 onverted-to.pdf Chapter4/robotcarfeb.eps>
 (epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcarfeb-eps-converted-to.pdf, id=716, 1284.8pt x 963.6pt>
+<Chapter4/robotcarfeb-eps-converted-to.pdf, id=715, 1284.8pt x 963.6pt>
 File: Chapter4/robotcarfeb-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/robotcarfeb-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/robotcarfeb-eps-converted-to.pdf  used on inp
@@ -1428,14 +1424,14 @@ Package epstopdf Info: Source file: <Chapter4/robotcardec.eps>
 onverted-to.pdf Chapter4/robotcardec.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcardec-eps-converted-to.pdf, id=717, 1284.8pt x 963.6pt>
+<Chapter4/robotcardec-eps-converted-to.pdf, id=716, 1284.8pt x 963.6pt>
 File: Chapter4/robotcardec-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/robotcardec-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/robotcardec-eps-converted-to.pdf  used on inp
 ut line 89.
 (pdftex.def)             Requested size: 144.54pt x 108.39296pt.
  [23 <./Chapter4/robotcarsensorlocation-eps-converted-to.pdf>]
-<Chapter4/NTU/0446/plots/trajectory_top_gt_sim3_-1.pdf, id=731, 565.70294pt x 1
+<Chapter4/NTU/0446/plots/trajectory_top_gt_sim3_-1.pdf, id=730, 565.70294pt x 1
 82.01834pt>
 File: Chapter4/NTU/0446/plots/trajectory_top_gt_sim3_-1.pdf Graphic file (type 
 pdf)
@@ -1443,7 +1439,7 @@ pdf)
 Package pdftex.def Info: Chapter4/NTU/0446/plots/trajectory_top_gt_sim3_-1.pdf 
  used on input line 112.
 (pdftex.def)             Requested size: 144.54pt x 46.5071pt.
-<Chapter4/NTU/0454/plots/trajectory_top_gt_sim3_-1.pdf, id=732, 565.87582pt x 2
+<Chapter4/NTU/0454/plots/trajectory_top_gt_sim3_-1.pdf, id=731, 565.87582pt x 2
 59.01881pt>
 File: Chapter4/NTU/0454/plots/trajectory_top_gt_sim3_-1.pdf Graphic file (type 
 pdf)
@@ -1462,7 +1458,7 @@ Package epstopdf Info: Source file: <Chapter4/ntuhuskytugv.eps>
 converted-to.pdf Chapter4/ntuhuskytugv.eps>
 (epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/ntuhuskytugv-eps-converted-to.pdf, id=733, 1445.4pt x 1084.05pt>
+<Chapter4/ntuhuskytugv-eps-converted-to.pdf, id=732, 1445.4pt x 1084.05pt>
 File: Chapter4/ntuhuskytugv-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/ntuhuskytugv-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/ntuhuskytugv-eps-converted-to.pdf  used on in
@@ -1487,7 +1483,7 @@ Package epstopdf Info: Source file: <Chapter4/ntuexamples.eps>
 onverted-to.pdf Chapter4/ntuexamples.eps>
 (epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/ntuexamples-eps-converted-to.pdf, id=767, 1130.2225pt x 716.6775pt>
+<Chapter4/ntuexamples-eps-converted-to.pdf, id=766, 1130.2225pt x 716.6775pt>
 File: Chapter4/ntuexamples-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/ntuexamples-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/ntuexamples-eps-converted-to.pdf  used on inp
@@ -1495,7 +1491,7 @@ ut line 174.
 (pdftex.def)             Requested size: 361.34999pt x 229.12277pt.
  [25 <./Chapter4/ntuhuskytugv-eps-converted-to.pdf> <./Chapter4/ntuexamples-eps
 -converted-to.pdf>] (./Chapter4/KITTI/KITTI_Figures.tex
-<Chapter4/KITTI/00server/32/plots/trajectory_side_gt_sim3_-1.pdf, id=790, 535.5
+<Chapter4/KITTI/00server/32/plots/trajectory_side_gt_sim3_-1.pdf, id=789, 535.5
 1515pt x 385.92181pt>
 File: Chapter4/KITTI/00server/32/plots/trajectory_side_gt_sim3_-1.pdf Graphic f
 ile (type pdf)
@@ -1503,7 +1499,7 @@ ile (type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/32/plots/trajectory_side_gt_si
 m3_-1.pdf  used on input line 10.
 (pdftex.def)             Requested size: 144.54pt x 104.16495pt.
-<Chapter4/KITTI/00server/33/plots/trajectory_side_gt_sim3_-1.pdf, id=791, 544.8
+<Chapter4/KITTI/00server/33/plots/trajectory_side_gt_sim3_-1.pdf, id=790, 544.8
 4848pt x 385.92181pt>
 File: Chapter4/KITTI/00server/33/plots/trajectory_side_gt_sim3_-1.pdf Graphic f
 ile (type pdf)
@@ -1511,7 +1507,7 @@ ile (type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/33/plots/trajectory_side_gt_si
 m3_-1.pdf  used on input line 17.
 (pdftex.def)             Requested size: 144.54pt x 102.37479pt.
-<Chapter4/KITTI/00server/plots/trajectory_side_gt_sim3_-1.pdf, id=792, 544.8484
+<Chapter4/KITTI/00server/plots/trajectory_side_gt_sim3_-1.pdf, id=791, 544.8484
 8pt x 385.92181pt>
 File: Chapter4/KITTI/00server/plots/trajectory_side_gt_sim3_-1.pdf Graphic file
  (type pdf)
@@ -1524,7 +1520,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
-<Chapter4/KITTI/00/gps/plots/rel_translation_error.pdf, id=793, 422.05681pt x 1
+<Chapter4/KITTI/00/gps/plots/rel_translation_error.pdf, id=792, 422.05681pt x 1
 69.1118pt>
 File: Chapter4/KITTI/00/gps/plots/rel_translation_error.pdf Graphic file (type 
 pdf)
@@ -1532,7 +1528,7 @@ pdf)
 Package pdftex.def Info: Chapter4/KITTI/00/gps/plots/rel_translation_error.pdf 
  used on input line 38.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00/gps/plots/rel_translation_error_perc.pdf, id=794, 422.05681p
+<Chapter4/KITTI/00/gps/plots/rel_translation_error_perc.pdf, id=793, 422.05681p
 t x 169.1118pt>
 File: Chapter4/KITTI/00/gps/plots/rel_translation_error_perc.pdf Graphic file (
 type pdf)
@@ -1540,14 +1536,14 @@ type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00/gps/plots/rel_translation_error_perc
 .pdf  used on input line 45.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00/gps/plots/rel_yaw_error.pdf, id=795, 422.05681pt x 169.1118p
+<Chapter4/KITTI/00/gps/plots/rel_yaw_error.pdf, id=794, 422.05681pt x 169.1118p
 t>
 File: Chapter4/KITTI/00/gps/plots/rel_yaw_error.pdf Graphic file (type pdf)
 <use Chapter4/KITTI/00/gps/plots/rel_yaw_error.pdf>
 Package pdftex.def Info: Chapter4/KITTI/00/gps/plots/rel_yaw_error.pdf  used on
  input line 53.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/32/plots/rel_translation_error.pdf, id=796, 422.05681p
+<Chapter4/KITTI/00server/32/plots/rel_translation_error.pdf, id=795, 422.05681p
 t x 169.1118pt>
 File: Chapter4/KITTI/00server/32/plots/rel_translation_error.pdf Graphic file (
 type pdf)
@@ -1555,7 +1551,7 @@ type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/32/plots/rel_translation_error
 .pdf  used on input line 75.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/32/plots/rel_translation_error_perc.pdf, id=797, 422.0
+<Chapter4/KITTI/00server/32/plots/rel_translation_error_perc.pdf, id=796, 422.0
 5681pt x 169.1118pt>
 File: Chapter4/KITTI/00server/32/plots/rel_translation_error_perc.pdf Graphic f
 ile (type pdf)
@@ -1563,7 +1559,7 @@ ile (type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/32/plots/rel_translation_error
 _perc.pdf  used on input line 82.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/32/plots/rel_yaw_error.pdf, id=798, 422.05681pt x 169.
+<Chapter4/KITTI/00server/32/plots/rel_yaw_error.pdf, id=797, 422.05681pt x 169.
 1118pt>
 File: Chapter4/KITTI/00server/32/plots/rel_yaw_error.pdf Graphic file (type pdf
 )
@@ -1571,7 +1567,7 @@ File: Chapter4/KITTI/00server/32/plots/rel_yaw_error.pdf Graphic file (type pdf
 Package pdftex.def Info: Chapter4/KITTI/00server/32/plots/rel_yaw_error.pdf  us
 ed on input line 90.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/33/plots/rel_translation_error.pdf, id=799, 422.05681p
+<Chapter4/KITTI/00server/33/plots/rel_translation_error.pdf, id=798, 422.05681p
 t x 169.1118pt>
 File: Chapter4/KITTI/00server/33/plots/rel_translation_error.pdf Graphic file (
 type pdf)
@@ -1579,7 +1575,7 @@ type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/33/plots/rel_translation_error
 .pdf  used on input line 112.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/33/plots/rel_translation_error_perc.pdf, id=800, 422.0
+<Chapter4/KITTI/00server/33/plots/rel_translation_error_perc.pdf, id=799, 422.0
 5681pt x 169.1118pt>
 File: Chapter4/KITTI/00server/33/plots/rel_translation_error_perc.pdf Graphic f
 ile (type pdf)
@@ -1587,7 +1583,7 @@ ile (type pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/33/plots/rel_translation_error
 _perc.pdf  used on input line 119.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/33/plots/rel_yaw_error.pdf, id=801, 422.05681pt x 169.
+<Chapter4/KITTI/00server/33/plots/rel_yaw_error.pdf, id=800, 422.05681pt x 169.
 1118pt>
 File: Chapter4/KITTI/00server/33/plots/rel_yaw_error.pdf Graphic file (type pdf
 )
@@ -1601,7 +1597,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 188.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 188.
-<Chapter4/KITTI/00/gps/plots/trajectory_side_sim3_-1.pdf, id=802, 544.84848pt x
+<Chapter4/KITTI/00/gps/plots/trajectory_side_sim3_-1.pdf, id=801, 544.84848pt x
  385.92181pt>
 File: Chapter4/KITTI/00/gps/plots/trajectory_side_sim3_-1.pdf Graphic file (typ
 e pdf)
@@ -1662,7 +1658,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapter4/KITTI/00server/33
 /plots/rel_yaw_error.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
 >]
-<Chapter4/KITTI/00server/32/plots/trajectory_side_sim3_-1.pdf, id=900, 535.5151
+<Chapter4/KITTI/00server/32/plots/trajectory_side_sim3_-1.pdf, id=899, 535.5151
 5pt x 385.92181pt>
 File: Chapter4/KITTI/00server/32/plots/trajectory_side_sim3_-1.pdf Graphic file
  (type pdf)
@@ -1670,7 +1666,7 @@ File: Chapter4/KITTI/00server/32/plots/trajectory_side_sim3_-1.pdf Graphic file
 Package pdftex.def Info: Chapter4/KITTI/00server/32/plots/trajectory_side_sim3_
 -1.pdf  used on input line 324.
 (pdftex.def)             Requested size: 144.54pt x 104.16495pt.
-<Chapter4/KITTI/00server/33/plots/trajectory_side_sim3_-1.pdf, id=901, 544.8484
+<Chapter4/KITTI/00server/33/plots/trajectory_side_sim3_-1.pdf, id=900, 544.8484
 8pt x 385.92181pt>
 File: Chapter4/KITTI/00server/33/plots/trajectory_side_sim3_-1.pdf Graphic file
  (type pdf)
@@ -1683,7 +1679,7 @@ Underfull \hbox (badness 1515) in paragraph at lines 331--331
 []\OT1/ptm/m/n/10 (b) Map-ping re-sult of Seq.1 com-pared
  []
 
-<Chapter4/KITTI/00server/plots/trajectory_side_sim3_-1.pdf, id=902, 544.84848pt
+<Chapter4/KITTI/00server/plots/trajectory_side_sim3_-1.pdf, id=901, 544.84848pt
  x 385.92181pt>
 File: Chapter4/KITTI/00server/plots/trajectory_side_sim3_-1.pdf Graphic file (t
 ype pdf)
@@ -1696,7 +1692,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-<Chapter4/KITTI/00server/plots/rel_translation_error.pdf, id=903, 422.05681pt x
+<Chapter4/KITTI/00server/plots/rel_translation_error.pdf, id=902, 422.05681pt x
  169.1118pt>
 File: Chapter4/KITTI/00server/plots/rel_translation_error.pdf Graphic file (typ
 e pdf)
@@ -1704,7 +1700,7 @@ e pdf)
 Package pdftex.def Info: Chapter4/KITTI/00server/plots/rel_translation_error.pd
 f  used on input line 353.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/plots/rel_translation_error_perc.pdf, id=904, 422.0568
+<Chapter4/KITTI/00server/plots/rel_translation_error_perc.pdf, id=903, 422.0568
 1pt x 169.1118pt>
 File: Chapter4/KITTI/00server/plots/rel_translation_error_perc.pdf Graphic file
  (type pdf)
@@ -1712,7 +1708,7 @@ File: Chapter4/KITTI/00server/plots/rel_translation_error_perc.pdf Graphic file
 Package pdftex.def Info: Chapter4/KITTI/00server/plots/rel_translation_error_pe
 rc.pdf  used on input line 361.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/KITTI/00server/plots/rel_yaw_error.pdf, id=905, 422.05681pt x 169.111
+<Chapter4/KITTI/00server/plots/rel_yaw_error.pdf, id=904, 422.05681pt x 169.111
 8pt>
 File: Chapter4/KITTI/00server/plots/rel_yaw_error.pdf Graphic file (type pdf)
 <use Chapter4/KITTI/00server/plots/rel_yaw_error.pdf>
@@ -1765,7 +1761,7 @@ pdf)
 Package pdftex.def Info: Chapter4/NTU/0454/plots/trajectory_top_gt_sim3_-1.pdf 
  used on input line 16.
 (pdftex.def)             Requested size: 144.54pt x 66.16156pt.
-<Chapter4/NTU/server/trajectory_top_gt_sim3_-1.pdf, id=974, 565.40918pt x 291.2
+<Chapter4/NTU/server/trajectory_top_gt_sim3_-1.pdf, id=973, 565.40918pt x 291.2
 2829pt>
 File: Chapter4/NTU/server/trajectory_top_gt_sim3_-1.pdf Graphic file (type pdf)
 
@@ -1778,7 +1774,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-<Chapter4/NTU/0446/plots/trajectory_top_sim3_-1.pdf, id=975, 565.70294pt x 182.
+<Chapter4/NTU/0446/plots/trajectory_top_sim3_-1.pdf, id=974, 565.70294pt x 182.
 01834pt>
 File: Chapter4/NTU/0446/plots/trajectory_top_sim3_-1.pdf Graphic file (type pdf
 )
@@ -1791,7 +1787,7 @@ Underfull \hbox (badness 1371) in paragraph at lines 37--37
 []\OT1/ptm/m/n/10 (a) Map-ping re-sult of Bag.0 com-pared
  []
 
-<Chapter4/NTU/0454/plots/trajectory_top_sim3_-1.pdf, id=976, 565.87582pt x 259.
+<Chapter4/NTU/0454/plots/trajectory_top_sim3_-1.pdf, id=975, 565.87582pt x 259.
 01881pt>
 File: Chapter4/NTU/0454/plots/trajectory_top_sim3_-1.pdf Graphic file (type pdf
 )
@@ -1804,7 +1800,7 @@ Underfull \hbox (badness 1237) in paragraph at lines 44--44
 []\OT1/ptm/m/n/10 (b) Map-ping re-sult of Bag.1 com-pared
  []
 
-<Chapter4/NTU/server/trajectory_top_sim3_-1.pdf, id=977, 565.40918pt x 291.2282
+<Chapter4/NTU/server/trajectory_top_sim3_-1.pdf, id=976, 565.40918pt x 291.2282
 9pt>
 File: Chapter4/NTU/server/trajectory_top_sim3_-1.pdf Graphic file (type pdf)
 <use Chapter4/NTU/server/trajectory_top_sim3_-1.pdf>
@@ -1816,7 +1812,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
-<Chapter4/NTU/0446/plots/rel_translation_error.pdf, id=978, 422.05681pt x 169.1
+<Chapter4/NTU/0446/plots/rel_translation_error.pdf, id=977, 422.05681pt x 169.1
 118pt>
 File: Chapter4/NTU/0446/plots/rel_translation_error.pdf Graphic file (type pdf)
 
@@ -1824,7 +1820,7 @@ File: Chapter4/NTU/0446/plots/rel_translation_error.pdf Graphic file (type pdf)
 Package pdftex.def Info: Chapter4/NTU/0446/plots/rel_translation_error.pdf  use
 d on input line 65.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/0446/plots/rel_translation_error_perc.pdf, id=979, 422.05681pt x 
+<Chapter4/NTU/0446/plots/rel_translation_error_perc.pdf, id=978, 422.05681pt x 
 169.1118pt>
 File: Chapter4/NTU/0446/plots/rel_translation_error_perc.pdf Graphic file (type
  pdf)
@@ -1832,13 +1828,13 @@ File: Chapter4/NTU/0446/plots/rel_translation_error_perc.pdf Graphic file (type
 Package pdftex.def Info: Chapter4/NTU/0446/plots/rel_translation_error_perc.pdf
   used on input line 72.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/0446/plots/rel_yaw_error.pdf, id=980, 422.05681pt x 169.1118pt>
+<Chapter4/NTU/0446/plots/rel_yaw_error.pdf, id=979, 422.05681pt x 169.1118pt>
 File: Chapter4/NTU/0446/plots/rel_yaw_error.pdf Graphic file (type pdf)
 <use Chapter4/NTU/0446/plots/rel_yaw_error.pdf>
 Package pdftex.def Info: Chapter4/NTU/0446/plots/rel_yaw_error.pdf  used on inp
 ut line 80.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/0454/plots/rel_translation_error.pdf, id=981, 422.05681pt x 169.1
+<Chapter4/NTU/0454/plots/rel_translation_error.pdf, id=980, 422.05681pt x 169.1
 118pt>
 File: Chapter4/NTU/0454/plots/rel_translation_error.pdf Graphic file (type pdf)
 
@@ -1846,7 +1842,7 @@ File: Chapter4/NTU/0454/plots/rel_translation_error.pdf Graphic file (type pdf)
 Package pdftex.def Info: Chapter4/NTU/0454/plots/rel_translation_error.pdf  use
 d on input line 102.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/0454/plots/rel_translation_error_perc.pdf, id=982, 422.05681pt x 
+<Chapter4/NTU/0454/plots/rel_translation_error_perc.pdf, id=981, 422.05681pt x 
 169.1118pt>
 File: Chapter4/NTU/0454/plots/rel_translation_error_perc.pdf Graphic file (type
  pdf)
@@ -1854,20 +1850,20 @@ File: Chapter4/NTU/0454/plots/rel_translation_error_perc.pdf Graphic file (type
 Package pdftex.def Info: Chapter4/NTU/0454/plots/rel_translation_error_perc.pdf
   used on input line 109.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/0454/plots/rel_yaw_error.pdf, id=983, 422.05681pt x 169.1118pt>
+<Chapter4/NTU/0454/plots/rel_yaw_error.pdf, id=982, 422.05681pt x 169.1118pt>
 File: Chapter4/NTU/0454/plots/rel_yaw_error.pdf Graphic file (type pdf)
 <use Chapter4/NTU/0454/plots/rel_yaw_error.pdf>
 Package pdftex.def Info: Chapter4/NTU/0454/plots/rel_yaw_error.pdf  used on inp
 ut line 117.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/server/rel_translation_error.pdf, id=984, 422.05681pt x 169.1118p
+<Chapter4/NTU/server/rel_translation_error.pdf, id=983, 422.05681pt x 169.1118p
 t>
 File: Chapter4/NTU/server/rel_translation_error.pdf Graphic file (type pdf)
 <use Chapter4/NTU/server/rel_translation_error.pdf>
 Package pdftex.def Info: Chapter4/NTU/server/rel_translation_error.pdf  used on
  input line 139.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/server/rel_translation_error_perc.pdf, id=985, 422.05681pt x 169.
+<Chapter4/NTU/server/rel_translation_error_perc.pdf, id=984, 422.05681pt x 169.
 1118pt>
 File: Chapter4/NTU/server/rel_translation_error_perc.pdf Graphic file (type pdf
 )
@@ -1875,7 +1871,7 @@ File: Chapter4/NTU/server/rel_translation_error_perc.pdf Graphic file (type pdf
 Package pdftex.def Info: Chapter4/NTU/server/rel_translation_error_perc.pdf  us
 ed on input line 146.
 (pdftex.def)             Requested size: 144.54pt x 57.91527pt.
-<Chapter4/NTU/server/rel_yaw_error.pdf, id=986, 422.05681pt x 169.1118pt>
+<Chapter4/NTU/server/rel_yaw_error.pdf, id=985, 422.05681pt x 169.1118pt>
 File: Chapter4/NTU/server/rel_yaw_error.pdf Graphic file (type pdf)
 <use Chapter4/NTU/server/rel_yaw_error.pdf>
 Package pdftex.def Info: Chapter4/NTU/server/rel_yaw_error.pdf  used on input l
@@ -1946,7 +1942,7 @@ Package epstopdf Info: Source file: <Chapter4/robotcaroverexposed.eps>
 ed-eps-converted-to.pdf Chapter4/robotcaroverexposed.eps>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcaroverexposed-eps-converted-to.pdf, id=1088, 770.88pt x 505.89p
+<Chapter4/robotcaroverexposed-eps-converted-to.pdf, id=1087, 770.88pt x 505.89p
 t>
 File: Chapter4/robotcaroverexposed-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1961,56 +1957,132 @@ ed. Be-cause Robot-Car Datasets
  []
 
 [35 <./Chapter4/robotcaroverexposed-eps-converted-to.pdf>]
-<Chapter3/0714gt.pdf, id=1105, 562.49773pt x 291.57556pt>
-File: Chapter3/0714gt.pdf Graphic file (type pdf)
-<use Chapter3/0714gt.pdf>
-Package pdftex.def Info: Chapter3/0714gt.pdf  used on input line 263.
-(pdftex.def)             Requested size: 144.54pt x 74.92249pt.
-<Chapter3/0224gt.pdf, id=1106, 535.51515pt x 385.92181pt>
-File: Chapter3/0224gt.pdf Graphic file (type pdf)
-<use Chapter3/0224gt.pdf>
-Package pdftex.def Info: Chapter3/0224gt.pdf  used on input line 270.
-(pdftex.def)             Requested size: 144.54pt x 104.16495pt.
-<Chapter3/overall_gt_top_.pdf, id=1107, 598.65141pt x 348.1552pt>
-File: Chapter3/overall_gt_top_.pdf Graphic file (type pdf)
-<use Chapter3/overall_gt_top_.pdf>
-Package pdftex.def Info: Chapter3/overall_gt_top_.pdf  used on input line 278.
-(pdftex.def)             Requested size: 361.34999pt x 210.15376pt.
+Package epstopdf Info: Source file: <Chapter3/0714gt.eps>
+(epstopdf)                    date: 2019-03-27 20:17:00
+(epstopdf)                    size: 992583 bytes
+(epstopdf)             Output file: <Chapter3/0714gt-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-27 20:17:47
+(epstopdf)                    size: 12709 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter3/0714gt-eps-conver
+ted-to.pdf Chapter3/0714gt.eps>
+(epstopdf)             \includegraphics on input line 263.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter3/0714gt-eps-converted-to.pdf, id=1104, 562.1pt x 291.0875pt>
+File: Chapter3/0714gt-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter3/0714gt-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter3/0714gt-eps-converted-to.pdf  used on input li
+ne 263.
+(pdftex.def)             Requested size: 144.54pt x 74.85037pt.
+Package epstopdf Info: Source file: <Chapter3/0224gt.eps>
+(epstopdf)                    date: 2019-03-27 20:17:11
+(epstopdf)                    size: 1251800 bytes
+(epstopdf)             Output file: <Chapter3/0224gt-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-27 20:17:48
+(epstopdf)                    size: 14232 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter3/0224gt-eps-conver
+ted-to.pdf Chapter3/0224gt.eps>
+(epstopdf)             \includegraphics on input line 270.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter3/0224gt-eps-converted-to.pdf, id=1105, 536.0025pt x 385.44pt>
+File: Chapter3/0224gt-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter3/0224gt-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter3/0224gt-eps-converted-to.pdf  used on input li
+ne 270.
+(pdftex.def)             Requested size: 144.54pt x 103.93492pt.
+Package epstopdf Info: Source file: <Chapter3/overall_gt_top_.eps>
+(epstopdf)                    date: 2019-03-27 20:17:21
+(epstopdf)                    size: 1262480 bytes
+(epstopdf)             Output file: <Chapter3/overall_gt_top_-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-03-27 20:17:48
+(epstopdf)                    size: 18192 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter3/overall_gt_top_-e
+ps-converted-to.pdf Chapter3/overall_gt_top_.eps>
+(epstopdf)             \includegraphics on input line 278.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter3/overall_gt_top_-eps-converted-to.pdf, id=1106, 598.235pt x 348.30125p
+t>
+File: Chapter3/overall_gt_top_-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter3/overall_gt_top_-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter3/overall_gt_top_-eps-converted-to.pdf  used on
+ input line 278.
+(pdftex.def)             Requested size: 361.34999pt x 210.38542pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 278--279
  [][] 
  []
 
-<Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1.pdf, id=1108, 571.2840
-9pt x 303.2153pt>
-File: Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1.pdf Graphic file 
-(type pdf)
-<use Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1.pdf>
+Package epstopdf Info: Source file: <Chapter4/robotcar/0714/gps/plots/trajector
+y_top_sim3_-1.eps>
+(epstopdf)                    date: 2019-03-27 20:14:27
+(epstopdf)                    size: 1049953 bytes
+(epstopdf)             Output file: <Chapter4/robotcar/0714/gps/plots/trajector
+y_top_sim3_-1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-27 20:15:36
+(epstopdf)                    size: 14633 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter4/robotcar/0714/gps
+/plots/trajectory_top_sim3_-1-eps-converted-to.pdf Chapter4/robotcar/0714/gps/p
+lots/trajectory_top_sim3_-1.eps>
+(epstopdf)             \includegraphics on input line 291.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1-eps-converted-to.pdf, 
+id=1107, 571.13374pt x 303.1325pt>
+File: Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1-eps-converted-to.
+pdf Graphic file (type pdf)
+<use Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1-eps-converted-to.p
+df>
 Package pdftex.def Info: Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-
-1.pdf  used on input line 291.
-(pdftex.def)             Requested size: 144.54pt x 76.71509pt.
-<Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-1.pdf, id=1109, 485.3500
-4pt x 385.92181pt>
-File: Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-1.pdf Graphic file 
-(type pdf)
-<use Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-1.pdf>
+1-eps-converted-to.pdf  used on input line 291.
+(pdftex.def)             Requested size: 144.54pt x 76.71265pt.
+Package epstopdf Info: Source file: <Chapter4/robotcar/0224/gps/plots/trajector
+y_top_sim3_-1.eps>
+(epstopdf)                    date: 2019-03-27 19:01:55
+(epstopdf)                    size: 1135139 bytes
+(epstopdf)             Output file: <Chapter4/robotcar/0224/gps/plots/trajector
+y_top_sim3_-1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-27 20:15:37
+(epstopdf)                    size: 16467 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter4/robotcar/0224/gps
+/plots/trajectory_top_sim3_-1-eps-converted-to.pdf Chapter4/robotcar/0224/gps/p
+lots/trajectory_top_sim3_-1.eps>
+(epstopdf)             \includegraphics on input line 298.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-1-eps-converted-to.pdf, 
+id=1108, 485.815pt x 385.44pt>
+File: Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-1-eps-converted-to.
+pdf Graphic file (type pdf)
+<use Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-1-eps-converted-to.p
+df>
 Package pdftex.def Info: Chapter4/robotcar/0224/gps/plots/trajectory_top_sim3_-
-1.pdf  used on input line 298.
-(pdftex.def)             Requested size: 144.54pt x 114.92946pt.
-<Chapter4/robotcar/plots/trajectory_top_sim3_-1.pdf, id=1110, 562.49773pt x 366
-.60303pt>
-File: Chapter4/robotcar/plots/trajectory_top_sim3_-1.pdf Graphic file (type pdf
-)
-<use Chapter4/robotcar/plots/trajectory_top_sim3_-1.pdf>
-Package pdftex.def Info: Chapter4/robotcar/plots/trajectory_top_sim3_-1.pdf  us
-ed on input line 306.
-(pdftex.def)             Requested size: 361.34999pt x 235.51456pt.
+1-eps-converted-to.pdf  used on input line 298.
+(pdftex.def)             Requested size: 144.54pt x 114.67422pt.
+Package epstopdf Info: Source file: <Chapter4/robotcar/plots/trajectory_top_sim
+3_-1.eps>
+(epstopdf)                    date: 2019-03-27 19:02:34
+(epstopdf)                    size: 1247830 bytes
+(epstopdf)             Output file: <Chapter4/robotcar/plots/trajectory_top_sim
+3_-1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-27 20:15:37
+(epstopdf)                    size: 22830 bytes
+(epstopdf)             Command: <repstopdf --outfile=Chapter4/robotcar/plots/tr
+ajectory_top_sim3_-1-eps-converted-to.pdf Chapter4/robotcar/plots/trajectory_to
+p_sim3_-1.eps>
+(epstopdf)             \includegraphics on input line 306.
+Package epstopdf Info: Output file is already uptodate.
+<Chapter4/robotcar/plots/trajectory_top_sim3_-1-eps-converted-to.pdf, id=1109, 
+562.1pt x 366.36874pt>
+File: Chapter4/robotcar/plots/trajectory_top_sim3_-1-eps-converted-to.pdf Graph
+ic file (type pdf)
+<use Chapter4/robotcar/plots/trajectory_top_sim3_-1-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter4/robotcar/plots/trajectory_top_sim3_-1-eps-con
+verted-to.pdf  used on input line 306.
+(pdftex.def)             Requested size: 361.34999pt x 235.52058pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 306--307
  [][] 
  []
 
-<Chapter4/robotcar/plots/trajectory_top_est_sim3_-1.pdf, id=1111, 538.38971pt x
+<Chapter4/robotcar/plots/trajectory_top_est_sim3_-1.pdf, id=1110, 538.38971pt x
  321.58655pt>
 File: Chapter4/robotcar/plots/trajectory_top_est_sim3_-1.pdf Graphic file (type
  pdf)
@@ -2019,26 +2091,11 @@ Package pdftex.def Info: Chapter4/robotcar/plots/trajectory_top_est_sim3_-1.pdf
   used on input line 313.
 (pdftex.def)             Requested size: 361.34999pt x 215.83969pt.
 [36 <./Chapter4/robotcar/plots/trajectory_top_est_sim3_-1.pdf>] [37 <./Chapter3
-/0714gt.pdf> <./Chapter3/0224gt.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapter3/0224gt.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
-> <./Chapter3/overall_gt_top_.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapter3/overall_gt_top_.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
->] [38 <./Chapter4/robotcar/0714/gps/plots/trajectory_top_sim3_-1.pdf> <./Chapt
-er4/robotcar/0224/gps/plots/trajectory_top_sim3_-1.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapter4/robotcar/0224/gps
-/plots/trajectory_top_sim3_-1.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
-> <./Chapter4/robotcar/plots/trajectory_top_sim3_-1.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapter4/robotcar/plots/tr
-ajectory_top_sim3_-1.pdf): PDF inclusion: multiple pdfs with page group include
-d in a single page
->])
+/0714gt-eps-converted-to.pdf> <./Chapter3/0224gt-eps-converted-to.pdf> <./Chapt
+er3/overall_gt_top_-eps-converted-to.pdf>] [38 <./Chapter4/robotcar/0714/gps/pl
+ots/trajectory_top_sim3_-1-eps-converted-to.pdf> <./Chapter4/robotcar/0224/gps/
+plots/trajectory_top_sim3_-1-eps-converted-to.pdf> <./Chapter4/robotcar/plots/t
+rajectory_top_sim3_-1-eps-converted-to.pdf>])
 \openout2 = `Chapter5/Chapter5.aux'.
 
  (./Chapter5/Chapter5.tex
@@ -2070,7 +2127,7 @@ o.pdf>
 -eps-converted-to.pdf Chapter4/robotcar/ill_inv1.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcar/ill_inv1-eps-converted-to.pdf, id=1227, 1284.8pt x 963.6pt>
+<Chapter4/robotcar/ill_inv1-eps-converted-to.pdf, id=1192, 1284.8pt x 963.6pt>
 File: Chapter4/robotcar/ill_inv1-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/robotcar/ill_inv1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/robotcar/ill_inv1-eps-converted-to.pdf  used 
@@ -2092,7 +2149,7 @@ o.pdf>
 -eps-converted-to.pdf Chapter4/robotcar/ill_inv2.eps>
 (epstopdf)             \includegraphics on input line 66.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcar/ill_inv2-eps-converted-to.pdf, id=1229, 1284.8pt x 963.6pt>
+<Chapter4/robotcar/ill_inv2-eps-converted-to.pdf, id=1194, 1284.8pt x 963.6pt>
 File: Chapter4/robotcar/ill_inv2-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/robotcar/ill_inv2-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/robotcar/ill_inv2-eps-converted-to.pdf  used 
@@ -2114,7 +2171,7 @@ Package epstopdf Info: Source file: <Chapter4/robotcar/rawmatches.eps>
 es-eps-converted-to.pdf Chapter4/robotcar/rawmatches.eps>
 (epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcar/rawmatches-eps-converted-to.pdf, id=1231, 2569.6pt x 963.6pt
+<Chapter4/robotcar/rawmatches-eps-converted-to.pdf, id=1196, 2569.6pt x 963.6pt
 >
 File: Chapter4/robotcar/rawmatches-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2138,7 +2195,7 @@ Package epstopdf Info: Source file: <Chapter4/robotcar/matches.eps>
 eps-converted-to.pdf Chapter4/robotcar/matches.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
-<Chapter4/robotcar/matches-eps-converted-to.pdf, id=1234, 2569.6pt x 963.6pt>
+<Chapter4/robotcar/matches-eps-converted-to.pdf, id=1199, 2569.6pt x 963.6pt>
 File: Chapter4/robotcar/matches-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter4/robotcar/matches-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter4/robotcar/matches-eps-converted-to.pdf  used o
@@ -2197,7 +2254,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6E0D53210BCD1C2CD586FFA6B1C2281B;2519.
+(rerunfilecheck)             Checksum: C9A66F47C6199EAE918D22EE13966933;2519.
 
 
 LaTeX Warning: There were undefined references.
@@ -2205,10 +2262,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 22738 strings out of 492649
- 431620 string characters out of 6129622
- 621292 words of memory out of 5000000
- 25605 multiletter control sequences out of 15000+600000
+ 22736 strings out of 492649
+ 432008 string characters out of 6129622
+ 621275 words of memory out of 5000000
+ 25604 multiletter control sequences out of 15000+600000
  48809 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,99p,1128b,2007s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2217,17 +2274,16 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/tim
-es/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (61 pages, 9961740 bytes).
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (61 pages, 9989314 bytes).
 PDF statistics:
- 1584 PDF objects out of 1728 (max. 8388607)
- 1398 compressed objects within 14 object streams
- 450 named destinations out of 1000 (max. 500000)
+ 1548 PDF objects out of 1728 (max. 8388607)
+ 1357 compressed objects within 14 object streams
+ 449 named destinations out of 1000 (max. 500000)
  662 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,11 +14,10 @@
 \contentsline {section}{\numberline {2.2}Multi-robot SLAM}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}CORB-SLAM}{9}{subsection.2.2.1}
 \contentsline {subsubsection}{CORB-SLAM Client}{9}{section*.10}
-\contentsline {subsubsection}{Map Fusion}{9}{section*.12}
 \contentsline {section}{\numberline {2.3}Illumination Variance}{11}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Appearance Change From Illumination}{11}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Formulation}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Application of Localization}{12}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}Formulation}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Application of Localization}{13}{subsection.2.3.3}
 \contentsline {chapter}{\numberline {3}Approach}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Quantitative Trajectory Evaluation Method}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}CORBSLAM with Illumination Variance}{18}{section.3.2}
@@ -31,13 +30,13 @@
 \contentsline {subsection}{\numberline {4.2.1}KITTI Datasets}{26}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}NTU Datasets}{31}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Evaluation under different illumination}{35}{section.4.3}
-\contentsline {subsubsection}{Oxford RobotCar Datasets}{35}{section*.55}
+\contentsline {subsubsection}{Oxford RobotCar Datasets}{35}{section*.54}
 \contentsline {chapter}{\numberline {5}Discussion}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Results of multi ground robots cluster}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}Failure Reasons and Drawbacks of Illumination Variance Method}{40}{section.5.2}
 \contentsline {chapter}{\numberline {6}Conclusions and Future Work}{44}{chapter.6}
 \contentsline {section}{\numberline {6.1}Conclusions}{44}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{44}{section.6.2}
-\contentsline {chapter}{Appendix: Example Code}{50}{chapter*.64}
-\contentsline {subsubsection}{Map Fuse To Global Map}{50}{section*.65}
-\contentsline {subsubsection}{Illumination Variance Conversion}{52}{section*.66}
+\contentsline {chapter}{Appendix: Example Code}{50}{chapter*.63}
+\contentsline {subsubsection}{Map Fuse To Global Map}{50}{section*.64}
+\contentsline {subsubsection}{Illumination Variance Conversion}{52}{section*.65}
