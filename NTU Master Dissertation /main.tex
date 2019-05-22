@@ -28,6 +28,7 @@
 \usepackage{listings}
 %\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
 \usepackage{xcolor}
+\usepackage{pdfpages}
 
 \usepackage{amsmath}
 \DeclareMathOperator*{\argmax}{arg\,max}
@@ -54,8 +55,9 @@ minimum height=4em]
 \begin{document}
 
 %==== FRONT PART====
+\include{Title/coverpage}
 \include{Title/titlepage}
-
+\includepdf[pages={1,2,3}]{Statements/statements.pdf} 
 %\begingroup
 %\let\cleardoublepage\clearpage
 \pagenumbering{roman}
@@ -64,6 +66,7 @@ minimum height=4em]
 
 \include{Front/Abstract}
 \include{Front/Acknowledgement}
+
 %\include{Front/Acronyms}
 %\include{Front/Symbols}
 

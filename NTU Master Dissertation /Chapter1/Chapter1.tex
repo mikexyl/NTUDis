@@ -47,7 +47,7 @@ Because of the limitation of the difficulties mentioned above, the development o
 
 Recently, some solutions for multi-robot SLAM systems have been proposed. One of them is CORB-SLAM proposed in \cite{li2017corb}. As its clients based on ORB-SLAM, it inherits major advantages of ORB-SLAM e.g. relatively low computational cost and low cost of sensors. But in its initial work, the accuracy of its map fusion results are not evaluated in a quantitative evaluation method, while only a rough demonstration of its mapping results is given. Therefore, quantitative evaluation of CORB-SLAM with mapping results of single-robot ORB-SLAM system and CORB-SLAM clients given for comparison can help understand the performance of this multi-robot slam algorithm and assess the feasibility of its potential applications.
 
-Another critical requirement of applications of multi-robot slam algorithms is its ability to fuse sub maps under different illumination conditions and season, which is named as life-long application circumstances. Illumination variance method proposed in \cite{maddern2014illumination}  with advantages of easy implement and low computational cost, may be able to help CORB-SLAM to deal with illumination and season changes. Therefore related experiments are undertaken in this work in order to find a effective way to combine CORB-SLAM with illumination variance.
+Another critical requirement of applications of multi-robot slam algorithms is its ability to fuse sub maps under different illumination conditions and season, which is named as long-term application circumstances. Illumination variance method proposed in \cite{maddern2014illumination}  with advantages of easy implement and low computational cost, may be able to help CORB-SLAM to deal with illumination and season changes. Therefore related experiments are undertaken in this work in order to find a effective way to combine CORB-SLAM with illumination variance.
 
 \section{Major contribution of the Dissertation}
 \begin{enumerate}[1.]
@@ -58,7 +58,7 @@ Another critical requirement of applications of multi-robot slam algorithms is i
 \section{Organisation of the Dissertation}
 This dissertation is organised into several chapters:
 \begin{enumerate}[1.]
-	\item Chapter 2 briefly outlines the development of visual SLAM technique. Firstly, the classic structure of visual SLAM system is introduced, and the critical algorithms involved are elaborated, so as the classifications of visual SLAM systems. Then two main algorithms involved in this work, ORB-SLAM and CORB-SLAM, are demonstrated. This chapter also explores prior work in shade dealing algorithms required to implement life-long SLAM.
+	\item Chapter 2 briefly outlines the development of visual SLAM technique. Firstly, the classic structure of visual SLAM system is introduced, and the critical algorithms involved are elaborated, so as the classifications of visual SLAM systems. Then two main algorithms involved in this work, ORB-SLAM and CORB-SLAM, are demonstrated. This chapter also explores prior work in shade dealing algorithms required to implement long-term SLAM.
 	
 	\item Chapter 3 explains the methodology used in this dissertation to evaluate map fusion performance of CORB-SLAM, and how to combine illumination variance method with CORB-SLAM system to test if illumination variance can be utilized to enhance the ability of CORB-SLAM to deal with illumination changes.
 	
